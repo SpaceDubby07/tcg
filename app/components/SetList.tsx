@@ -1,5 +1,5 @@
 import setsData from '@/data/sets/en.json';
-import SetCard from './SetCards';
+import SetFilter from './SetFilter';
 
 export default function SetsList() {
   return (
@@ -15,9 +15,7 @@ export default function SetsList() {
         </div>
 
         <div className="space-y-4">
-          {setsData.map((set) => (
-            <SetCard key={set.id} set={set} />
-          ))}
+          <SetFilter sets={setsData} />
         </div>
       </div>
     </div>

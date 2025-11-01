@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-br from-gray-50 to-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-violet-400 via-sky-100 to-indigo-400`}
       >
         <nav className=" p-4">
           <Link href="/" className="cursor-pointer">

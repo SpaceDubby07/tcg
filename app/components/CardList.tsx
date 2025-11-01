@@ -52,7 +52,7 @@ export default async function CardList({ setId }: CardListProps) {
         {setName} Cards
       </h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 space-x-4">
         {cards.map((card) => (
           <div
             key={card.id}
