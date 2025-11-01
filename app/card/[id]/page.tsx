@@ -247,7 +247,7 @@ export default async function CardDetailPage({
             )}
 
             {/* Weaknesses & Resistances */}
-            {(card.weaknesses || card.resistances) && (
+            {(card.weaknesses) && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {card.weaknesses && (
                   <div className="bg-red-950/30 border border-red-900/50 rounded-xl p-5">
@@ -261,18 +261,6 @@ export default async function CardDetailPage({
                     ))}
                   </div>
                 )}
-                {card.resistances && (
-                  <div className="bg-green-950/30 border border-green-900/50 rounded-xl p-5">
-                    <h3 className="text-lg font-bold text-green-400 mb-3">
-                      Resistance
-                    </h3>
-                    {card.resistances.map((resistance, idx) => (
-                      <div key={idx} className="text-neutral-300">
-                        {resistance.type} {resistance.value}
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
             )}
 
@@ -280,7 +268,7 @@ export default async function CardDetailPage({
             {card.flavorText && (
               <div className="bg-neutral-800 rounded-xl p-6 border border-neutral-700">
                 <p className="text-neutral-300 italic leading-relaxed text-lg">
-                  "{card.flavorText}"
+                  {card.flavorText}
                 </p>
               </div>
             )}
