@@ -1,6 +1,12 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import {
+  useState,
+  useMemo,
+  useEffect,
+  useRef,
+  useCallback,
+} from 'react';
 import Image from 'next/image';
 import type { Card } from '@/types/types';
 
@@ -8,9 +14,13 @@ interface CardFilterProps {
   cards: Card[];
 }
 
+const CARDS_PER_PAGE = 50;
+
 export default function CardFilter({ cards }: CardFilterProps) {
   const [query, setQuery] = useState('');
   const [rarity, setRarity] = useState('');
+  const [displayCount, setDisplayCount] = useState(CARDS_PER_PAGE);
+  const observerTarget = useRef<HTMLDivElement>(null);
 
   const rarities = useMemo(() => {
     const all = cards.map((c) => c.rarity).filter(Boolean);
@@ -26,6 +36,48 @@ export default function CardFilter({ cards }: CardFilterProps) {
       return matchesQuery && matchesRarity;
     });
   }, [cards, query, rarity]);
+
+  // Reset display count when filters change
+  useEffect(() => {
+    setDisplayCount(CARDS_PER_PAGE);
+  }, [query, rarity]);
+
+  const displayedCards = useMemo(() => {
+    return filtered.slice(0, displayCount);
+  }, [filtered, displayCount]);
+
+  const hasMore = displayCount < filtered.length;
+
+  const loadMore = useCallback(() => {
+    if (hasMore) {
+      setDisplayCount((prev) =>
+        Math.min(prev + CARDS_PER_PAGE, filtered.length)
+      );
+    }
+  }, [hasMore, filtered.length]);
+
+  // Intersection Observer for infinite scroll
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore) {
+          loadMore();
+        }
+      },
+      { threshold: 0.1, rootMargin: '100px' }
+    );
+
+    const currentTarget = observerTarget.current;
+    if (currentTarget) {
+      observer.observe(currentTarget);
+    }
+
+    return () => {
+      if (currentTarget) {
+        observer.unobserve(currentTarget);
+      }
+    };
+  }, [hasMore, loadMore]);
 
   return (
     <div>
@@ -51,11 +103,15 @@ export default function CardFilter({ cards }: CardFilterProps) {
             </option>
           ))}
         </select>
+
+        <div className="text-sm text-gray-600">
+          Showing {displayedCards.length} of {filtered.length}
+        </div>
       </div>
 
       {/* Results */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filtered.map((card) => (
+        {displayedCards.map((card) => (
           <div
             key={card.id}
             className="bg-white rounded-xl shadow hover:shadow-lg transition p-2"
@@ -77,9 +133,27 @@ export default function CardFilter({ cards }: CardFilterProps) {
         ))}
       </div>
 
+      {/* Loading trigger */}
+      {hasMore && (
+        <div
+          ref={observerTarget}
+          className="flex justify-center py-8"
+        >
+          <div className="text-gray-500">Loading more cards...</div>
+        </div>
+      )}
+
+      {/* No results */}
       {filtered.length === 0 && (
         <p className="text-center text-gray-500 mt-8">
           No cards found.
+        </p>
+      )}
+
+      {/* End of results */}
+      {!hasMore && displayedCards.length > 0 && (
+        <p className="text-center text-gray-500 mt-8">
+          All cards loaded ({filtered.length} total)
         </p>
       )}
     </div>
