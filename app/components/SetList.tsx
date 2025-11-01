@@ -6,10 +6,10 @@ export default function SetsList() {
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="mb-10 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-4xl font-bold text-gray-200 mb-2">
             Pokémon Card Sets
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-50">
             Explore classic and modern Pokémon TCG sets
           </p>
         </div>

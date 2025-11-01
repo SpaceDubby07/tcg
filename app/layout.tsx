@@ -26,19 +26,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-violet-400 via-sky-100 to-indigo-400`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-900`}
       >
-        <nav className="flex flex-row items-center space-x-6 p-4">
-          <Link href="/" className="cursor-pointer">
-            <button className="p-2 rounded-md bg-gray-700 hover:bg-gray-900 text-white cursor-pointer">
-              Sets
-            </button>
-          </Link>
-          <Link href="/card" className="cursor-pointer">
-            <button className="p-2 rounded-md bg-gray-700 hover:bg-gray-900 text-white cursor-pointer">
-              Cards
-            </button>
-          </Link>
+        <nav className="sticky top-0 z-50 bg-black/50 backdrop-blur-md border-b border-neutral-800">
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            <div className="flex items-center justify-between">
+              {/* Logo/Brand */}
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-blue-500 rounded-lg"></div>
+                <span className="text-xl font-bold text-white">
+                  Pokémon TCG
+                </span>
+              </div>
+
+              {/* Navigation Links */}
+              <div className="flex items-center gap-3">
+                <Link href="/">
+                  <button className="px-5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-white transition-colors font-medium">
+                    Sets
+                  </button>
+                </Link>
+                <Link href="/card">
+                  <button className="px-5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-white transition-colors font-medium">
+                    Cards
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </nav>
         {children}
       </body>

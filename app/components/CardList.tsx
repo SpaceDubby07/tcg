@@ -48,7 +48,7 @@ export default async function CardList({ setId }: CardListProps) {
   console.log(cards);
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6 capitalize text-center">
+      <h1 className="text-3xl font-bold text-gray-50 mb-6 capitalize text-center">
         {setName} Cards
       </h1>
 

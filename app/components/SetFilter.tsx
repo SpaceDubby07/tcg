@@ -42,25 +42,31 @@ export default function SetFilter({ sets }: SetFilterProps) {
 
   return (
     <div>
-      <div className="mb-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div className="mb-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-50">
         {/* Search */}
         <input
           type="text"
           placeholder="Search sets..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="border px-3 py-2 rounded w-full sm:w-64"
+          className="border px-3 py-2 rounded w-full sm:w-64 text-gray-200"
         />
 
         {/* Year Select */}
         <select
           value={selectedYear}
           onChange={(e) => setSelectedYear(e.target.value)}
-          className="border px-3 py-2 rounded w-full sm:w-40"
+          className="border px-3 py-2 rounded w-full sm:w-40 "
         >
-          <option value="">All Years</option>
+          <option value="" className="text-slate-900">
+            All Years
+          </option>
           {years.map((year) => (
-            <option key={year} value={year}>
+            <option
+              key={year}
+              value={year}
+              className="text-slate-900"
+            >
               {year}
             </option>
           ))}
@@ -71,7 +77,7 @@ export default function SetFilter({ sets }: SetFilterProps) {
           onClick={() =>
             setSortOrder((prev) => (prev === 'asc' ? 'desc' : 'asc'))
           }
-          className="border px-3 py-2 rounded w-full sm:w-40 hover:bg-gray-100 transition"
+          className="border px-3 py-2 rounded w-full sm:w-40 hover:bg-slate-950 transition"
         >
           {sortOrder === 'asc' ? '↑ Ascending' : '↓ Descending'}
         </button>
@@ -84,7 +90,7 @@ export default function SetFilter({ sets }: SetFilterProps) {
             <SetCard key={set.id} set={set} />
           ))
         ) : (
-          <p className="text-center text-gray-500">No sets found.</p>
+          <p className="text-center text-gray-100">No sets found.</p>
         )}
       </div>
     </div>

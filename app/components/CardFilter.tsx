@@ -84,29 +84,31 @@ export default function CardFilter({ cards }: CardFilterProps) {
   return (
     <div>
       {/* Filters */}
-      <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
+      <div className="flex flex-col sm:flex-row items-center gap-4 mb-8 text-white">
         <input
           type="text"
           placeholder="Search cards..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="border px-3 py-2 rounded w-full sm:w-64"
+          className="border px-3 py-2 rounded w-full sm:w-64 text-white"
         />
 
         <select
           value={rarity}
           onChange={(e) => setRarity(e.target.value)}
-          className="border px-3 py-2 rounded w-full sm:w-48"
+          className="border px-3 py-2 rounded w-full sm:w-48 text-white"
         >
-          <option value="">All Rarities</option>
+          <option value="" className="text-slate-950">
+            All Rarities
+          </option>
           {rarities.map((r) => (
-            <option key={r} value={r}>
+            <option key={r} value={r} className="text-slate-950">
               {r}
             </option>
           ))}
         </select>
 
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-gray-50">
           Showing {displayedCards.length} of {filtered.length}
         </div>
       </div>
@@ -130,7 +132,7 @@ export default function CardFilter({ cards }: CardFilterProps) {
             <h2 className="mt-2 text-sm font-medium text-center">
               {card.name}
             </h2>
-            <p className="text-xs text-gray-500 text-center">
+            <p className="text-xs text-slate-950 text-center">
               {card.rarity}
             </p>
           </div>
@@ -143,20 +145,20 @@ export default function CardFilter({ cards }: CardFilterProps) {
           ref={observerTarget}
           className="flex justify-center py-8"
         >
-          <div className="text-gray-500">Loading more cards...</div>
+          <div className="text-gray-50">Loading more cards...</div>
         </div>
       )}
 
       {/* No results */}
       {filtered.length === 0 && (
-        <p className="text-center text-gray-500 mt-8">
+        <p className="text-center text-gray-50 mt-8">
           No cards found.
         </p>
       )}
 
       {/* End of results */}
       {!hasMore && displayedCards.length > 0 && (
-        <p className="text-center text-gray-500 mt-8">
+        <p className="text-center text-gray-50 mt-8">
           All cards loaded ({filtered.length} total)
         </p>
       )}
