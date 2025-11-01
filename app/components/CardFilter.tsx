@@ -9,6 +9,7 @@ import {
 } from 'react';
 import Image from 'next/image';
 import type { Card } from '@/types/types';
+import Link from 'next/link';
 
 interface CardFilterProps {
   cards: Card[];
@@ -39,6 +40,7 @@ export default function CardFilter({ cards }: CardFilterProps) {
 
   // Reset display count when filters change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDisplayCount(CARDS_PER_PAGE);
   }, [query, rarity]);
 
@@ -116,13 +118,15 @@ export default function CardFilter({ cards }: CardFilterProps) {
             key={card.id}
             className="bg-white rounded-xl shadow hover:shadow-lg transition p-2"
           >
-            <Image
-              src={card.images.large}
-              alt={card.name}
-              width={250}
-              height={350}
-              className="rounded-lg object-contain mx-auto"
-            />
+            <Link href={`/card/${card.id}`}>
+              <Image
+                src={card.images.large}
+                alt={card.name}
+                width={250}
+                height={350}
+                className="rounded-lg object-contain mx-auto"
+              />
+            </Link>
             <h2 className="mt-2 text-sm font-medium text-center">
               {card.name}
             </h2>

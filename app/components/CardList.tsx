@@ -61,9 +61,9 @@ export default async function CardList({ setId }: CardListProps) {
             <Image
               src={card.images.large}
               alt={card.name}
-              className="w-full h-auto object-cover"
               width={200}
-              height={200}
+              height={0} // Set to 0 and let CSS handle it
+              className="w-full h-auto object-contain"
               loading="eager"
             />
           </div>
