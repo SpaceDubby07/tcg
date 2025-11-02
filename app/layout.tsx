@@ -33,8 +33,10 @@ export default function RootLayout({
             <div className="flex items-center justify-between">
               {/* Logo/Brand */}
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-blue-500 rounded-lg"></div>
-                <span className="text-xl font-bold text-white">
+                <div className="w-8 h-8 bg-linear-to-br from-red-500 to-blue-500 rounded-full text-center items-center flex justify-center text-white font-bold">
+                  P
+                </div>
+                <span className="text-xl font-bold text-white hidden md:inline-block">
                   Pokémon TCG
                 </span>
               </div>
