@@ -24,6 +24,7 @@ export interface Card {
   subtypes?: string[];
   level?: string;
   hp?: string;
+  rules?: string[];
   types?: string[];
   evolvesFrom?: string;
   abilities?: {

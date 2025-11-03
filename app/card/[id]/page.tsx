@@ -246,8 +246,23 @@ export default async function CardDetailPage({
               </div>
             )}
 
+            {card.rules && (
+              <div className="">
+                {card.rules && (
+                  <div className="bg-neutral-800 rounded-xl p-5 border border-neutral-700">
+                    <h3 className="text-lg font-bold text-white mb-3">
+                      Rules
+                    </h3>
+                    <p className="text-neutral-300 leading-relaxed text-lg">
+                      {card.rules}
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Weaknesses & Resistances */}
-            {(card.weaknesses) && (
+            {card.weaknesses && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {card.weaknesses && (
                   <div className="bg-red-950/30 border border-red-900/50 rounded-xl p-5">
