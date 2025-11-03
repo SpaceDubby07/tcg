@@ -118,23 +118,32 @@ export default function CardFilter({ cards }: CardFilterProps) {
         {displayedCards.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-xl shadow hover:shadow-lg transition p-2"
+            className="rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-2 group bg-gradient-to-br from-gray-800/40 to-gray-700/20"
           >
             <Link href={`/card/${card.id}`}>
-              <Image
-                src={card.images.large}
-                alt={card.name}
-                width={250}
-                height={350}
-                className="rounded-lg object-contain mx-auto"
-              />
+              <div className="relative overflow-hidden rounded-lg">
+                {/* Card Image */}
+                <Image
+                  src={card.images.large}
+                  alt={card.name}
+                  width={250}
+                  height={350}
+                  className="rounded-lg object-contain mx-auto transition-all duration-500 group-hover:opacity-40 group-hover:scale-105"
+                />
+
+                {/* Overlay Text */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="bg-black/60 backdrop-blur-sm px-3 py-2 rounded-lg">
+                    <h2 className="text-white text-base font-semibold tracking-wide">
+                      {card.name}
+                    </h2>
+                    <p className="text-gray-200 text-sm mt-1">
+                      {card.rarity}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </Link>
-            <h2 className="mt-2 text-sm font-medium text-center">
-              {card.name}
-            </h2>
-            <p className="text-xs text-slate-950 text-center">
-              {card.rarity}
-            </p>
           </div>
         ))}
       </div>

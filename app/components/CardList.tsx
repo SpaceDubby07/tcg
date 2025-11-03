@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import { Card, Set } from '@/types/types';
+import Link from 'next/link';
 
 interface CardListProps {
   setId: string;
@@ -45,7 +46,6 @@ export default async function CardList({ setId }: CardListProps) {
   if (!cards.length)
     return <p className="text-center p-4">No cards found.</p>;
 
-  console.log(cards);
   return (
     <div className="p-4">
       <h1 className="text-3xl font-bold text-gray-50 mb-6 capitalize text-center">
@@ -58,14 +58,16 @@ export default async function CardList({ setId }: CardListProps) {
             key={card.id}
             className="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform"
           >
-            <Image
-              src={card.images.large}
-              alt={card.name}
-              width={200}
-              height={0} // Set to 0 and let CSS handle it
-              className="w-full h-auto object-contain"
-              loading="eager"
-            />
+            <Link href={`/card/${card.id}`}>
+              <Image
+                src={card.images.large}
+                alt={card.name}
+                width={200}
+                height={0} // Set to 0 and let CSS handle it
+                className="w-full h-auto object-contain"
+                loading="eager"
+              />
+            </Link>
           </div>
         ))}
       </div>

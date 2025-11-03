@@ -129,7 +129,7 @@ export default function PackOpeningModal({
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 overflow-hidden">
                 {!showCards ? (
                   <div className="text-center py-12">
                     {/* Pack Size Selection */}
@@ -193,7 +193,7 @@ export default function PackOpeningModal({
                         <p className="text-white text-xl font-semibold">
                           Opening your pack...
                         </p>
-                        <div className="flex justify-center gap-2">
+                        <div className="flex justify-center gap-2 w-full">
                           {[0, 1, 2].map((i) => (
                             <motion.div
                               key={i}
@@ -247,13 +247,13 @@ export default function PackOpeningModal({
                                   initial={{ rotateY: 0 }}
                                   exit={{ rotateY: 90 }}
                                   transition={{ duration: 0.3 }}
-                                  className="absolute inset-0 bg-linear-to-br from-red-600 via-red-700 to-red-900 rounded-lg shadow-xl flex items-center justify-center border-4 border-yellow-400 group-hover:scale-105 transition-transform"
+                                  className="absolute inset-0 bg-linear-to-br from-blue-600 via-blue-700 to-blue-900 rounded-lg shadow-xl flex items-center justify-center border-4 border-yellow-400 group-hover:scale-105 transition-transform"
                                 >
                                   <div className="text-center">
                                     <div className="text-4xl mb-2">
-                                      ⚡
+                                      (╯°□°)╯
                                     </div>
-                                    <p className="text-white font-bold text-xs">
+                                    <p className="text-white font-bold text-xs pt-20">
                                       Click to Reveal
                                     </p>
                                   </div>
@@ -269,8 +269,9 @@ export default function PackOpeningModal({
                                   <Image
                                     src={card.images.small}
                                     alt={card.name}
-                                    fill
                                     className="object-cover"
+                                    width={300}
+                                    height={0}
                                   />
                                   <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
                                   <div className="absolute bottom-0 left-0 right-0 p-2 text-white">
