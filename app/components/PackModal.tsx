@@ -140,10 +140,10 @@ export default function PackOpeningModal({
                         className="space-y-6"
                       >
                         <div>
-                          <label className="block text-white text-lg font-semibold mb-4">
+                          <label className="md:block text-white text-lg font-semibold mb-4">
                             Choose Pack Size
                           </label>
-                          <div className="flex justify-center gap-3">
+                          <div className="md:flex flex flex-wrap justify-center gap-3">
                             {[3, 4, 5, 6, 7, 8].map((size) => (
                               <button
                                 key={size}
