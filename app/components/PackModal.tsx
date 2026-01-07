@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { Card } from '@/types/types';
 
+const BackImage =
+  'https://img2.clipart-library.com/28/pokemon-card-clipart/pokemon-card-clipart-4.gif';
+
 interface PackOpeningModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -213,83 +216,87 @@ export default function PackOpeningModal({
                 ) : (
                   <div>
                     {/* Cards Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-                      {pulledCards.map((card, index) => (
-                        <motion.div
-                          key={card.id}
-                          initial={{
-                            opacity: 0,
-                            scale: 0,
-                            rotateY: 180,
-                          }}
-                          animate={{
-                            opacity: 1,
-                            scale: 1,
-                            rotateY: 0,
-                          }}
-                          transition={{
-                            delay: index * 0.15,
-                            duration: 0.5,
-                            type: 'spring',
-                            stiffness: 200,
-                          }}
-                          className="relative"
-                        >
-                          <button
-                            onClick={() => revealCard(index)}
-                            className="w-full aspect-[2.5/3.5] relative group"
-                            disabled={revealedCards.has(index)}
+                    <div>
+                      {/* Cards Grid */}
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-6">
+                        {pulledCards.map((card, index) => (
+                          <motion.div
+                            key={card.id}
+                            initial={{
+                              opacity: 0,
+                              scale: 0,
+                              rotateY: 180,
+                            }}
+                            animate={{
+                              opacity: 1,
+                              scale: 1,
+                              rotateY: 0,
+                            }}
+                            transition={{
+                              delay: index * 0.15,
+                              duration: 0.5,
+                              type: 'spring',
+                              stiffness: 200,
+                            }}
+                            className="relative"
                           >
-                            <AnimatePresence mode="wait">
-                              {!revealedCards.has(index) ? (
-                                <motion.div
-                                  key="back"
-                                  initial={{ rotateY: 0 }}
-                                  exit={{ rotateY: 90 }}
-                                  transition={{ duration: 0.3 }}
-                                  className="absolute inset-0 bg-linear-to-br from-blue-600 via-blue-700 to-blue-900 rounded-lg shadow-xl flex items-center justify-center border-4 border-yellow-400 group-hover:scale-105 transition-transform"
-                                >
-                                  <div className="text-center">
-                                    <div className="text-4xl mb-2">
-                                      (╯°□°)╯
+                            <button
+                              onClick={() => revealCard(index)}
+                              className="w-full aspect-[2.5/3.5] relative group"
+                              disabled={revealedCards.has(index)}
+                            >
+                              <AnimatePresence mode="wait">
+                                {!revealedCards.has(index) ? (
+                                  <motion.div
+                                    key="back"
+                                    initial={{ rotateY: 0 }}
+                                    exit={{ rotateY: 90 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="absolute inset-0 rounded-lg flex flex-col items-center justify-center group-hover:scale-105 transition-transform"
+                                  >
+                                    <div className="flex-1 flex items-center justify-center w-full">
+                                      <Image
+                                        src={BackImage}
+                                        alt="back of card"
+                                        className="object-contain max-h-full rounded-xl"
+                                        width={300}
+                                        height={420}
+                                      />
                                     </div>
-                                    <p className="text-white font-bold text-xs pt-20">
-                                      Click to Reveal
-                                    </p>
-                                  </div>
-                                </motion.div>
-                              ) : (
-                                <motion.div
-                                  key="front"
-                                  initial={{ rotateY: -90 }}
-                                  animate={{ rotateY: 0 }}
-                                  transition={{ duration: 0.3 }}
-                                  className="absolute inset-0 bg-white rounded-lg shadow-2xl overflow-hidden"
-                                >
-                                  <Image
-                                    src={card.images.small}
-                                    alt={card.name}
-                                    className="object-cover"
-                                    width={300}
-                                    height={0}
-                                  />
-                                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
-                                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white">
-                                    <p className="text-xs font-bold truncate">
-                                      {card.name}
-                                    </p>
-                                    {card.rarity && (
-                                      <p className="text-xs text-yellow-300">
-                                        {card.rarity}
+                                  </motion.div>
+                                ) : (
+                                  <motion.div
+                                    key="front"
+                                    initial={{ rotateY: -90 }}
+                                    animate={{ rotateY: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="absolute inset-0 bg-white rounded-xl shadow-2xl overflow-hidden"
+                                  >
+                                    <Image
+                                      src={card.images.small}
+                                      alt={card.name}
+                                      className="object-cover"
+                                      width={300}
+                                      height={0}
+                                    />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                                    <div className="absolute bottom-0 left-0 right-0 p-2 text-white">
+                                      <p className="text-xs font-bold truncate">
+                                        {card.name}
                                       </p>
-                                    )}
-                                  </div>
-                                </motion.div>
-                              )}
-                            </AnimatePresence>
-                          </button>
-                        </motion.div>
-                      ))}
+                                      {card.rarity && (
+                                        <p className="text-xs text-yellow-300">
+                                          {card.rarity}
+                                        </p>
+                                      )}
+                                    </div>
+                                  </motion.div>
+                                )}
+                              </AnimatePresence>
+                            </button>
+                          </motion.div>
+                        ))}
+                      </div>
                     </div>
 
                     {/* Action Buttons */}

@@ -12,6 +12,11 @@ module.exports = {
         hostname: 'images.pokemontcg.io',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'img2.clipart-library.com',
+        port: '',
+      },
     ],
   },
 };
