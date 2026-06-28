@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback, forwardRef } from 'react';
 import { createPortal } from 'react-dom';
 import Image from 'next/image';
-import { animate } from 'animejs';
+import { animate, utils } from 'animejs';
 import type { Card } from '@/types/types';
 import { particleBurst } from '@/lib/anime';
 
@@ -101,7 +101,7 @@ export default function PackOpeningModal({
       animate(cards, {
         translateY: [40, 0],
         opacity: [0, 1],
-        delay: (_, i) => i * 70,
+        delay: utils.stagger(70),
         duration: 450,
         ease: 'outBack',
       });
