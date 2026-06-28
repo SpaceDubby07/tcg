@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getAllCards } from '@/lib/cards';
+import { getCardSummaries } from '@/lib/cards';
 import CardFilter from '../components/CardFilter';
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default async function CardsPage() {
-  const allCards = getAllCards();
+  const allCards = getCardSummaries();
 
   return (
     <div className="min-h-screen py-12 px-4">

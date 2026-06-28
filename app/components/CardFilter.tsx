@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Card } from '@/types/types';
+import type { CardSummary } from '@/types/types';
 import { staggerIn } from '@/lib/anime';
 
 const CARDS_PER_PAGE = 50;
@@ -36,7 +36,7 @@ function ChevronDown() {
   );
 }
 
-export default function CardFilter({ cards }: { cards: Card[] }) {
+export default function CardFilter({ cards }: { cards: CardSummary[] }) {
   const [query, setQuery] = useState('');
   const [rarity, setRarity] = useState('');
   const [type, setType] = useState('');

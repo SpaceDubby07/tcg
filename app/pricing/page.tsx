@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllPrices } from '@/lib/prices';
-import { getAllCards } from '@/lib/cards';
+import { getCardById, getCardSummaries } from '@/lib/cards';
 
 export const metadata: Metadata = {
   title: 'Pricing Preview',
@@ -13,10 +13,10 @@ const SAMPLE_IDS = ['base1-4', 'base1-1', 'base1-15', 'sv4-215', 'swsh9-186'];
 export default function PricingPreviewPage() {
   const prices = getAllPrices();
   const pricedCount = Object.keys(prices).length;
-  const totalCards = getAllCards().length;
+  const totalCards = getCardSummaries().length;
 
   const samples = SAMPLE_IDS.map((id) => {
-    const card = getAllCards().find((c) => c.id === id);
+    const card = getCardById(id);
     return card ? { id, name: card.name, hasPrice: Boolean(prices[id]) } : null;
   }).filter(Boolean) as { id: string; name: string; hasPrice: boolean }[];
 

@@ -47,6 +47,8 @@ export interface CardPriceData {
   };
 }
 
+export type CardSummary = Pick<Card, 'id' | 'name' | 'rarity' | 'types' | 'images'>;
+
 export interface Card {
   id: string;
   name: string;

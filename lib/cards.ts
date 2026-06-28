@@ -2,7 +2,7 @@
 import { cache } from 'react';
 import fs from 'fs';
 import path from 'path';
-import { Card } from '@/types/types';
+import { Card, CardSummary } from '@/types/types';
 
 export const getAllCards = cache(() => {
   const dir = path.join(process.cwd(), 'data/cards/en');
@@ -15,6 +15,16 @@ export const getAllCards = cache(() => {
   });
 
   return allCards;
+});
+
+export const getCardSummaries = cache((): CardSummary[] => {
+  return getAllCards().map((card) => ({
+    id: card.id,
+    name: card.name,
+    rarity: card.rarity,
+    types: card.types,
+    images: card.images,
+  }));
 });
 
 export const getCardById = cache((id: string) => {
