@@ -21,3 +21,13 @@ export const getCardById = cache((id: string) => {
   const cards = getAllCards();
   return cards.find((card) => card.id === id) || null;
 });
+
+export const getCardsForSet = cache((setId: string): Card[] => {
+  const filePath = path.join(process.cwd(), 'data', 'cards', 'en', `${setId}.json`);
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+});

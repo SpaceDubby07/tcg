@@ -1,4 +1,9 @@
 import CardList from '@/app/components/CardList';
+import setsData from '@/data/sets/en.json';
+
+export async function generateStaticParams() {
+  return setsData.map((set) => ({ setId: set.id }));
+}
 
 interface SetPageProps {
   params: Promise<{ setId: string }>;

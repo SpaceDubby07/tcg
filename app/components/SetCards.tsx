@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import PackOpeningModal from './PackModal';
 
-export default function SetCard({ set }: { set: Set }) {
+export default function SetCard({ set, hasDeck = false }: { set: Set; hasDeck?: boolean }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -96,7 +96,7 @@ export default function SetCard({ set }: { set: Set }) {
           </div>
 
           {/* Action Buttons */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className={`grid gap-3 ${hasDeck ? 'grid-cols-3' : 'grid-cols-2'}`}>
             <button
               onClick={() => setIsModalOpen(true)}
               className="px-4 py-3 bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -105,14 +105,23 @@ export default function SetCard({ set }: { set: Set }) {
             </button>
 
             <Link
-              className="px-4 py-3 bg-gray-900 hover:bg-black text-white rounded-xl transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              className="px-4 py-3 bg-gray-900 hover:bg-black text-white rounded-xl transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
               href={{
                 pathname: `/sets/${set.id}`,
                 query: { name: set.name },
               }}
             >
-              <button className="cursor-pointer">View Cards</button>
+              View Cards
             </Link>
+
+            {hasDeck && (
+              <Link
+                className="px-4 py-3 bg-linear-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white rounded-xl transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
+                href={`/decks/${set.id}`}
+              >
+                View Decks
+              </Link>
+            )}
           </div>
         </div>
       </div>

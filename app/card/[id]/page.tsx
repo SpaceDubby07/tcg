@@ -4,6 +4,10 @@ import { getAllCards, getCardById } from '@/lib/cards';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export async function generateStaticParams() {
+  return getAllCards().map((card) => ({ id: card.id }));
+}
+
 export default async function CardDetailPage({
   params,
 }: {

@@ -1,7 +1,10 @@
 import setsData from '@/data/sets/en.json';
+import { getDeckSetIds } from '@/lib/decks';
 import SetFilter from './SetFilter';
 
 export default function SetsList() {
+  const deckSetIds = getDeckSetIds();
+
   return (
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-4xl mx-auto">
@@ -15,7 +18,7 @@ export default function SetsList() {
         </div>
 
         <div className="space-y-4">
-          <SetFilter sets={setsData} />
+          <SetFilter sets={setsData} deckSetIds={deckSetIds} />
         </div>
       </div>
     </div>

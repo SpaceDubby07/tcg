@@ -53,6 +53,11 @@ export default function RootLayout({
                     Cards
                   </button>
                 </Link>
+                <Link href="/decks">
+                  <button className="px-5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-white transition-colors font-medium">
+                    Decks
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

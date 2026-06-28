@@ -1,48 +1,17 @@
-import fs from 'fs';
-import path from 'path';
 import Image from 'next/image';
-import { Card, Set } from '@/types/types';
 import Link from 'next/link';
+import { getCardsForSet } from '@/lib/cards';
+import setsData from '@/data/sets/en.json';
 
 interface CardListProps {
   setId: string;
 }
 
 export default async function CardList({ setId }: CardListProps) {
-  let cards: Card[] = [];
-  let setName = setId;
-  let error: string | null = null;
+  const cards = getCardsForSet(setId);
+  const setInfo = setsData.find((s) => s.id === setId);
+  const setName = setInfo?.name ?? setId;
 
-  try {
-    // Load cards for this set
-    const cardsPath = path.join(
-      process.cwd(),
-      'data',
-      'cards',
-      'en',
-      `${setId}.json`
-    );
-    const cardsFile = fs.readFileSync(cardsPath, 'utf8');
-    cards = JSON.parse(cardsFile);
-
-    // Load all sets and find matching set name
-    const setsPath = path.join(
-      process.cwd(),
-      'data',
-      'sets',
-      'en.json'
-    );
-    const setsFile = fs.readFileSync(setsPath, 'utf8');
-    const allSets = JSON.parse(setsFile);
-    const currentSet = allSets.find((set: Set) => set.id === setId);
-    if (currentSet) setName = currentSet.name;
-  } catch (err) {
-    console.error('Error loading cards for', setId, err);
-    error = 'Failed to load card data.';
-  }
-
-  if (error)
-    return <p className="text-center text-red-500 p-4">{error}</p>;
   if (!cards.length)
     return <p className="text-center p-4">No cards found.</p>;
 

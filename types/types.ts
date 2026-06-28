@@ -17,6 +17,20 @@ export interface Set {
   };
 }
 
+export interface DeckCard {
+  id: string;
+  name: string;
+  rarity?: string;
+  count: number;
+}
+
+export interface Deck {
+  id: string;
+  name: string;
+  types: string[];
+  cards: DeckCard[];
+}
+
 export interface Card {
   id: string;
   name: string;

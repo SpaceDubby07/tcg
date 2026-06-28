@@ -6,9 +6,10 @@ import type { Set } from '@/types/types';
 
 interface SetFilterProps {
   sets: Set[];
+  deckSetIds: string[];
 }
 
-export default function SetFilter({ sets }: SetFilterProps) {
+export default function SetFilter({ sets, deckSetIds }: SetFilterProps) {
   const [query, setQuery] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
@@ -87,7 +88,7 @@ export default function SetFilter({ sets }: SetFilterProps) {
       <div className="space-y-4">
         {filteredSets.length > 0 ? (
           filteredSets.map((set) => (
-            <SetCard key={set.id} set={set} />
+            <SetCard key={set.id} set={set} hasDeck={deckSetIds.includes(set.id)} />
           ))
         ) : (
           <p className="text-center text-gray-100">No sets found.</p>
