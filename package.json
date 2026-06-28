@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch-prices": "node scripts/fetch-prices.mjs",
+    "fetch-prices:sample": "node scripts/fetch-prices.mjs --set=base1"
   },
   "dependencies": {
     "animejs": "^4.5.0",

@@ -31,6 +31,22 @@ export interface Deck {
   cards: DeckCard[];
 }
 
+export interface CardPriceData {
+  tcgplayerUpdated?: string;
+  cardmarketUpdated?: string;
+  usd?: {
+    variant: string;
+    market: number;
+    low?: number;
+    mid?: number;
+  };
+  eur?: {
+    trend?: number;
+    avg?: number;
+    low?: number;
+  };
+}
+
 export interface Card {
   id: string;
   name: string;

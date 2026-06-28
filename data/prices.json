@@ -1,0 +1,1460 @@
+{
+  "base1-1": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 84.13,
+      "low": 50.46,
+      "mid": 74.99
+    },
+    "eur": {
+      "trend": 41.1,
+      "avg": 49.49,
+      "low": 7.45
+    }
+  },
+  "base1-2": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 225.61,
+      "low": 149,
+      "mid": 221.98
+    },
+    "eur": {
+      "trend": 133.17,
+      "avg": 143.1,
+      "low": 28.95
+    }
+  },
+  "base1-3": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 64.92,
+      "low": 28,
+      "mid": 49.74
+    },
+    "eur": {
+      "trend": 23.5,
+      "avg": 25.63,
+      "low": 4.99
+    }
+  },
+  "base1-4": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 644.27,
+      "low": 534.99,
+      "mid": 699.99
+    },
+    "eur": {
+      "trend": 627.98,
+      "avg": 512.96,
+      "low": 80
+    }
+  },
+  "base1-5": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 40.93,
+      "low": 21.95,
+      "mid": 28.24
+    },
+    "eur": {
+      "trend": 24.53,
+      "avg": 30.53,
+      "low": 5
+    }
+  },
+  "base1-6": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 52.87,
+      "low": 18.68,
+      "mid": 28.13
+    },
+    "eur": {
+      "trend": 24.24,
+      "avg": 22.95,
+      "low": 2
+    }
+  },
+  "base1-7": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 24.75,
+      "low": 12.16,
+      "mid": 17.99
+    },
+    "eur": {
+      "trend": 7.15,
+      "avg": 11.23,
+      "low": 1
+    }
+  },
+  "base1-8": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 10.52,
+      "avg": 12.03,
+      "low": 0.5
+    }
+  },
+  "base1-9": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 36.55,
+      "low": 16.99,
+      "mid": 27.88
+    },
+    "eur": {
+      "trend": 21.44,
+      "avg": 24.02,
+      "low": 4
+    }
+  },
+  "base1-10": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 74.82,
+      "low": 34.99,
+      "mid": 64.68
+    },
+    "eur": {
+      "trend": 117.93,
+      "avg": 49.29,
+      "low": 2.5
+    }
+  },
+  "base1-11": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 38.33,
+      "low": 24.71,
+      "mid": 32.14
+    },
+    "eur": {
+      "trend": 23.65,
+      "avg": 29.4,
+      "low": 4.66
+    }
+  },
+  "base1-12": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 36.8,
+      "low": 14.67,
+      "mid": 31.05
+    },
+    "eur": {
+      "trend": 18.91,
+      "avg": 15.51,
+      "low": 1
+    }
+  },
+  "base1-13": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 37.31,
+      "low": 19.4,
+      "mid": 28
+    },
+    "eur": {
+      "trend": 30.56,
+      "avg": 25.23,
+      "low": 3.99
+    }
+  },
+  "base1-14": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 72.85,
+      "low": 25.08,
+      "mid": 60
+    },
+    "eur": {
+      "trend": 60.22,
+      "avg": 50.51,
+      "low": 7
+    }
+  },
+  "base1-15": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 156.42,
+      "low": 104.99,
+      "mid": 165
+    },
+    "eur": {
+      "trend": 108.08,
+      "avg": 111.97,
+      "low": 20
+    }
+  },
+  "base1-16": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "holofoil",
+      "market": 53.25,
+      "low": 30.67,
+      "mid": 44.99
+    },
+    "eur": {
+      "trend": 16.57,
+      "avg": 38.45,
+      "low": 3
+    }
+  },
+  "base1-17": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 5.16,
+      "low": 1.91,
+      "mid": 3.89
+    },
+    "eur": {
+      "trend": 3.69,
+      "avg": 4.96,
+      "low": 0.05
+    }
+  },
+  "base1-18": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 17.7,
+      "low": 7.58,
+      "mid": 12.08
+    },
+    "eur": {
+      "trend": 12.97,
+      "avg": 13.12,
+      "low": 1.49
+    }
+  },
+  "base1-19": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 10.92,
+      "low": 3.99,
+      "mid": 7
+    },
+    "eur": {
+      "trend": 9.69,
+      "avg": 7.75,
+      "low": 0.19
+    }
+  },
+  "base1-20": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.828Z",
+    "usd": {
+      "variant": "normal",
+      "market": 12.58,
+      "low": 3.99,
+      "mid": 9
+    },
+    "eur": {
+      "trend": 12.41,
+      "avg": 10.28,
+      "low": 0.25
+    }
+  },
+  "base1-21": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.828Z",
+    "usd": {
+      "variant": "normal",
+      "market": 7.7,
+      "low": 3,
+      "mid": 5.57
+    },
+    "eur": {
+      "trend": 6.55,
+      "avg": 7.68,
+      "low": 0.4
+    }
+  },
+  "base1-22": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.828Z",
+    "usd": {
+      "variant": "normal",
+      "market": 11.33,
+      "low": 5.73,
+      "mid": 9.19
+    },
+    "eur": {
+      "trend": 8.65,
+      "avg": 10.55,
+      "low": 0.7
+    }
+  },
+  "base1-23": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3.54,
+      "low": 0.5,
+      "mid": 2.5
+    },
+    "eur": {
+      "trend": 5.34,
+      "avg": 4.09,
+      "low": 0.05
+    }
+  },
+  "base1-24": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.76,
+      "low": 0.23,
+      "mid": 1.29
+    },
+    "eur": {
+      "trend": 1.89,
+      "avg": 2.36,
+      "low": 0.02
+    }
+  },
+  "base1-25": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.62,
+      "low": 0.69,
+      "mid": 1.83
+    },
+    "eur": {
+      "trend": 3.01,
+      "avg": 3.24,
+      "low": 0.15
+    }
+  },
+  "base1-26": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.828Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3,
+      "low": 0.4,
+      "mid": 1.47
+    },
+    "eur": {
+      "trend": 2.46,
+      "avg": 2.43,
+      "low": 0.02
+    }
+  },
+  "base1-27": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.88,
+      "low": 0.2,
+      "mid": 0.9
+    },
+    "eur": {
+      "trend": 1.39,
+      "avg": 1.96,
+      "low": 0.02
+    }
+  },
+  "base1-28": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.24,
+      "low": 0.2,
+      "mid": 0.85
+    },
+    "eur": {
+      "trend": 1.44,
+      "avg": 1.51,
+      "low": 0.02
+    }
+  },
+  "base1-29": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.754Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.18,
+      "low": 0.49,
+      "mid": 1.25
+    },
+    "eur": {
+      "trend": 3.11,
+      "avg": 3.12,
+      "low": 0.03
+    }
+  },
+  "base1-30": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.754Z",
+    "usd": {
+      "variant": "normal",
+      "market": 4.07,
+      "low": 0.75,
+      "mid": 2.82
+    },
+    "eur": {
+      "trend": 8.59,
+      "avg": 6.57,
+      "low": 0.02
+    }
+  },
+  "base1-31": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.34,
+      "low": 0.28,
+      "mid": 0.8
+    },
+    "eur": {
+      "trend": 1.06,
+      "avg": 1.31,
+      "low": 0.02
+    }
+  },
+  "base1-32": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.87,
+      "low": 0.16,
+      "mid": 1.03
+    },
+    "eur": {
+      "trend": 4.34,
+      "avg": 2.14,
+      "low": 0.02
+    }
+  },
+  "base1-33": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.22,
+      "low": 0.35,
+      "mid": 0.99
+    },
+    "eur": {
+      "trend": 2.56,
+      "avg": 2.03,
+      "low": 0.02
+    }
+  },
+  "base1-34": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.03,
+      "low": 0.15,
+      "mid": 0.71
+    },
+    "eur": {
+      "trend": 1.48,
+      "avg": 1.57,
+      "low": 0.02
+    }
+  },
+  "base1-35": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3.14,
+      "low": 0.69,
+      "mid": 2
+    },
+    "eur": {
+      "trend": 3.12,
+      "avg": 3.41,
+      "low": 0.02
+    }
+  },
+  "base1-36": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.93,
+      "low": 0.68,
+      "mid": 1.5
+    },
+    "eur": {
+      "trend": 4.25,
+      "avg": 4.37,
+      "low": 0.02
+    }
+  },
+  "base1-37": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.57,
+      "low": 0.3,
+      "mid": 1.8
+    },
+    "eur": {
+      "trend": 3.48,
+      "avg": 4.07,
+      "low": 0.02
+    }
+  },
+  "base1-38": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.56,
+      "low": 0.2,
+      "mid": 1
+    },
+    "eur": {
+      "trend": 2.47,
+      "avg": 3.33,
+      "low": 0.02
+    }
+  },
+  "base1-39": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.54,
+      "low": 0.68,
+      "mid": 1.95
+    },
+    "eur": {
+      "trend": 7.27,
+      "avg": 3.75,
+      "low": 0.02
+    }
+  },
+  "base1-40": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.75,
+      "low": 0.5,
+      "mid": 1.41
+    },
+    "eur": {
+      "trend": 3.58,
+      "avg": 2.71,
+      "low": 0.05
+    }
+  },
+  "base1-41": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.13,
+      "low": 0.34,
+      "mid": 0.89
+    },
+    "eur": {
+      "trend": 1.5,
+      "avg": 1.59,
+      "low": 0.02
+    }
+  },
+  "base1-42": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 4.23,
+      "low": 0.89,
+      "mid": 2.5
+    },
+    "eur": {
+      "trend": 7.02,
+      "avg": 4.62,
+      "low": 0.05
+    }
+  },
+  "base1-43": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.34,
+      "low": 0.14,
+      "mid": 0.74
+    },
+    "eur": {
+      "trend": 1.46,
+      "avg": 1.58,
+      "low": 0.02
+    }
+  },
+  "base1-44": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3.13,
+      "low": 0.24,
+      "mid": 1.79
+    },
+    "eur": {
+      "trend": 3.08,
+      "avg": 4.13,
+      "low": 0.02
+    }
+  },
+  "base1-45": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.34,
+      "low": 0.25,
+      "mid": 0.81
+    },
+    "eur": {
+      "trend": 1.26,
+      "avg": 1.59,
+      "low": 0.02
+    }
+  },
+  "base1-46": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.39,
+      "low": 0.33,
+      "mid": 1.3
+    },
+    "eur": {
+      "trend": 5.88,
+      "avg": 3.25,
+      "low": 0.02
+    }
+  },
+  "base1-47": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.06,
+      "low": 0.13,
+      "mid": 0.5
+    },
+    "eur": {
+      "trend": 0.43,
+      "avg": 1.05,
+      "low": 0.02
+    }
+  },
+  "base1-48": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.92,
+      "low": 0.25,
+      "mid": 0.86
+    },
+    "eur": {
+      "trend": 2.92,
+      "avg": 2.36,
+      "low": 0.02
+    }
+  },
+  "base1-49": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.85,
+      "low": 0.2,
+      "mid": 0.65
+    },
+    "eur": {
+      "trend": 2.75,
+      "avg": 1.36,
+      "low": 0.02
+    }
+  },
+  "base1-50": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.92,
+      "low": 0.18,
+      "mid": 0.67
+    },
+    "eur": {
+      "trend": 1.12,
+      "avg": 1.24,
+      "low": 0.02
+    }
+  },
+  "base1-51": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.68,
+      "low": 0.14,
+      "mid": 0.58
+    },
+    "eur": {
+      "trend": 1.02,
+      "avg": 1.15,
+      "low": 0.02
+    }
+  },
+  "base1-52": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.56,
+      "low": 0.09,
+      "mid": 0.46
+    },
+    "eur": {
+      "trend": 1.5,
+      "avg": 0.84,
+      "low": 0.02
+    }
+  },
+  "base1-53": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.69,
+      "low": 0.16,
+      "mid": 0.56
+    },
+    "eur": {
+      "trend": 2.55,
+      "avg": 1.42,
+      "low": 0.02
+    }
+  },
+  "base1-54": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.94,
+      "low": 0.2,
+      "mid": 0.75
+    },
+    "eur": {
+      "trend": 1.48,
+      "avg": 1.26,
+      "low": 0.02
+    }
+  },
+  "base1-56": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.76,
+      "low": 0.2,
+      "mid": 0.61
+    },
+    "eur": {
+      "trend": 1.01,
+      "avg": 1.2,
+      "low": 0.02
+    }
+  },
+  "base1-57": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.58,
+      "low": 0.26,
+      "mid": 0.9
+    },
+    "eur": {
+      "trend": 1.76,
+      "avg": 1.1,
+      "low": 0.02
+    }
+  },
+  "base1-58": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 7.44,
+      "low": 0.96,
+      "mid": 4.25
+    },
+    "eur": {
+      "trend": 6,
+      "avg": 8.04,
+      "low": 0.05
+    }
+  },
+  "base1-59": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.67,
+      "low": 0.2,
+      "mid": 0.59
+    },
+    "eur": {
+      "trend": 0.72,
+      "avg": 1.13,
+      "low": 0.02
+    }
+  },
+  "base1-60": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.73,
+      "low": 0.07,
+      "mid": 0.5
+    },
+    "eur": {
+      "trend": 0.82,
+      "avg": 0.82,
+      "low": 0.02
+    }
+  },
+  "base1-61": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.89,
+      "low": 0.13,
+      "mid": 0.55
+    },
+    "eur": {
+      "trend": 0.84,
+      "avg": 0.84,
+      "low": 0.02
+    }
+  },
+  "base1-62": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.99,
+      "low": 0.22,
+      "mid": 0.67
+    },
+    "eur": {
+      "trend": 0.94,
+      "avg": 1.53,
+      "low": 0.02
+    }
+  },
+  "base1-63": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 7.74,
+      "low": 1.99,
+      "mid": 4.99
+    },
+    "eur": {
+      "trend": 4.72,
+      "avg": 5.87,
+      "low": 0.02
+    }
+  },
+  "base1-64": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.82,
+      "low": 0.17,
+      "mid": 0.65
+    },
+    "eur": {
+      "trend": 1.06,
+      "avg": 1.19,
+      "low": 0.02
+    }
+  },
+  "base1-65": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.69,
+      "low": 0.14,
+      "mid": 0.53
+    },
+    "eur": {
+      "trend": 0.65,
+      "avg": 0.79,
+      "low": 0.02
+    }
+  },
+  "base1-66": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.18,
+      "low": 0.23,
+      "mid": 0.73
+    },
+    "eur": {
+      "trend": 1.05,
+      "avg": 0.84,
+      "low": 0.02
+    }
+  },
+  "base1-67": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 5.05,
+      "low": 0.9,
+      "mid": 2.69
+    },
+    "eur": {
+      "trend": 2.6,
+      "avg": 2.29,
+      "low": 0.02
+    }
+  },
+  "base1-68": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.92,
+      "low": 0.2,
+      "mid": 0.7
+    },
+    "eur": {
+      "trend": 1.23,
+      "avg": 1,
+      "low": 0.02
+    }
+  },
+  "base1-69": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.58,
+      "low": 0.16,
+      "mid": 0.5
+    },
+    "eur": {
+      "trend": 0.73,
+      "avg": 0.92,
+      "low": 0.02
+    }
+  },
+  "base1-70": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 8.36,
+      "low": 3.64,
+      "mid": 6.01
+    },
+    "eur": {
+      "trend": 8.41,
+      "avg": 9.66,
+      "low": 0.98
+    }
+  },
+  "base1-71": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3.03,
+      "low": 0.93,
+      "mid": 3
+    },
+    "eur": {
+      "trend": 2.95,
+      "avg": 2.87,
+      "low": 0.36
+    }
+  },
+  "base1-72": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 8.09,
+      "low": 2.25,
+      "mid": 3.48
+    },
+    "eur": {
+      "trend": 8.49,
+      "avg": 7.68,
+      "low": 0.15
+    }
+  },
+  "base1-74": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 9.14,
+      "low": 4.5,
+      "mid": 8.76
+    },
+    "eur": {
+      "trend": 9.03,
+      "avg": 9.24,
+      "low": 1
+    }
+  },
+  "base1-75": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 3.93,
+      "low": 1.1,
+      "mid": 2.21
+    },
+    "eur": {
+      "trend": 1.15,
+      "avg": 3.93,
+      "low": 0.12
+    }
+  },
+  "base1-76": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 10.96,
+      "avg": 9.2,
+      "low": 1.5
+    }
+  },
+  "base1-77": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 8.2,
+      "avg": 6.75,
+      "low": 0.75
+    }
+  },
+  "base1-78": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 9.16,
+      "low": 3.84,
+      "mid": 8.1
+    },
+    "eur": {
+      "trend": 9.81,
+      "avg": 10.02,
+      "low": 0.75
+    }
+  },
+  "base1-79": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 4,
+      "low": 1.07,
+      "mid": 3.09
+    },
+    "eur": {
+      "trend": 4.14,
+      "avg": 4.02,
+      "low": 0.1
+    }
+  },
+  "base1-80": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.45,
+      "low": 0.42,
+      "mid": 0.99
+    },
+    "eur": {
+      "trend": 2.41,
+      "avg": 1.63,
+      "low": 0.02
+    }
+  },
+  "base1-81": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.58,
+      "low": 0.16,
+      "mid": 0.5
+    },
+    "eur": {
+      "trend": 0.73,
+      "avg": 0.68,
+      "low": 0.02
+    }
+  },
+  "base1-82": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.74,
+      "low": 0.14,
+      "mid": 0.99
+    },
+    "eur": {
+      "trend": 2.48,
+      "avg": 2.75,
+      "low": 0.02
+    }
+  },
+  "base1-83": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.86,
+      "low": 0.49,
+      "mid": 1.71
+    },
+    "eur": {
+      "trend": 4.43,
+      "avg": 3.73,
+      "low": 0.1
+    }
+  },
+  "base1-84": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.72,
+      "low": 0.16,
+      "mid": 0.57
+    },
+    "eur": {
+      "trend": 0.94,
+      "avg": 0.87,
+      "low": 0.02
+    }
+  },
+  "base1-85": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 2.56,
+      "avg": 2.85,
+      "low": 0.02
+    }
+  },
+  "base1-86": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 3.26,
+      "avg": 2.99,
+      "low": 0.05
+    }
+  },
+  "base1-87": {
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "eur": {
+      "trend": 0.59,
+      "avg": 0.78,
+      "low": 0.02
+    }
+  },
+  "base1-88": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 1.49,
+      "low": 0.19,
+      "mid": 1
+    },
+    "eur": {
+      "trend": 1.11,
+      "avg": 1.52,
+      "low": 0.02
+    }
+  },
+  "base1-89": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 2.44,
+      "low": 0.89,
+      "mid": 1.83
+    },
+    "eur": {
+      "trend": 4.54,
+      "avg": 3.97,
+      "low": 0.02
+    }
+  },
+  "base1-90": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.38,
+      "low": 0.05,
+      "mid": 0.34
+    },
+    "eur": {
+      "trend": 0.52,
+      "avg": 0.53,
+      "low": 0.02
+    }
+  },
+  "base1-91": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.42,
+      "low": 0.07,
+      "mid": 0.36
+    },
+    "eur": {
+      "trend": 0.5,
+      "avg": 0.6,
+      "low": 0.02
+    }
+  },
+  "base1-92": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.49,
+      "low": 0.11,
+      "mid": 0.4
+    },
+    "eur": {
+      "trend": 0.38,
+      "avg": 0.49,
+      "low": 0.02
+    }
+  },
+  "base1-93": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.38,
+      "low": 0.08,
+      "mid": 0.35
+    },
+    "eur": {
+      "trend": 0.4,
+      "avg": 0.39,
+      "low": 0.02
+    }
+  },
+  "base1-94": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.29,
+      "low": 0.01,
+      "mid": 0.28
+    },
+    "eur": {
+      "trend": 0.36,
+      "avg": 0.36,
+      "low": 0.02
+    }
+  },
+  "base1-95": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.36,
+      "low": 0.02,
+      "mid": 0.34
+    },
+    "eur": {
+      "trend": 0.29,
+      "avg": 0.44,
+      "low": 0.02
+    }
+  },
+  "base1-96": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 5.57,
+      "low": 2.47,
+      "mid": 4
+    },
+    "eur": {
+      "trend": 3.76,
+      "avg": 3.86,
+      "low": 0.1
+    }
+  },
+  "base1-97": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.37,
+      "low": 0.09,
+      "mid": 0.31
+    },
+    "eur": {
+      "trend": 0.36,
+      "avg": 0.21,
+      "low": 0.02
+    }
+  },
+  "base1-98": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.38,
+      "low": 0.1,
+      "mid": 0.34
+    },
+    "eur": {
+      "trend": 0.39,
+      "avg": 0.33,
+      "low": 0.02
+    }
+  },
+  "base1-99": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.36,
+      "low": 0.06,
+      "mid": 0.35
+    },
+    "eur": {
+      "trend": 0.02,
+      "avg": 0.34,
+      "low": 0.02
+    }
+  },
+  "base1-100": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:41.128Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.51,
+      "low": 0.08,
+      "mid": 0.38
+    },
+    "eur": {
+      "trend": 0.71,
+      "avg": 0.6,
+      "low": 0.02
+    }
+  },
+  "base1-101": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.44,
+      "low": 0.1,
+      "mid": 0.36
+    },
+    "eur": {
+      "trend": 0.49,
+      "avg": 0.28,
+      "low": 0.02
+    }
+  },
+  "base1-102": {
+    "tcgplayerUpdated": "2026-06-27T22:58:38.231Z",
+    "cardmarketUpdated": "2026-06-27T22:58:40.614Z",
+    "usd": {
+      "variant": "normal",
+      "market": 0.41,
+      "low": 0.03,
+      "mid": 0.37
+    },
+    "eur": {
+      "trend": 0.78,
+      "avg": 0.51,
+      "low": 0.02
+    }
+  }
+}
