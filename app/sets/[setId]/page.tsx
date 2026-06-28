@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import CardList from '@/app/components/CardList';
+import { getCardsForSet } from '@/lib/cards';
 import setsData from '@/data/sets/en.json';
 
 export async function generateStaticParams() {
@@ -41,11 +42,13 @@ interface SetPageProps {
 
 export default async function SetPage({ params }: SetPageProps) {
   const { setId } = await params;
+  const cards = getCardsForSet(setId);
+  const set = setsData.find((s) => s.id === setId);
 
   return (
     <main className="min-h-screen py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <CardList setId={setId} />
+        <CardList cards={cards} setName={set?.name ?? setId} />
       </div>
     </main>
   );
