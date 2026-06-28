@@ -90,13 +90,18 @@ export default function SetGrid({ sets }: { sets: Set[] }) {
   }, [sets]);
 
   useEffect(() => {
+    if (isFiltering) {
+      animatedEras.current.clear();
+      return;
+    }
+
     gridRefs.current.forEach((el, era) => {
       if (animatedEras.current.has(era)) return;
       animatedEras.current.add(era);
       const cards = Array.from(el.querySelectorAll('[data-set-card]')) as HTMLElement[];
       if (cards.length) staggerIn(cards, 30);
     });
-  });
+  }, [isFiltering]);
 
   const fieldCls = "h-11 bg-[#0a0a14] border border-white/10 rounded-xl text-slate-200 text-sm focus:outline-none focus:border-blue-500/60 transition-colors";
 
@@ -167,7 +172,10 @@ export default function SetGrid({ sets }: { sets: Set[] }) {
                 </div>
 
                 <div
-                  ref={(el) => { if (el) gridRefs.current.set(era, el); }}
+                  ref={(el) => {
+                    if (el) gridRefs.current.set(era, el);
+                    else gridRefs.current.delete(era);
+                  }}
                   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                 >
                   {eraSets.map((set) => (
