@@ -1,4 +1,4 @@
-// app/card/[id]/page.tsx
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllCards, getCardById } from '@/lib/cards';
 import Image from 'next/image';
@@ -6,6 +6,39 @@ import Link from 'next/link';
 
 export async function generateStaticParams() {
   return getAllCards().map((card) => ({ id: card.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const card = getCardById(id);
+  if (!card) return {};
+
+  const descParts = [card.supertype];
+  if (card.types?.length) descParts.push(card.types.join('/') + ' type');
+  if (card.hp) descParts.push(`HP ${card.hp}`);
+  if (card.rarity) descParts.push(card.rarity);
+  const description = `${card.name} — ${descParts.join(', ')}. View attacks, abilities, and full card details.`;
+
+  return {
+    title: card.name,
+    description,
+    openGraph: {
+      title: card.name,
+      description,
+      images: [{ url: card.images.large, width: 500, height: 700, alt: card.name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: card.name,
+      description,
+      images: [card.images.large],
+    },
+    alternates: { canonical: `https://tcg.zaclark.com/card/${id}` },
+  };
 }
 
 export default async function CardDetailPage({

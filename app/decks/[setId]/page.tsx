@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getDecksForSet, getDeckSetIds } from '@/lib/decks';
@@ -8,6 +9,22 @@ import setsData from '@/data/sets/en.json';
 
 export async function generateStaticParams() {
   return getDeckSetIds().map((setId) => ({ setId }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ setId: string }>;
+}): Promise<Metadata> {
+  const { setId } = await params;
+  const set = setsData.find((s) => s.id === setId);
+  if (!set) return {};
+
+  return {
+    title: `${set.name} Theme Decks`,
+    description: `View the pre-built theme decks from ${set.name} (${set.series} series). Full deck lists with card counts.`,
+    alternates: { canonical: `https://tcg.zaclark.com/decks/${setId}` },
+  };
 }
 
 interface DeckPageProps {

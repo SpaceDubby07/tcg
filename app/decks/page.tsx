@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Theme Decks',
+  description:
+    'Explore pre-built Pokémon TCG theme decks from every set. View full deck lists with card counts.',
+  alternates: { canonical: 'https://tcg.zaclark.com/decks' },
+};
 import Image from 'next/image';
 import { getDeckSetIds } from '@/lib/decks';
 import setsData from '@/data/sets/en.json';

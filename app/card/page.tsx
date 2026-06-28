@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import { getAllCards } from '@/lib/cards';
 import CardFilter from '../components/CardFilter';
+
+export const metadata: Metadata = {
+  title: 'Cards',
+  description:
+    'Search and filter every Pokémon TCG card by name and rarity. Browse the complete card collection.',
+  alternates: { canonical: 'https://tcg.zaclark.com/card' },
+};
 
 export default async function CardsPage() {
   const allCards = getAllCards();

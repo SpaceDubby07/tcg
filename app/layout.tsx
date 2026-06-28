@@ -13,9 +13,56 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const BASE_URL = 'https://tcg.zaclark.com';
+
 export const metadata: Metadata = {
-  title: 'Zachs TCG Generator',
-  description: 'Created by Zachary Clark',
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: 'Pokémon TCG Browser',
+    template: '%s | Pokémon TCG Browser',
+  },
+  description:
+    'Browse every Pokémon Trading Card Game set and card. Search, filter, and explore the complete Pokémon TCG collection.',
+  keywords: [
+    'Pokemon TCG',
+    'Pokemon cards',
+    'Pokemon card browser',
+    'Trading card game',
+    'Pokemon set list',
+  ],
+  authors: [{ name: 'Zachary Clark', url: BASE_URL }],
+  creator: 'Zachary Clark',
+  openGraph: {
+    type: 'website',
+    siteName: 'Pokémon TCG Browser',
+    url: BASE_URL,
+    title: 'Pokémon TCG Browser',
+    description:
+      'Browse every Pokémon Trading Card Game set and card. Search, filter, and explore the complete Pokémon TCG collection.',
+    images: [
+      {
+        url: '/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'Pokémon TCG Browser',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pokémon TCG Browser',
+    description:
+      'Browse every Pokémon Trading Card Game set and card. Search, filter, and explore the complete Pokémon TCG collection.',
+    images: ['/og-default.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
 };
 
 export default function RootLayout({
