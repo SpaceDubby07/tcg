@@ -74,7 +74,7 @@ export default async function CardDetailPage({
   const typeColor = primaryType ? (TYPE_COLORS[primaryType] ?? '#ef4444') : '#ef4444';
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f]">
+    <div className="min-h-screen bg-[#0f0f23]">
       {/* Back nav */}
       <header className="sticky top-0 z-40 bg-black/50 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -302,7 +302,7 @@ export default async function CardDetailPage({
                 />
                 <div>
                   <div className="text-xs text-neutral-500 mb-1">Previous Card</div>
-                  <div className="text-white font-bold group-hover:text-blue-400 transition-colors">
+                  <div className="text-white font-bold group-hover:text-violet-400 transition-colors">
                     ← {prevCard.name}
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export default async function CardDetailPage({
               >
                 <div>
                   <div className="text-xs text-neutral-500 mb-1">Next Card</div>
-                  <div className="text-white font-bold group-hover:text-blue-400 transition-colors">
+                  <div className="text-white font-bold group-hover:text-violet-400 transition-colors">
                     {nextCard.name} →
                   </div>
                 </div>

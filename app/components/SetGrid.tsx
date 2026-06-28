@@ -19,33 +19,25 @@ const ERA_MAP: Record<string, string> = {
   'Base': 'Base',
 };
 
-const ERA_EMOJI: Record<string, string> = {
-  'Scarlet & Violet': '🔴',
-  'Sword & Shield': '⚔️',
-  'Sun & Moon': '🌙',
-  'XY': '🦋',
-  'Black & White': '🖤',
-  'HeartGold SoulSilver': '✨',
-  'Platinum': '💎',
-  'Diamond & Pearl': '💠',
-  'EX': '⚡',
-  'Neo': '🌿',
-  'Base': '🏆',
+const ERA_COLOR: Record<string, string> = {
+  'Scarlet & Violet':     '#f43f5e',
+  'Sword & Shield':       '#6366f1',
+  'Sun & Moon':           '#f59e0b',
+  'XY':                   '#3b82f6',
+  'Black & White':        '#e5e7eb',
+  'HeartGold SoulSilver': '#eab308',
+  'Platinum':             '#22d3ee',
+  'Diamond & Pearl':      '#818cf8',
+  'EX':                   '#ef4444',
+  'Neo':                  '#22c55e',
+  'Base':                 '#f97316',
+  'Other':                '#6b7280',
 };
 
 const ERA_ORDER = [
-  'Scarlet & Violet',
-  'Sword & Shield',
-  'Sun & Moon',
-  'XY',
-  'Black & White',
-  'HeartGold SoulSilver',
-  'Platinum',
-  'Diamond & Pearl',
-  'EX',
-  'Neo',
-  'Base',
-  'Other',
+  'Scarlet & Violet', 'Sword & Shield', 'Sun & Moon', 'XY',
+  'Black & White', 'HeartGold SoulSilver', 'Platinum', 'Diamond & Pearl',
+  'EX', 'Neo', 'Base', 'Other',
 ];
 
 function getEra(series: string): string {
@@ -53,21 +45,22 @@ function getEra(series: string): string {
 }
 
 function getYearRange(sets: Set[]): string {
-  const years = sets
-    .map((s) => new Date(s.releaseDate).getFullYear())
-    .filter((y) => !isNaN(y));
+  const years = sets.map((s) => new Date(s.releaseDate).getFullYear()).filter((y) => !isNaN(y));
   if (!years.length) return '';
   const min = Math.min(...years);
   const max = Math.max(...years);
   return min === max ? String(min) : `${min}–${max}`;
 }
 
-interface SetGridProps {
-  sets: Set[];
-  deckSetIds: string[];
+function ChevronDown() {
+  return (
+    <svg className="w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  );
 }
 
-export default function SetGrid({ sets, deckSetIds }: SetGridProps) {
+export default function SetGrid({ sets }: { sets: Set[] }) {
   const [query, setQuery] = useState('');
   const [selectedEra, setSelectedEra] = useState('');
   const gridRefs = useRef<Map<string, HTMLDivElement>>(new Map());
@@ -80,13 +73,11 @@ export default function SetGrid({ sets, deckSetIds }: SetGridProps) {
 
   const isFiltering = query.trim() !== '' || selectedEra !== '';
 
-  const filteredSets = useMemo(() => {
-    return sets.filter((set) => {
-      const matchesQuery = set.name.toLowerCase().includes(query.toLowerCase());
-      const matchesEra = selectedEra ? getEra(set.series) === selectedEra : true;
-      return matchesQuery && matchesEra;
-    });
-  }, [sets, query, selectedEra]);
+  const filteredSets = useMemo(() => sets.filter((set) => {
+    const matchesQuery = set.name.toLowerCase().includes(query.toLowerCase());
+    const matchesEra = selectedEra ? getEra(set.series) === selectedEra : true;
+    return matchesQuery && matchesEra;
+  }), [sets, query, selectedEra]);
 
   const groupedByEra = useMemo(() => {
     const map = new Map<string, Set[]>();
@@ -98,7 +89,6 @@ export default function SetGrid({ sets, deckSetIds }: SetGridProps) {
     return map;
   }, [sets]);
 
-  // Animate each era grid on first mount
   useEffect(() => {
     gridRefs.current.forEach((el, era) => {
       if (animatedEras.current.has(era)) return;
@@ -108,77 +98,81 @@ export default function SetGrid({ sets, deckSetIds }: SetGridProps) {
     });
   });
 
+  const fieldCls = "h-11 bg-[#0a0a14] border border-white/10 rounded-xl text-slate-200 text-sm focus:outline-none focus:border-blue-500/60 transition-colors";
+
   return (
     <div>
       {/* Filter bar */}
       <div className="flex flex-col sm:flex-row gap-3 mb-10">
-        <input
-          type="text"
-          placeholder="Search sets..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-2.5 text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 text-sm"
-        />
-        <select
-          value={selectedEra}
-          onChange={(e) => setSelectedEra(e.target.value)}
-          className="bg-white/5 border border-white/10 rounded-full px-5 py-2.5 text-white focus:outline-none focus:border-white/30 text-sm"
-        >
-          <option value="" className="bg-neutral-900">All Eras</option>
-          {availableEras.map((era) => (
-            <option key={era} value={era} className="bg-neutral-900">
-              {ERA_EMOJI[era] ?? '🃏'} {era}
-            </option>
-          ))}
-        </select>
+        {/* Search */}
+        <div className="relative flex-1">
+          <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search sets..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className={`${fieldCls} w-full pl-10 pr-4`}
+          />
+        </div>
+        {/* Era select */}
+        <div className="relative sm:w-48">
+          <select
+            value={selectedEra}
+            onChange={(e) => setSelectedEra(e.target.value)}
+            className={`${fieldCls} w-full appearance-none pl-4 pr-10 cursor-pointer`}
+            style={{ background: '#0a0a14' }}
+          >
+            <option value="" style={{ background: '#111827' }}>All Eras</option>
+            {availableEras.map((era) => (
+              <option key={era} value={era} style={{ background: '#111827' }}>{era}</option>
+            ))}
+          </select>
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+            <ChevronDown />
+          </div>
+        </div>
       </div>
 
-      {/* Flat filtered grid when searching */}
+      {/* Flat filtered grid */}
       {isFiltering && (
-        <div>
-          {filteredSets.length === 0 ? (
-            <p className="text-center text-neutral-500 py-12">No sets found.</p>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {filteredSets.map((set) => (
-                <div key={set.id}>
-                  <SetCard set={set} hasDeck={deckSetIds.includes(set.id)} />
-                </div>
-              ))}
+        filteredSets.length === 0
+          ? <p className="text-center text-slate-500 py-16">No sets found.</p>
+          : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {filteredSets.map((set) => <div key={set.id}><SetCard set={set} /></div>)}
             </div>
-          )}
-        </div>
+          )
       )}
 
       {/* Era-grouped layout */}
       {!isFiltering && (
-        <div className="space-y-12">
+        <div className="space-y-14">
           {ERA_ORDER.filter((era) => groupedByEra.has(era)).map((era) => {
             const eraSets = groupedByEra.get(era)!;
+            const color = ERA_COLOR[era] ?? '#6b7280';
             return (
               <section key={era}>
-                <div className="flex items-center justify-between mb-5 pb-3 border-b border-white/10">
+                <div className="flex items-center justify-between mb-5 pb-3 border-b border-white/8">
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl" role="img" aria-label={era}>
-                      {ERA_EMOJI[era] ?? '🃏'}
-                    </span>
-                    <h2 className="text-white font-bold text-xl">{era}</h2>
-                    <span className="px-2 py-0.5 bg-white/10 text-neutral-400 rounded-full text-xs">
+                    <div className="w-1 h-6 rounded-full flex-shrink-0" style={{ background: color }} />
+                    <h2 className="text-slate-100 font-bold text-lg">{era}</h2>
+                    <span className="px-2 py-0.5 rounded-full text-xs text-slate-400 bg-white/6 border border-white/8">
                       {getYearRange(eraSets)}
                     </span>
                   </div>
-                  <span className="text-neutral-500 text-sm">{eraSets.length} sets</span>
+                  <span className="text-slate-500 text-xs">{eraSets.length} sets</span>
                 </div>
 
                 <div
-                  ref={(el) => {
-                    if (el) gridRefs.current.set(era, el);
-                  }}
-                  className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
+                  ref={(el) => { if (el) gridRefs.current.set(era, el); }}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
                 >
                   {eraSets.map((set) => (
                     <div key={set.id} data-set-card style={{ opacity: 0 }}>
-                      <SetCard set={set} hasDeck={deckSetIds.includes(set.id)} />
+                      <SetCard set={set} />
                     </div>
                   ))}
                 </div>

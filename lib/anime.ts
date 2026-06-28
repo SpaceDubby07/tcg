@@ -6,7 +6,7 @@ export function fadeIn(targets: HTMLElement | HTMLElement[], delay = 0) {
     translateY: [20, 0],
     duration: 500,
     delay,
-    ease: 'easeOutExpo',
+    ease: 'outExpo',
   });
 }
 
@@ -16,16 +16,16 @@ export function staggerIn(targets: HTMLElement[], staggerMs = 40) {
     translateY: [20, 0],
     duration: 400,
     delay: utils.stagger(staggerMs),
-    ease: 'easeOutExpo',
+    ease: 'outExpo',
   });
 }
 
 export function hoverLift(target: HTMLElement) {
-  return animate(target, { translateY: -4, duration: 200, ease: 'easeOutQuad' });
+  return animate(target, { translateY: -4, duration: 200, ease: 'outQuad' });
 }
 
 export function hoverReset(target: HTMLElement) {
-  return animate(target, { translateY: 0, duration: 200, ease: 'easeOutQuad' });
+  return animate(target, { translateY: 0, duration: 200, ease: 'outQuad' });
 }
 
 export function particleBurst(container: HTMLElement, color = '#ffd700', count = 20) {
@@ -45,7 +45,7 @@ export function particleBurst(container: HTMLElement, color = '#ffd700', count =
     translateY: () => (Math.sin((Math.random() * 2 * Math.PI)) * (60 + Math.random() * 60)),
     opacity: [1, 0],
     duration: 700,
-    ease: 'easeOutExpo',
+    ease: 'outExpo',
     onComplete: () => particles.forEach((p) => p.remove()),
   });
 }

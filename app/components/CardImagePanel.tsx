@@ -35,7 +35,7 @@ export default function CardImagePanel({ src, alt, type }: CardImagePanelProps) 
       opacity: [0, 1],
       scale: [0.92, 1],
       duration: 600,
-      ease: 'easeOutExpo',
+      ease: 'outExpo',
     });
   }, []);
 

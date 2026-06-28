@@ -1,0 +1,2364 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "TCG Browser" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e12]: TCG Browser
+      - generic [ref=e13]:
+        - link "Sets" [ref=e14] [cursor=pointer]:
+          - /url: /
+        - link "Cards" [ref=e15] [cursor=pointer]:
+          - /url: /card
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Pokémon Card Sets" [level=1] [ref=e20]
+        - paragraph [ref=e21]: Browse every era of the Pokémon TCG
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - img
+            - textbox "Search sets..." [ref=e25]
+          - combobox [ref=e26]:
+            - option "All Eras" [selected]
+            - option "Scarlet & Violet"
+            - option "Sword & Shield"
+            - option "Sun & Moon"
+            - option "XY"
+            - option "Black & White"
+            - option "Platinum"
+            - option "Diamond & Pearl"
+            - option "EX"
+            - option "Neo"
+            - option "Base"
+            - option "Other"
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - heading "Scarlet & Violet" [level=2] [ref=e32]
+                - generic [ref=e33]: 2023–2025
+              - generic [ref=e34]: 18 sets
+            - generic [ref=e35]:
+              - generic [ref=e38] [cursor=pointer]:
+                - generic [ref=e39]:
+                  - img "Scarlet & Violet Black Star Promos logo" [ref=e41]
+                  - generic [ref=e42]: Legal
+                - heading "Scarlet & Violet Black Star Promos" [level=3] [ref=e44]
+                - paragraph [ref=e45]: Scarlet & Violet
+                - generic [ref=e46]:
+                  - generic [ref=e47]: 75 cards
+                  - generic [ref=e48]: "2023"
+                - generic [ref=e49]:
+                  - button "Open Pack" [ref=e50]
+                  - link "View Cards" [ref=e51]:
+                    - /url: /sets/svp
+              - generic [ref=e54] [cursor=pointer]:
+                - generic [ref=e55]:
+                  - img "Scarlet & Violet Energies logo" [ref=e57]
+                  - generic [ref=e58]: Legal
+                - heading "Scarlet & Violet Energies" [level=3] [ref=e60]
+                - paragraph [ref=e61]: Scarlet & Violet
+                - generic [ref=e62]:
+                  - generic [ref=e63]: 8 cards
+                  - generic [ref=e64]: "2023"
+                - generic [ref=e65]:
+                  - button "Open Pack" [ref=e66]
+                  - link "View Cards" [ref=e67]:
+                    - /url: /sets/sve
+              - generic [ref=e70] [cursor=pointer]:
+                - generic [ref=e71]:
+                  - img "Scarlet & Violet logo" [ref=e73]
+                  - generic [ref=e74]: Legal
+                - heading "Scarlet & Violet" [level=3] [ref=e76]
+                - paragraph [ref=e77]: Scarlet & Violet
+                - generic [ref=e78]:
+                  - generic [ref=e79]: 258 cards
+                  - generic [ref=e80]: "2023"
+                - generic [ref=e81]:
+                  - button "Open Pack" [ref=e82]
+                  - link "View Cards" [ref=e83]:
+                    - /url: /sets/sv1
+              - generic [ref=e86] [cursor=pointer]:
+                - generic [ref=e87]:
+                  - img "Paldea Evolved logo" [ref=e89]
+                  - generic [ref=e90]: Legal
+                - heading "Paldea Evolved" [level=3] [ref=e92]
+                - paragraph [ref=e93]: Scarlet & Violet
+                - generic [ref=e94]:
+                  - generic [ref=e95]: 279 cards
+                  - generic [ref=e96]: "2023"
+                - generic [ref=e97]:
+                  - button "Open Pack" [ref=e98]
+                  - link "View Cards" [ref=e99]:
+                    - /url: /sets/sv2
+              - generic [ref=e102] [cursor=pointer]:
+                - generic [ref=e103]:
+                  - img "Obsidian Flames logo" [ref=e105]
+                  - generic [ref=e106]: Legal
+                - heading "Obsidian Flames" [level=3] [ref=e108]
+                - paragraph [ref=e109]: Scarlet & Violet
+                - generic [ref=e110]:
+                  - generic [ref=e111]: 230 cards
+                  - generic [ref=e112]: "2023"
+                - generic [ref=e113]:
+                  - button "Open Pack" [ref=e114]
+                  - link "View Cards" [ref=e115]:
+                    - /url: /sets/sv3
+              - generic [ref=e118] [cursor=pointer]:
+                - generic [ref=e119]:
+                  - img "151 logo" [ref=e121]
+                  - generic [ref=e122]: Legal
+                - heading "151" [level=3] [ref=e124]
+                - paragraph [ref=e125]: Scarlet & Violet
+                - generic [ref=e126]:
+                  - generic [ref=e127]: 207 cards
+                  - generic [ref=e128]: "2023"
+                - generic [ref=e129]:
+                  - button "Open Pack" [ref=e130]
+                  - link "View Cards" [ref=e131]:
+                    - /url: /sets/sv3pt5
+              - generic [ref=e134] [cursor=pointer]:
+                - generic [ref=e135]:
+                  - img "Paradox Rift logo" [ref=e137]
+                  - generic [ref=e138]: Legal
+                - heading "Paradox Rift" [level=3] [ref=e140]
+                - paragraph [ref=e141]: Scarlet & Violet
+                - generic [ref=e142]:
+                  - generic [ref=e143]: 266 cards
+                  - generic [ref=e144]: "2023"
+                - generic [ref=e145]:
+                  - button "Open Pack" [ref=e146]
+                  - link "View Cards" [ref=e147]:
+                    - /url: /sets/sv4
+              - generic [ref=e150] [cursor=pointer]:
+                - generic [ref=e151]:
+                  - img "Paldean Fates logo" [ref=e153]
+                  - generic [ref=e154]: Legal
+                - heading "Paldean Fates" [level=3] [ref=e156]
+                - paragraph [ref=e157]: Scarlet & Violet
+                - generic [ref=e158]:
+                  - generic [ref=e159]: 245 cards
+                  - generic [ref=e160]: "2024"
+                - generic [ref=e161]:
+                  - button "Open Pack" [ref=e162]
+                  - link "View Cards" [ref=e163]:
+                    - /url: /sets/sv4pt5
+              - generic [ref=e166] [cursor=pointer]:
+                - generic [ref=e167]:
+                  - img "Temporal Forces logo" [ref=e169]
+                  - generic [ref=e170]: Legal
+                - heading "Temporal Forces" [level=3] [ref=e172]
+                - paragraph [ref=e173]: Scarlet & Violet
+                - generic [ref=e174]:
+                  - generic [ref=e175]: 218 cards
+                  - generic [ref=e176]: "2024"
+                - generic [ref=e177]:
+                  - button "Open Pack" [ref=e178]
+                  - link "View Cards" [ref=e179]:
+                    - /url: /sets/sv5
+              - generic [ref=e182] [cursor=pointer]:
+                - generic [ref=e183]:
+                  - img "Twilight Masquerade logo" [ref=e185]
+                  - generic [ref=e186]: Legal
+                - heading "Twilight Masquerade" [level=3] [ref=e188]
+                - paragraph [ref=e189]: Scarlet & Violet
+                - generic [ref=e190]:
+                  - generic [ref=e191]: 226 cards
+                  - generic [ref=e192]: "2024"
+                - generic [ref=e193]:
+                  - button "Open Pack" [ref=e194]
+                  - link "View Cards" [ref=e195]:
+                    - /url: /sets/sv6
+              - generic [ref=e198] [cursor=pointer]:
+                - generic [ref=e199]:
+                  - img "Shrouded Fable logo" [ref=e201]
+                  - generic [ref=e202]: Legal
+                - heading "Shrouded Fable" [level=3] [ref=e204]
+                - paragraph [ref=e205]: Scarlet & Violet
+                - generic [ref=e206]:
+                  - generic [ref=e207]: 99 cards
+                  - generic [ref=e208]: "2024"
+                - generic [ref=e209]:
+                  - button "Open Pack" [ref=e210]
+                  - link "View Cards" [ref=e211]:
+                    - /url: /sets/sv6pt5
+              - generic [ref=e214] [cursor=pointer]:
+                - generic [ref=e215]:
+                  - img "Stellar Crown logo" [ref=e217]
+                  - generic [ref=e218]: Legal
+                - heading "Stellar Crown" [level=3] [ref=e220]
+                - paragraph [ref=e221]: Scarlet & Violet
+                - generic [ref=e222]:
+                  - generic [ref=e223]: 175 cards
+                  - generic [ref=e224]: "2024"
+                - generic [ref=e225]:
+                  - button "Open Pack" [ref=e226]
+                  - link "View Cards" [ref=e227]:
+                    - /url: /sets/sv7
+              - generic [ref=e230] [cursor=pointer]:
+                - generic [ref=e231]:
+                  - img "Surging Sparks logo" [ref=e233]
+                  - generic [ref=e234]: Legal
+                - heading "Surging Sparks" [level=3] [ref=e236]
+                - paragraph [ref=e237]: Scarlet & Violet
+                - generic [ref=e238]:
+                  - generic [ref=e239]: 252 cards
+                  - generic [ref=e240]: "2024"
+                - generic [ref=e241]:
+                  - button "Open Pack" [ref=e242]
+                  - link "View Cards" [ref=e243]:
+                    - /url: /sets/sv8
+              - generic [ref=e246] [cursor=pointer]:
+                - generic [ref=e247]:
+                  - img "Prismatic Evolutions logo" [ref=e249]
+                  - generic [ref=e250]: Legal
+                - heading "Prismatic Evolutions" [level=3] [ref=e252]
+                - paragraph [ref=e253]: Scarlet & Violet
+                - generic [ref=e254]:
+                  - generic [ref=e255]: 180 cards
+                  - generic [ref=e256]: "2025"
+                - generic [ref=e257]:
+                  - button "Open Pack" [ref=e258]
+                  - link "View Cards" [ref=e259]:
+                    - /url: /sets/sv8pt5
+              - generic [ref=e262] [cursor=pointer]:
+                - generic [ref=e263]:
+                  - img "Journey Together logo" [ref=e265]
+                  - generic [ref=e266]: Legal
+                - heading "Journey Together" [level=3] [ref=e268]
+                - paragraph [ref=e269]: Scarlet & Violet
+                - generic [ref=e270]:
+                  - generic [ref=e271]: 190 cards
+                  - generic [ref=e272]: "2025"
+                - generic [ref=e273]:
+                  - button "Open Pack" [ref=e274]
+                  - link "View Cards" [ref=e275]:
+                    - /url: /sets/sv9
+              - generic [ref=e278] [cursor=pointer]:
+                - generic [ref=e279]:
+                  - img "Destined Rivals logo" [ref=e281]
+                  - generic [ref=e282]: Legal
+                - heading "Destined Rivals" [level=3] [ref=e284]
+                - paragraph [ref=e285]: Scarlet & Violet
+                - generic [ref=e286]:
+                  - generic [ref=e287]: 244 cards
+                  - generic [ref=e288]: "2025"
+                - generic [ref=e289]:
+                  - button "Open Pack" [ref=e290]
+                  - link "View Cards" [ref=e291]:
+                    - /url: /sets/sv10
+              - generic [ref=e294] [cursor=pointer]:
+                - generic [ref=e295]:
+                  - img "Black Bolt logo" [ref=e297]
+                  - generic [ref=e298]: Legal
+                - heading "Black Bolt" [level=3] [ref=e300]
+                - paragraph [ref=e301]: Scarlet & Violet
+                - generic [ref=e302]:
+                  - generic [ref=e303]: 172 cards
+                  - generic [ref=e304]: "2025"
+                - generic [ref=e305]:
+                  - button "Open Pack" [ref=e306]
+                  - link "View Cards" [ref=e307]:
+                    - /url: /sets/zsv10pt5
+              - generic [ref=e310] [cursor=pointer]:
+                - generic [ref=e311]:
+                  - img "White Flare logo" [ref=e313]
+                  - generic [ref=e314]: Legal
+                - heading "White Flare" [level=3] [ref=e316]
+                - paragraph [ref=e317]: Scarlet & Violet
+                - generic [ref=e318]:
+                  - generic [ref=e319]: 173 cards
+                  - generic [ref=e320]: "2025"
+                - generic [ref=e321]:
+                  - button "Open Pack" [ref=e322]
+                  - link "View Cards" [ref=e323]:
+                    - /url: /sets/rsv10pt5
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - generic [ref=e326]:
+                - heading "Sword & Shield" [level=2] [ref=e328]
+                - generic [ref=e329]: 2019–2023
+              - generic [ref=e330]: 25 sets
+            - generic [ref=e331]:
+              - generic [ref=e334] [cursor=pointer]:
+                - generic [ref=e335]:
+                  - img "SWSH Black Star Promos logo" [ref=e337]
+                  - generic [ref=e338]: Legal
+                - heading "SWSH Black Star Promos" [level=3] [ref=e340]
+                - paragraph [ref=e341]: Sword & Shield
+                - generic [ref=e342]:
+                  - generic [ref=e343]: 304 cards
+                  - generic [ref=e344]: "2019"
+                - generic [ref=e345]:
+                  - button "Open Pack" [ref=e346]
+                  - link "View Cards" [ref=e347]:
+                    - /url: /sets/swshp
+              - generic [ref=e350] [cursor=pointer]:
+                - generic [ref=e351]:
+                  - img "Sword & Shield logo" [ref=e353]
+                  - generic [ref=e354]: Legal
+                - heading "Sword & Shield" [level=3] [ref=e356]
+                - paragraph [ref=e357]: Sword & Shield
+                - generic [ref=e358]:
+                  - generic [ref=e359]: 216 cards
+                  - generic [ref=e360]: "2020"
+                - generic [ref=e361]:
+                  - button "Open Pack" [ref=e362]
+                  - link "View Cards" [ref=e363]:
+                    - /url: /sets/swsh1
+              - generic [ref=e366] [cursor=pointer]:
+                - generic [ref=e367]:
+                  - img "Rebel Clash logo" [ref=e369]
+                  - generic [ref=e370]: Legal
+                - heading "Rebel Clash" [level=3] [ref=e372]
+                - paragraph [ref=e373]: Sword & Shield
+                - generic [ref=e374]:
+                  - generic [ref=e375]: 209 cards
+                  - generic [ref=e376]: "2020"
+                - generic [ref=e377]:
+                  - button "Open Pack" [ref=e378]
+                  - link "View Cards" [ref=e379]:
+                    - /url: /sets/swsh2
+              - generic [ref=e382] [cursor=pointer]:
+                - generic [ref=e383]:
+                  - img "Darkness Ablaze logo" [ref=e385]
+                  - generic [ref=e386]: Legal
+                - heading "Darkness Ablaze" [level=3] [ref=e388]
+                - paragraph [ref=e389]: Sword & Shield
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 201 cards
+                  - generic [ref=e392]: "2020"
+                - generic [ref=e393]:
+                  - button "Open Pack" [ref=e394]
+                  - link "View Cards" [ref=e395]:
+                    - /url: /sets/swsh3
+              - generic [ref=e398] [cursor=pointer]:
+                - generic [ref=e399]:
+                  - img "Champion's Path logo" [ref=e401]
+                  - generic [ref=e402]: Legal
+                - heading "Champion's Path" [level=3] [ref=e404]
+                - paragraph [ref=e405]: Sword & Shield
+                - generic [ref=e406]:
+                  - generic [ref=e407]: 80 cards
+                  - generic [ref=e408]: "2020"
+                - generic [ref=e409]:
+                  - button "Open Pack" [ref=e410]
+                  - link "View Cards" [ref=e411]:
+                    - /url: /sets/swsh35
+              - generic [ref=e414] [cursor=pointer]:
+                - generic [ref=e415]:
+                  - img "Vivid Voltage logo" [ref=e417]
+                  - generic [ref=e418]: Legal
+                - heading "Vivid Voltage" [level=3] [ref=e420]
+                - paragraph [ref=e421]: Sword & Shield
+                - generic [ref=e422]:
+                  - generic [ref=e423]: 203 cards
+                  - generic [ref=e424]: "2020"
+                - generic [ref=e425]:
+                  - button "Open Pack" [ref=e426]
+                  - link "View Cards" [ref=e427]:
+                    - /url: /sets/swsh4
+              - generic [ref=e430] [cursor=pointer]:
+                - generic [ref=e431]:
+                  - img "Shining Fates logo" [ref=e433]
+                  - generic [ref=e434]: Legal
+                - heading "Shining Fates" [level=3] [ref=e436]
+                - paragraph [ref=e437]: Sword & Shield
+                - generic [ref=e438]:
+                  - generic [ref=e439]: 73 cards
+                  - generic [ref=e440]: "2021"
+                - generic [ref=e441]:
+                  - button "Open Pack" [ref=e442]
+                  - link "View Cards" [ref=e443]:
+                    - /url: /sets/swsh45
+              - generic [ref=e446] [cursor=pointer]:
+                - generic [ref=e447]:
+                  - img "Shining Fates Shiny Vault logo" [ref=e449]
+                  - generic [ref=e450]: Legal
+                - heading "Shining Fates Shiny Vault" [level=3] [ref=e452]
+                - paragraph [ref=e453]: Sword & Shield
+                - generic [ref=e454]:
+                  - generic [ref=e455]: 122 cards
+                  - generic [ref=e456]: "2021"
+                - generic [ref=e457]:
+                  - button "Open Pack" [ref=e458]
+                  - link "View Cards" [ref=e459]:
+                    - /url: /sets/swsh45sv
+              - generic [ref=e462] [cursor=pointer]:
+                - generic [ref=e463]:
+                  - img "Battle Styles logo" [ref=e465]
+                  - generic [ref=e466]: Legal
+                - heading "Battle Styles" [level=3] [ref=e468]
+                - paragraph [ref=e469]: Sword & Shield
+                - generic [ref=e470]:
+                  - generic [ref=e471]: 183 cards
+                  - generic [ref=e472]: "2021"
+                - generic [ref=e473]:
+                  - button "Open Pack" [ref=e474]
+                  - link "View Cards" [ref=e475]:
+                    - /url: /sets/swsh5
+              - generic [ref=e478] [cursor=pointer]:
+                - generic [ref=e479]:
+                  - img "Chilling Reign logo" [ref=e481]
+                  - generic [ref=e482]: Legal
+                - heading "Chilling Reign" [level=3] [ref=e484]
+                - paragraph [ref=e485]: Sword & Shield
+                - generic [ref=e486]:
+                  - generic [ref=e487]: 233 cards
+                  - generic [ref=e488]: "2021"
+                - generic [ref=e489]:
+                  - button "Open Pack" [ref=e490]
+                  - link "View Cards" [ref=e491]:
+                    - /url: /sets/swsh6
+              - generic [ref=e494] [cursor=pointer]:
+                - generic [ref=e495]:
+                  - img "Evolving Skies logo" [ref=e497]
+                  - generic [ref=e498]: Legal
+                - heading "Evolving Skies" [level=3] [ref=e500]
+                - paragraph [ref=e501]: Sword & Shield
+                - generic [ref=e502]:
+                  - generic [ref=e503]: 237 cards
+                  - generic [ref=e504]: "2021"
+                - generic [ref=e505]:
+                  - button "Open Pack" [ref=e506]
+                  - link "View Cards" [ref=e507]:
+                    - /url: /sets/swsh7
+              - generic [ref=e510] [cursor=pointer]:
+                - generic [ref=e511]:
+                  - img "Celebrations logo" [ref=e513]
+                  - generic [ref=e514]: Legal
+                - heading "Celebrations" [level=3] [ref=e516]
+                - paragraph [ref=e517]: Sword & Shield
+                - generic [ref=e518]:
+                  - generic [ref=e519]: 25 cards
+                  - generic [ref=e520]: "2021"
+                - generic [ref=e521]:
+                  - button "Open Pack" [ref=e522]
+                  - link "View Cards" [ref=e523]:
+                    - /url: /sets/cel25
+              - generic [ref=e526] [cursor=pointer]:
+                - generic [ref=e527]:
+                  - 'img "Celebrations: Classic Collection logo" [ref=e529]'
+                  - generic [ref=e530]: Legal
+                - 'heading "Celebrations: Classic Collection" [level=3] [ref=e532]'
+                - paragraph [ref=e533]: Sword & Shield
+                - generic [ref=e534]:
+                  - generic [ref=e535]: 25 cards
+                  - generic [ref=e536]: "2021"
+                - generic [ref=e537]:
+                  - button "Open Pack" [ref=e538]
+                  - link "View Cards" [ref=e539]:
+                    - /url: /sets/cel25c
+              - generic [ref=e542] [cursor=pointer]:
+                - generic [ref=e543]:
+                  - img "Fusion Strike logo" [ref=e545]
+                  - generic [ref=e546]: Legal
+                - heading "Fusion Strike" [level=3] [ref=e548]
+                - paragraph [ref=e549]: Sword & Shield
+                - generic [ref=e550]:
+                  - generic [ref=e551]: 284 cards
+                  - generic [ref=e552]: "2021"
+                - generic [ref=e553]:
+                  - button "Open Pack" [ref=e554]
+                  - link "View Cards" [ref=e555]:
+                    - /url: /sets/swsh8
+              - generic [ref=e558] [cursor=pointer]:
+                - generic [ref=e559]:
+                  - img "Brilliant Stars logo" [ref=e561]
+                  - generic [ref=e562]: Legal
+                - heading "Brilliant Stars" [level=3] [ref=e564]
+                - paragraph [ref=e565]: Sword & Shield
+                - generic [ref=e566]:
+                  - generic [ref=e567]: 186 cards
+                  - generic [ref=e568]: "2022"
+                - generic [ref=e569]:
+                  - button "Open Pack" [ref=e570]
+                  - link "View Cards" [ref=e571]:
+                    - /url: /sets/swsh9
+              - generic [ref=e574] [cursor=pointer]:
+                - generic [ref=e575]:
+                  - img "Brilliant Stars Trainer Gallery logo" [ref=e577]
+                  - generic [ref=e578]: Legal
+                - heading "Brilliant Stars Trainer Gallery" [level=3] [ref=e580]
+                - paragraph [ref=e581]: Sword & Shield
+                - generic [ref=e582]:
+                  - generic [ref=e583]: 30 cards
+                  - generic [ref=e584]: "2022"
+                - generic [ref=e585]:
+                  - button "Open Pack" [ref=e586]
+                  - link "View Cards" [ref=e587]:
+                    - /url: /sets/swsh9tg
+              - generic [ref=e590] [cursor=pointer]:
+                - generic [ref=e591]:
+                  - img "Astral Radiance logo" [ref=e593]
+                  - generic [ref=e594]: Legal
+                - heading "Astral Radiance" [level=3] [ref=e596]
+                - paragraph [ref=e597]: Sword & Shield
+                - generic [ref=e598]:
+                  - generic [ref=e599]: 216 cards
+                  - generic [ref=e600]: "2022"
+                - generic [ref=e601]:
+                  - button "Open Pack" [ref=e602]
+                  - link "View Cards" [ref=e603]:
+                    - /url: /sets/swsh10
+              - generic [ref=e606] [cursor=pointer]:
+                - generic [ref=e607]:
+                  - img "Astral Radiance Trainer Gallery logo" [ref=e609]
+                  - generic [ref=e610]: Legal
+                - heading "Astral Radiance Trainer Gallery" [level=3] [ref=e612]
+                - paragraph [ref=e613]: Sword & Shield
+                - generic [ref=e614]:
+                  - generic [ref=e615]: 30 cards
+                  - generic [ref=e616]: "2022"
+                - generic [ref=e617]:
+                  - button "Open Pack" [ref=e618]
+                  - link "View Cards" [ref=e619]:
+                    - /url: /sets/swsh10tg
+              - generic [ref=e622] [cursor=pointer]:
+                - generic [ref=e623]:
+                  - img "Pokémon GO logo" [ref=e625]
+                  - generic [ref=e626]: Legal
+                - heading "Pokémon GO" [level=3] [ref=e628]
+                - paragraph [ref=e629]: Sword & Shield
+                - generic [ref=e630]:
+                  - generic [ref=e631]: 88 cards
+                  - generic [ref=e632]: "2022"
+                - generic [ref=e633]:
+                  - button "Open Pack" [ref=e634]
+                  - link "View Cards" [ref=e635]:
+                    - /url: /sets/pgo
+              - generic [ref=e638] [cursor=pointer]:
+                - generic [ref=e639]:
+                  - img "Lost Origin logo" [ref=e641]
+                  - generic [ref=e642]: Legal
+                - heading "Lost Origin" [level=3] [ref=e644]
+                - paragraph [ref=e645]: Sword & Shield
+                - generic [ref=e646]:
+                  - generic [ref=e647]: 217 cards
+                  - generic [ref=e648]: "2022"
+                - generic [ref=e649]:
+                  - button "Open Pack" [ref=e650]
+                  - link "View Cards" [ref=e651]:
+                    - /url: /sets/swsh11
+              - generic [ref=e654] [cursor=pointer]:
+                - generic [ref=e655]:
+                  - img "Lost Origin Trainer Gallery logo" [ref=e657]
+                  - generic [ref=e658]: Legal
+                - heading "Lost Origin Trainer Gallery" [level=3] [ref=e660]
+                - paragraph [ref=e661]: Sword & Shield
+                - generic [ref=e662]:
+                  - generic [ref=e663]: 30 cards
+                  - generic [ref=e664]: "2022"
+                - generic [ref=e665]:
+                  - button "Open Pack" [ref=e666]
+                  - link "View Cards" [ref=e667]:
+                    - /url: /sets/swsh11tg
+              - generic [ref=e670] [cursor=pointer]:
+                - generic [ref=e671]:
+                  - img "Silver Tempest logo" [ref=e673]
+                  - generic [ref=e674]: Legal
+                - heading "Silver Tempest" [level=3] [ref=e676]
+                - paragraph [ref=e677]: Sword & Shield
+                - generic [ref=e678]:
+                  - generic [ref=e679]: 215 cards
+                  - generic [ref=e680]: "2022"
+                - generic [ref=e681]:
+                  - button "Open Pack" [ref=e682]
+                  - link "View Cards" [ref=e683]:
+                    - /url: /sets/swsh12
+              - generic [ref=e686] [cursor=pointer]:
+                - generic [ref=e687]:
+                  - img "Silver Tempest Trainer Gallery logo" [ref=e689]
+                  - generic [ref=e690]: Legal
+                - heading "Silver Tempest Trainer Gallery" [level=3] [ref=e692]
+                - paragraph [ref=e693]: Sword & Shield
+                - generic [ref=e694]:
+                  - generic [ref=e695]: 30 cards
+                  - generic [ref=e696]: "2022"
+                - generic [ref=e697]:
+                  - button "Open Pack" [ref=e698]
+                  - link "View Cards" [ref=e699]:
+                    - /url: /sets/swsh12tg
+              - generic [ref=e702] [cursor=pointer]:
+                - generic [ref=e703]:
+                  - img "Crown Zenith logo" [ref=e705]
+                  - generic [ref=e706]: Legal
+                - heading "Crown Zenith" [level=3] [ref=e708]
+                - paragraph [ref=e709]: Sword & Shield
+                - generic [ref=e710]:
+                  - generic [ref=e711]: 160 cards
+                  - generic [ref=e712]: "2023"
+                - generic [ref=e713]:
+                  - button "Open Pack" [ref=e714]
+                  - link "View Cards" [ref=e715]:
+                    - /url: /sets/swsh12pt5
+              - generic [ref=e718] [cursor=pointer]:
+                - generic [ref=e719]:
+                  - img "Crown Zenith Galarian Gallery logo" [ref=e721]
+                  - generic [ref=e722]: Legal
+                - heading "Crown Zenith Galarian Gallery" [level=3] [ref=e724]
+                - paragraph [ref=e725]: Sword & Shield
+                - generic [ref=e726]:
+                  - generic [ref=e727]: 70 cards
+                  - generic [ref=e728]: "2023"
+                - generic [ref=e729]:
+                  - button "Open Pack" [ref=e730]
+                  - link "View Cards" [ref=e731]:
+                    - /url: /sets/swsh12pt5gg
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - generic [ref=e734]:
+                - heading "Sun & Moon" [level=2] [ref=e736]
+                - generic [ref=e737]: 2017–2019
+              - generic [ref=e738]: 18 sets
+            - generic [ref=e739]:
+              - generic [ref=e742] [cursor=pointer]:
+                - generic [ref=e743]:
+                  - img "Sun & Moon logo" [ref=e745]
+                  - generic [ref=e746]: Legal
+                - heading "Sun & Moon" [level=3] [ref=e748]
+                - paragraph [ref=e749]: Sun & Moon
+                - generic [ref=e750]:
+                  - generic [ref=e751]: 173 cards
+                  - generic [ref=e752]: "2017"
+                - generic [ref=e753]:
+                  - button "Open Pack" [ref=e754]
+                  - link "View Cards" [ref=e755]:
+                    - /url: /sets/sm1
+              - generic [ref=e758] [cursor=pointer]:
+                - generic [ref=e759]:
+                  - img "SM Black Star Promos logo" [ref=e761]
+                  - generic [ref=e762]: Legal
+                - heading "SM Black Star Promos" [level=3] [ref=e764]
+                - paragraph [ref=e765]: Sun & Moon
+                - generic [ref=e766]:
+                  - generic [ref=e767]: 250 cards
+                  - generic [ref=e768]: "2017"
+                - generic [ref=e769]:
+                  - button "Open Pack" [ref=e770]
+                  - link "View Cards" [ref=e771]:
+                    - /url: /sets/smp
+              - generic [ref=e774] [cursor=pointer]:
+                - generic [ref=e775]:
+                  - img "Guardians Rising logo" [ref=e777]
+                  - generic [ref=e778]: Legal
+                - heading "Guardians Rising" [level=3] [ref=e780]
+                - paragraph [ref=e781]: Sun & Moon
+                - generic [ref=e782]:
+                  - generic [ref=e783]: 180 cards
+                  - generic [ref=e784]: "2017"
+                - generic [ref=e785]:
+                  - button "Open Pack" [ref=e786]
+                  - link "View Cards" [ref=e787]:
+                    - /url: /sets/sm2
+              - generic [ref=e790] [cursor=pointer]:
+                - generic [ref=e791]:
+                  - img "Burning Shadows logo" [ref=e793]
+                  - generic [ref=e794]: Legal
+                - heading "Burning Shadows" [level=3] [ref=e796]
+                - paragraph [ref=e797]: Sun & Moon
+                - generic [ref=e798]:
+                  - generic [ref=e799]: 177 cards
+                  - generic [ref=e800]: "2017"
+                - generic [ref=e801]:
+                  - button "Open Pack" [ref=e802]
+                  - link "View Cards" [ref=e803]:
+                    - /url: /sets/sm3
+              - generic [ref=e806] [cursor=pointer]:
+                - generic [ref=e807]:
+                  - img "Shining Legends logo" [ref=e809]
+                  - generic [ref=e810]: Legal
+                - heading "Shining Legends" [level=3] [ref=e812]
+                - paragraph [ref=e813]: Sun & Moon
+                - generic [ref=e814]:
+                  - generic [ref=e815]: 81 cards
+                  - generic [ref=e816]: "2017"
+                - generic [ref=e817]:
+                  - button "Open Pack" [ref=e818]
+                  - link "View Cards" [ref=e819]:
+                    - /url: /sets/sm35
+              - generic [ref=e822] [cursor=pointer]:
+                - generic [ref=e823]:
+                  - img "Crimson Invasion logo" [ref=e825]
+                  - generic [ref=e826]: Legal
+                - heading "Crimson Invasion" [level=3] [ref=e828]
+                - paragraph [ref=e829]: Sun & Moon
+                - generic [ref=e830]:
+                  - generic [ref=e831]: 126 cards
+                  - generic [ref=e832]: "2017"
+                - generic [ref=e833]:
+                  - button "Open Pack" [ref=e834]
+                  - link "View Cards" [ref=e835]:
+                    - /url: /sets/sm4
+              - generic [ref=e838] [cursor=pointer]:
+                - generic [ref=e839]:
+                  - img "Ultra Prism logo" [ref=e841]
+                  - generic [ref=e842]: Legal
+                - heading "Ultra Prism" [level=3] [ref=e844]
+                - paragraph [ref=e845]: Sun & Moon
+                - generic [ref=e846]:
+                  - generic [ref=e847]: 178 cards
+                  - generic [ref=e848]: "2018"
+                - generic [ref=e849]:
+                  - button "Open Pack" [ref=e850]
+                  - link "View Cards" [ref=e851]:
+                    - /url: /sets/sm5
+              - generic [ref=e854] [cursor=pointer]:
+                - generic [ref=e855]:
+                  - img "Forbidden Light logo" [ref=e857]
+                  - generic [ref=e858]: Legal
+                - heading "Forbidden Light" [level=3] [ref=e860]
+                - paragraph [ref=e861]: Sun & Moon
+                - generic [ref=e862]:
+                  - generic [ref=e863]: 150 cards
+                  - generic [ref=e864]: "2018"
+                - generic [ref=e865]:
+                  - button "Open Pack" [ref=e866]
+                  - link "View Cards" [ref=e867]:
+                    - /url: /sets/sm6
+              - generic [ref=e870] [cursor=pointer]:
+                - generic [ref=e871]:
+                  - img "Celestial Storm logo" [ref=e873]
+                  - generic [ref=e874]: Legal
+                - heading "Celestial Storm" [level=3] [ref=e876]
+                - paragraph [ref=e877]: Sun & Moon
+                - generic [ref=e878]:
+                  - generic [ref=e879]: 187 cards
+                  - generic [ref=e880]: "2018"
+                - generic [ref=e881]:
+                  - button "Open Pack" [ref=e882]
+                  - link "View Cards" [ref=e883]:
+                    - /url: /sets/sm7
+              - generic [ref=e886] [cursor=pointer]:
+                - generic [ref=e887]:
+                  - img "Dragon Majesty logo" [ref=e889]
+                  - generic [ref=e890]: Legal
+                - heading "Dragon Majesty" [level=3] [ref=e892]
+                - paragraph [ref=e893]: Sun & Moon
+                - generic [ref=e894]:
+                  - generic [ref=e895]: 80 cards
+                  - generic [ref=e896]: "2018"
+                - generic [ref=e897]:
+                  - button "Open Pack" [ref=e898]
+                  - link "View Cards" [ref=e899]:
+                    - /url: /sets/sm75
+              - generic [ref=e902] [cursor=pointer]:
+                - generic [ref=e903]:
+                  - img "Lost Thunder logo" [ref=e905]
+                  - generic [ref=e906]: Legal
+                - heading "Lost Thunder" [level=3] [ref=e908]
+                - paragraph [ref=e909]: Sun & Moon
+                - generic [ref=e910]:
+                  - generic [ref=e911]: 240 cards
+                  - generic [ref=e912]: "2018"
+                - generic [ref=e913]:
+                  - button "Open Pack" [ref=e914]
+                  - link "View Cards" [ref=e915]:
+                    - /url: /sets/sm8
+              - generic [ref=e918] [cursor=pointer]:
+                - generic [ref=e919]:
+                  - img "Team Up logo" [ref=e921]
+                  - generic [ref=e922]: Legal
+                - heading "Team Up" [level=3] [ref=e924]
+                - paragraph [ref=e925]: Sun & Moon
+                - generic [ref=e926]:
+                  - generic [ref=e927]: 198 cards
+                  - generic [ref=e928]: "2019"
+                - generic [ref=e929]:
+                  - button "Open Pack" [ref=e930]
+                  - link "View Cards" [ref=e931]:
+                    - /url: /sets/sm9
+              - generic [ref=e934] [cursor=pointer]:
+                - generic [ref=e935]:
+                  - img "Detective Pikachu logo" [ref=e937]
+                  - generic [ref=e938]: Legal
+                - heading "Detective Pikachu" [level=3] [ref=e940]
+                - paragraph [ref=e941]: Sun & Moon
+                - generic [ref=e942]:
+                  - generic [ref=e943]: 18 cards
+                  - generic [ref=e944]: "2019"
+                - generic [ref=e945]:
+                  - button "Open Pack" [ref=e946]
+                  - link "View Cards" [ref=e947]:
+                    - /url: /sets/det1
+              - generic [ref=e950] [cursor=pointer]:
+                - generic [ref=e951]:
+                  - img "Unbroken Bonds logo" [ref=e953]
+                  - generic [ref=e954]: Legal
+                - heading "Unbroken Bonds" [level=3] [ref=e956]
+                - paragraph [ref=e957]: Sun & Moon
+                - generic [ref=e958]:
+                  - generic [ref=e959]: 234 cards
+                  - generic [ref=e960]: "2019"
+                - generic [ref=e961]:
+                  - button "Open Pack" [ref=e962]
+                  - link "View Cards" [ref=e963]:
+                    - /url: /sets/sm10
+              - generic [ref=e966] [cursor=pointer]:
+                - generic [ref=e967]:
+                  - img "Unified Minds logo" [ref=e969]
+                  - generic [ref=e970]: Legal
+                - heading "Unified Minds" [level=3] [ref=e972]
+                - paragraph [ref=e973]: Sun & Moon
+                - generic [ref=e974]:
+                  - generic [ref=e975]: 260 cards
+                  - generic [ref=e976]: "2019"
+                - generic [ref=e977]:
+                  - button "Open Pack" [ref=e978]
+                  - link "View Cards" [ref=e979]:
+                    - /url: /sets/sm11
+              - generic [ref=e982] [cursor=pointer]:
+                - generic [ref=e983]:
+                  - img "Hidden Fates logo" [ref=e985]
+                  - generic [ref=e986]: Legal
+                - heading "Hidden Fates" [level=3] [ref=e988]
+                - paragraph [ref=e989]: Sun & Moon
+                - generic [ref=e990]:
+                  - generic [ref=e991]: 69 cards
+                  - generic [ref=e992]: "2019"
+                - generic [ref=e993]:
+                  - button "Open Pack" [ref=e994]
+                  - link "View Cards" [ref=e995]:
+                    - /url: /sets/sm115
+              - generic [ref=e998] [cursor=pointer]:
+                - generic [ref=e999]:
+                  - img "Hidden Fates Shiny Vault logo" [ref=e1001]
+                  - generic [ref=e1002]: Legal
+                - heading "Hidden Fates Shiny Vault" [level=3] [ref=e1004]
+                - paragraph [ref=e1005]: Sun & Moon
+                - generic [ref=e1006]:
+                  - generic [ref=e1007]: 94 cards
+                  - generic [ref=e1008]: "2019"
+                - generic [ref=e1009]:
+                  - button "Open Pack" [ref=e1010]
+                  - link "View Cards" [ref=e1011]:
+                    - /url: /sets/sma
+              - generic [ref=e1014] [cursor=pointer]:
+                - generic [ref=e1015]:
+                  - img "Cosmic Eclipse logo" [ref=e1017]
+                  - generic [ref=e1018]: Legal
+                - heading "Cosmic Eclipse" [level=3] [ref=e1020]
+                - paragraph [ref=e1021]: Sun & Moon
+                - generic [ref=e1022]:
+                  - generic [ref=e1023]: 272 cards
+                  - generic [ref=e1024]: "2019"
+                - generic [ref=e1025]:
+                  - button "Open Pack" [ref=e1026]
+                  - link "View Cards" [ref=e1027]:
+                    - /url: /sets/sm12
+          - generic [ref=e1028]:
+            - generic [ref=e1029]:
+              - generic [ref=e1030]:
+                - heading "XY" [level=2] [ref=e1032]
+                - generic [ref=e1033]: 2013–2016
+              - generic [ref=e1034]: 16 sets
+            - generic [ref=e1035]:
+              - generic [ref=e1038] [cursor=pointer]:
+                - generic [ref=e1039]:
+                  - img "XY Black Star Promos logo" [ref=e1041]
+                  - generic [ref=e1042]: Legal
+                - heading "XY Black Star Promos" [level=3] [ref=e1044]
+                - paragraph [ref=e1045]: XY
+                - generic [ref=e1046]:
+                  - generic [ref=e1047]: 216 cards
+                  - generic [ref=e1048]: "2013"
+                - generic [ref=e1049]:
+                  - button "Open Pack" [ref=e1050]
+                  - link "View Cards" [ref=e1051]:
+                    - /url: /sets/xyp
+              - generic [ref=e1054] [cursor=pointer]:
+                - generic [ref=e1055]:
+                  - img "Kalos Starter Set logo" [ref=e1057]
+                  - generic [ref=e1058]: Legal
+                - heading "Kalos Starter Set" [level=3] [ref=e1060]
+                - paragraph [ref=e1061]: XY
+                - generic [ref=e1062]:
+                  - generic [ref=e1063]: 39 cards
+                  - generic [ref=e1064]: "2013"
+                - generic [ref=e1065]:
+                  - button "Open Pack" [ref=e1066]
+                  - link "View Cards" [ref=e1067]:
+                    - /url: /sets/xy0
+              - generic [ref=e1070] [cursor=pointer]:
+                - generic [ref=e1071]:
+                  - img "XY logo" [ref=e1073]
+                  - generic [ref=e1074]: Legal
+                - heading "XY" [level=3] [ref=e1076]
+                - paragraph [ref=e1077]: XY
+                - generic [ref=e1078]:
+                  - generic [ref=e1079]: 146 cards
+                  - generic [ref=e1080]: "2014"
+                - generic [ref=e1081]:
+                  - button "Open Pack" [ref=e1082]
+                  - link "View Cards" [ref=e1083]:
+                    - /url: /sets/xy1
+              - generic [ref=e1086] [cursor=pointer]:
+                - generic [ref=e1087]:
+                  - img "Flashfire logo" [ref=e1089]
+                  - generic [ref=e1090]: Legal
+                - heading "Flashfire" [level=3] [ref=e1092]
+                - paragraph [ref=e1093]: XY
+                - generic [ref=e1094]:
+                  - generic [ref=e1095]: 110 cards
+                  - generic [ref=e1096]: "2014"
+                - generic [ref=e1097]:
+                  - button "Open Pack" [ref=e1098]
+                  - link "View Cards" [ref=e1099]:
+                    - /url: /sets/xy2
+              - generic [ref=e1102] [cursor=pointer]:
+                - generic [ref=e1103]:
+                  - img "Furious Fists logo" [ref=e1105]
+                  - generic [ref=e1106]: Legal
+                - heading "Furious Fists" [level=3] [ref=e1108]
+                - paragraph [ref=e1109]: XY
+                - generic [ref=e1110]:
+                  - generic [ref=e1111]: 114 cards
+                  - generic [ref=e1112]: "2014"
+                - generic [ref=e1113]:
+                  - button "Open Pack" [ref=e1114]
+                  - link "View Cards" [ref=e1115]:
+                    - /url: /sets/xy3
+              - generic [ref=e1118] [cursor=pointer]:
+                - generic [ref=e1119]:
+                  - img "Phantom Forces logo" [ref=e1121]
+                  - generic [ref=e1122]: Legal
+                - heading "Phantom Forces" [level=3] [ref=e1124]
+                - paragraph [ref=e1125]: XY
+                - generic [ref=e1126]:
+                  - generic [ref=e1127]: 124 cards
+                  - generic [ref=e1128]: "2014"
+                - generic [ref=e1129]:
+                  - button "Open Pack" [ref=e1130]
+                  - link "View Cards" [ref=e1131]:
+                    - /url: /sets/xy4
+              - generic [ref=e1134] [cursor=pointer]:
+                - generic [ref=e1135]:
+                  - img "Primal Clash logo" [ref=e1137]
+                  - generic [ref=e1138]: Legal
+                - heading "Primal Clash" [level=3] [ref=e1140]
+                - paragraph [ref=e1141]: XY
+                - generic [ref=e1142]:
+                  - generic [ref=e1143]: 164 cards
+                  - generic [ref=e1144]: "2015"
+                - generic [ref=e1145]:
+                  - button "Open Pack" [ref=e1146]
+                  - link "View Cards" [ref=e1147]:
+                    - /url: /sets/xy5
+              - generic [ref=e1150] [cursor=pointer]:
+                - generic [ref=e1151]:
+                  - img "Double Crisis logo" [ref=e1153]
+                  - generic [ref=e1154]: Legal
+                - heading "Double Crisis" [level=3] [ref=e1156]
+                - paragraph [ref=e1157]: XY
+                - generic [ref=e1158]:
+                  - generic [ref=e1159]: 34 cards
+                  - generic [ref=e1160]: "2015"
+                - generic [ref=e1161]:
+                  - button "Open Pack" [ref=e1162]
+                  - link "View Cards" [ref=e1163]:
+                    - /url: /sets/dc1
+              - generic [ref=e1166] [cursor=pointer]:
+                - generic [ref=e1167]:
+                  - img "Roaring Skies logo" [ref=e1169]
+                  - generic [ref=e1170]: Legal
+                - heading "Roaring Skies" [level=3] [ref=e1172]
+                - paragraph [ref=e1173]: XY
+                - generic [ref=e1174]:
+                  - generic [ref=e1175]: 112 cards
+                  - generic [ref=e1176]: "2015"
+                - generic [ref=e1177]:
+                  - button "Open Pack" [ref=e1178]
+                  - link "View Cards" [ref=e1179]:
+                    - /url: /sets/xy6
+              - generic [ref=e1182] [cursor=pointer]:
+                - generic [ref=e1183]:
+                  - img "Ancient Origins logo" [ref=e1185]
+                  - generic [ref=e1186]: Legal
+                - heading "Ancient Origins" [level=3] [ref=e1188]
+                - paragraph [ref=e1189]: XY
+                - generic [ref=e1190]:
+                  - generic [ref=e1191]: 100 cards
+                  - generic [ref=e1192]: "2015"
+                - generic [ref=e1193]:
+                  - button "Open Pack" [ref=e1194]
+                  - link "View Cards" [ref=e1195]:
+                    - /url: /sets/xy7
+              - generic [ref=e1198] [cursor=pointer]:
+                - generic [ref=e1199]:
+                  - img "BREAKthrough logo" [ref=e1201]
+                  - generic [ref=e1202]: Legal
+                - heading "BREAKthrough" [level=3] [ref=e1204]
+                - paragraph [ref=e1205]: XY
+                - generic [ref=e1206]:
+                  - generic [ref=e1207]: 165 cards
+                  - generic [ref=e1208]: "2015"
+                - generic [ref=e1209]:
+                  - button "Open Pack" [ref=e1210]
+                  - link "View Cards" [ref=e1211]:
+                    - /url: /sets/xy8
+              - generic [ref=e1214] [cursor=pointer]:
+                - generic [ref=e1215]:
+                  - img "BREAKpoint logo" [ref=e1217]
+                  - generic [ref=e1218]: Legal
+                - heading "BREAKpoint" [level=3] [ref=e1220]
+                - paragraph [ref=e1221]: XY
+                - generic [ref=e1222]:
+                  - generic [ref=e1223]: 126 cards
+                  - generic [ref=e1224]: "2016"
+                - generic [ref=e1225]:
+                  - button "Open Pack" [ref=e1226]
+                  - link "View Cards" [ref=e1227]:
+                    - /url: /sets/xy9
+              - generic [ref=e1230] [cursor=pointer]:
+                - generic [ref=e1231]:
+                  - img "Generations logo" [ref=e1233]
+                  - generic [ref=e1234]: Legal
+                - heading "Generations" [level=3] [ref=e1236]
+                - paragraph [ref=e1237]: XY
+                - generic [ref=e1238]:
+                  - generic [ref=e1239]: 117 cards
+                  - generic [ref=e1240]: "2016"
+                - generic [ref=e1241]:
+                  - button "Open Pack" [ref=e1242]
+                  - link "View Cards" [ref=e1243]:
+                    - /url: /sets/g1
+              - generic [ref=e1246] [cursor=pointer]:
+                - generic [ref=e1247]:
+                  - img "Fates Collide logo" [ref=e1249]
+                  - generic [ref=e1250]: Legal
+                - heading "Fates Collide" [level=3] [ref=e1252]
+                - paragraph [ref=e1253]: XY
+                - generic [ref=e1254]:
+                  - generic [ref=e1255]: 129 cards
+                  - generic [ref=e1256]: "2016"
+                - generic [ref=e1257]:
+                  - button "Open Pack" [ref=e1258]
+                  - link "View Cards" [ref=e1259]:
+                    - /url: /sets/xy10
+              - generic [ref=e1262] [cursor=pointer]:
+                - generic [ref=e1263]:
+                  - img "Steam Siege logo" [ref=e1265]
+                  - generic [ref=e1266]: Legal
+                - heading "Steam Siege" [level=3] [ref=e1268]
+                - paragraph [ref=e1269]: XY
+                - generic [ref=e1270]:
+                  - generic [ref=e1271]: 116 cards
+                  - generic [ref=e1272]: "2016"
+                - generic [ref=e1273]:
+                  - button "Open Pack" [ref=e1274]
+                  - link "View Cards" [ref=e1275]:
+                    - /url: /sets/xy11
+              - generic [ref=e1278] [cursor=pointer]:
+                - generic [ref=e1279]:
+                  - img "Evolutions logo" [ref=e1281]
+                  - generic [ref=e1282]: Legal
+                - heading "Evolutions" [level=3] [ref=e1284]
+                - paragraph [ref=e1285]: XY
+                - generic [ref=e1286]:
+                  - generic [ref=e1287]: 113 cards
+                  - generic [ref=e1288]: "2016"
+                - generic [ref=e1289]:
+                  - button "Open Pack" [ref=e1290]
+                  - link "View Cards" [ref=e1291]:
+                    - /url: /sets/xy12
+          - generic [ref=e1292]:
+            - generic [ref=e1293]:
+              - generic [ref=e1294]:
+                - heading "Black & White" [level=2] [ref=e1296]
+                - generic [ref=e1297]: 2011–2013
+              - generic [ref=e1298]: 13 sets
+            - generic [ref=e1299]:
+              - generic [ref=e1302] [cursor=pointer]:
+                - generic [ref=e1303]:
+                  - img "BW Black Star Promos logo" [ref=e1305]
+                  - generic [ref=e1306]: Legal
+                - heading "BW Black Star Promos" [level=3] [ref=e1308]
+                - paragraph [ref=e1309]: Black & White
+                - generic [ref=e1310]:
+                  - generic [ref=e1311]: 101 cards
+                  - generic [ref=e1312]: "2011"
+                - generic [ref=e1313]:
+                  - button "Open Pack" [ref=e1314]
+                  - link "View Cards" [ref=e1315]:
+                    - /url: /sets/bwp
+              - generic [ref=e1318] [cursor=pointer]:
+                - generic [ref=e1319]:
+                  - img "Black & White logo" [ref=e1321]
+                  - generic [ref=e1322]: Legal
+                - heading "Black & White" [level=3] [ref=e1324]
+                - paragraph [ref=e1325]: Black & White
+                - generic [ref=e1326]:
+                  - generic [ref=e1327]: 115 cards
+                  - generic [ref=e1328]: "2011"
+                - generic [ref=e1329]:
+                  - button "Open Pack" [ref=e1330]
+                  - link "View Cards" [ref=e1331]:
+                    - /url: /sets/bw1
+              - generic [ref=e1334] [cursor=pointer]:
+                - generic [ref=e1335]:
+                  - img "Emerging Powers logo" [ref=e1337]
+                  - generic [ref=e1338]: Legal
+                - heading "Emerging Powers" [level=3] [ref=e1340]
+                - paragraph [ref=e1341]: Black & White
+                - generic [ref=e1342]:
+                  - generic [ref=e1343]: 98 cards
+                  - generic [ref=e1344]: "2011"
+                - generic [ref=e1345]:
+                  - button "Open Pack" [ref=e1346]
+                  - link "View Cards" [ref=e1347]:
+                    - /url: /sets/bw2
+              - generic [ref=e1350] [cursor=pointer]:
+                - generic [ref=e1351]:
+                  - img "Noble Victories logo" [ref=e1353]
+                  - generic [ref=e1354]: Legal
+                - heading "Noble Victories" [level=3] [ref=e1356]
+                - paragraph [ref=e1357]: Black & White
+                - generic [ref=e1358]:
+                  - generic [ref=e1359]: 102 cards
+                  - generic [ref=e1360]: "2011"
+                - generic [ref=e1361]:
+                  - button "Open Pack" [ref=e1362]
+                  - link "View Cards" [ref=e1363]:
+                    - /url: /sets/bw3
+              - generic [ref=e1366] [cursor=pointer]:
+                - generic [ref=e1367]:
+                  - img "Next Destinies logo" [ref=e1369]
+                  - generic [ref=e1370]: Legal
+                - heading "Next Destinies" [level=3] [ref=e1372]
+                - paragraph [ref=e1373]: Black & White
+                - generic [ref=e1374]:
+                  - generic [ref=e1375]: 103 cards
+                  - generic [ref=e1376]: "2012"
+                - generic [ref=e1377]:
+                  - button "Open Pack" [ref=e1378]
+                  - link "View Cards" [ref=e1379]:
+                    - /url: /sets/bw4
+              - generic [ref=e1382] [cursor=pointer]:
+                - generic [ref=e1383]:
+                  - img "Dark Explorers logo" [ref=e1385]
+                  - generic [ref=e1386]: Legal
+                - heading "Dark Explorers" [level=3] [ref=e1388]
+                - paragraph [ref=e1389]: Black & White
+                - generic [ref=e1390]:
+                  - generic [ref=e1391]: 111 cards
+                  - generic [ref=e1392]: "2012"
+                - generic [ref=e1393]:
+                  - button "Open Pack" [ref=e1394]
+                  - link "View Cards" [ref=e1395]:
+                    - /url: /sets/bw5
+              - generic [ref=e1398] [cursor=pointer]:
+                - generic [ref=e1399]:
+                  - img "Dragons Exalted logo" [ref=e1401]
+                  - generic [ref=e1402]: Legal
+                - heading "Dragons Exalted" [level=3] [ref=e1404]
+                - paragraph [ref=e1405]: Black & White
+                - generic [ref=e1406]:
+                  - generic [ref=e1407]: 128 cards
+                  - generic [ref=e1408]: "2012"
+                - generic [ref=e1409]:
+                  - button "Open Pack" [ref=e1410]
+                  - link "View Cards" [ref=e1411]:
+                    - /url: /sets/bw6
+              - generic [ref=e1414] [cursor=pointer]:
+                - generic [ref=e1415]:
+                  - img "Dragon Vault logo" [ref=e1417]
+                  - generic [ref=e1418]: Legal
+                - heading "Dragon Vault" [level=3] [ref=e1420]
+                - paragraph [ref=e1421]: Black & White
+                - generic [ref=e1422]:
+                  - generic [ref=e1423]: 21 cards
+                  - generic [ref=e1424]: "2012"
+                - generic [ref=e1425]:
+                  - button "Open Pack" [ref=e1426]
+                  - link "View Cards" [ref=e1427]:
+                    - /url: /sets/dv1
+              - generic [ref=e1430] [cursor=pointer]:
+                - generic [ref=e1431]:
+                  - img "Boundaries Crossed logo" [ref=e1433]
+                  - generic [ref=e1434]: Legal
+                - heading "Boundaries Crossed" [level=3] [ref=e1436]
+                - paragraph [ref=e1437]: Black & White
+                - generic [ref=e1438]:
+                  - generic [ref=e1439]: 153 cards
+                  - generic [ref=e1440]: "2012"
+                - generic [ref=e1441]:
+                  - button "Open Pack" [ref=e1442]
+                  - link "View Cards" [ref=e1443]:
+                    - /url: /sets/bw7
+              - generic [ref=e1446] [cursor=pointer]:
+                - generic [ref=e1447]:
+                  - img "Plasma Storm logo" [ref=e1449]
+                  - generic [ref=e1450]: Legal
+                - heading "Plasma Storm" [level=3] [ref=e1452]
+                - paragraph [ref=e1453]: Black & White
+                - generic [ref=e1454]:
+                  - generic [ref=e1455]: 138 cards
+                  - generic [ref=e1456]: "2013"
+                - generic [ref=e1457]:
+                  - button "Open Pack" [ref=e1458]
+                  - link "View Cards" [ref=e1459]:
+                    - /url: /sets/bw8
+              - generic [ref=e1462] [cursor=pointer]:
+                - generic [ref=e1463]:
+                  - img "Plasma Freeze logo" [ref=e1465]
+                  - generic [ref=e1466]: Legal
+                - heading "Plasma Freeze" [level=3] [ref=e1468]
+                - paragraph [ref=e1469]: Black & White
+                - generic [ref=e1470]:
+                  - generic [ref=e1471]: 122 cards
+                  - generic [ref=e1472]: "2013"
+                - generic [ref=e1473]:
+                  - button "Open Pack" [ref=e1474]
+                  - link "View Cards" [ref=e1475]:
+                    - /url: /sets/bw9
+              - generic [ref=e1478] [cursor=pointer]:
+                - generic [ref=e1479]:
+                  - img "Plasma Blast logo" [ref=e1481]
+                  - generic [ref=e1482]: Legal
+                - heading "Plasma Blast" [level=3] [ref=e1484]
+                - paragraph [ref=e1485]: Black & White
+                - generic [ref=e1486]:
+                  - generic [ref=e1487]: 105 cards
+                  - generic [ref=e1488]: "2013"
+                - generic [ref=e1489]:
+                  - button "Open Pack" [ref=e1490]
+                  - link "View Cards" [ref=e1491]:
+                    - /url: /sets/bw10
+              - generic [ref=e1494] [cursor=pointer]:
+                - generic [ref=e1495]:
+                  - img "Legendary Treasures logo" [ref=e1497]
+                  - generic [ref=e1498]: Legal
+                - heading "Legendary Treasures" [level=3] [ref=e1500]
+                - paragraph [ref=e1501]: Black & White
+                - generic [ref=e1502]:
+                  - generic [ref=e1503]: 140 cards
+                  - generic [ref=e1504]: "2013"
+                - generic [ref=e1505]:
+                  - button "Open Pack" [ref=e1506]
+                  - link "View Cards" [ref=e1507]:
+                    - /url: /sets/bw11
+          - generic [ref=e1508]:
+            - generic [ref=e1509]:
+              - generic [ref=e1510]:
+                - heading "Platinum" [level=2] [ref=e1512]
+                - generic [ref=e1513]: "2009"
+              - generic [ref=e1514]: 4 sets
+            - generic [ref=e1515]:
+              - generic [ref=e1518] [cursor=pointer]:
+                - generic [ref=e1519]:
+                  - img "Platinum logo" [ref=e1521]
+                  - generic [ref=e1522]: Legal
+                - heading "Platinum" [level=3] [ref=e1524]
+                - paragraph [ref=e1525]: Platinum
+                - generic [ref=e1526]:
+                  - generic [ref=e1527]: 133 cards
+                  - generic [ref=e1528]: "2009"
+                - generic [ref=e1529]:
+                  - button "Open Pack" [ref=e1530]
+                  - link "View Cards" [ref=e1531]:
+                    - /url: /sets/pl1
+              - generic [ref=e1534] [cursor=pointer]:
+                - generic [ref=e1535]:
+                  - img "Rising Rivals logo" [ref=e1537]
+                  - generic [ref=e1538]: Legal
+                - heading "Rising Rivals" [level=3] [ref=e1540]
+                - paragraph [ref=e1541]: Platinum
+                - generic [ref=e1542]:
+                  - generic [ref=e1543]: 120 cards
+                  - generic [ref=e1544]: "2009"
+                - generic [ref=e1545]:
+                  - button "Open Pack" [ref=e1546]
+                  - link "View Cards" [ref=e1547]:
+                    - /url: /sets/pl2
+              - generic [ref=e1550] [cursor=pointer]:
+                - generic [ref=e1551]:
+                  - img "Supreme Victors logo" [ref=e1553]
+                  - generic [ref=e1554]: Legal
+                - heading "Supreme Victors" [level=3] [ref=e1556]
+                - paragraph [ref=e1557]: Platinum
+                - generic [ref=e1558]:
+                  - generic [ref=e1559]: 153 cards
+                  - generic [ref=e1560]: "2009"
+                - generic [ref=e1561]:
+                  - button "Open Pack" [ref=e1562]
+                  - link "View Cards" [ref=e1563]:
+                    - /url: /sets/pl3
+              - generic [ref=e1566] [cursor=pointer]:
+                - generic [ref=e1567]:
+                  - img "Arceus logo" [ref=e1569]
+                  - generic [ref=e1570]: Legal
+                - heading "Arceus" [level=3] [ref=e1572]
+                - paragraph [ref=e1573]: Platinum
+                - generic [ref=e1574]:
+                  - generic [ref=e1575]: 111 cards
+                  - generic [ref=e1576]: "2009"
+                - generic [ref=e1577]:
+                  - button "Open Pack" [ref=e1578]
+                  - link "View Cards" [ref=e1579]:
+                    - /url: /sets/pl4
+          - generic [ref=e1580]:
+            - generic [ref=e1581]:
+              - generic [ref=e1582]:
+                - heading "Diamond & Pearl" [level=2] [ref=e1584]
+                - generic [ref=e1585]: 2007–2008
+              - generic [ref=e1586]: 8 sets
+            - generic [ref=e1587]:
+              - generic [ref=e1590] [cursor=pointer]:
+                - generic [ref=e1591]:
+                  - img "Diamond & Pearl logo" [ref=e1593]
+                  - generic [ref=e1594]: Legal
+                - heading "Diamond & Pearl" [level=3] [ref=e1596]
+                - paragraph [ref=e1597]: Diamond & Pearl
+                - generic [ref=e1598]:
+                  - generic [ref=e1599]: 130 cards
+                  - generic [ref=e1600]: "2007"
+                - generic [ref=e1601]:
+                  - button "Open Pack" [ref=e1602]
+                  - link "View Cards" [ref=e1603]:
+                    - /url: /sets/dp1
+              - generic [ref=e1606] [cursor=pointer]:
+                - generic [ref=e1607]:
+                  - img "DP Black Star Promos logo" [ref=e1609]
+                  - generic [ref=e1610]: Legal
+                - heading "DP Black Star Promos" [level=3] [ref=e1612]
+                - paragraph [ref=e1613]: Diamond & Pearl
+                - generic [ref=e1614]:
+                  - generic [ref=e1615]: 56 cards
+                  - generic [ref=e1616]: "2007"
+                - generic [ref=e1617]:
+                  - button "Open Pack" [ref=e1618]
+                  - link "View Cards" [ref=e1619]:
+                    - /url: /sets/dpp
+              - generic [ref=e1622] [cursor=pointer]:
+                - generic [ref=e1623]:
+                  - img "Mysterious Treasures logo" [ref=e1625]
+                  - generic [ref=e1626]: Legal
+                - heading "Mysterious Treasures" [level=3] [ref=e1628]
+                - paragraph [ref=e1629]: Diamond & Pearl
+                - generic [ref=e1630]:
+                  - generic [ref=e1631]: 124 cards
+                  - generic [ref=e1632]: "2007"
+                - generic [ref=e1633]:
+                  - button "Open Pack" [ref=e1634]
+                  - link "View Cards" [ref=e1635]:
+                    - /url: /sets/dp2
+              - generic [ref=e1638] [cursor=pointer]:
+                - generic [ref=e1639]:
+                  - img "Secret Wonders logo" [ref=e1641]
+                  - generic [ref=e1642]: Legal
+                - heading "Secret Wonders" [level=3] [ref=e1644]
+                - paragraph [ref=e1645]: Diamond & Pearl
+                - generic [ref=e1646]:
+                  - generic [ref=e1647]: 132 cards
+                  - generic [ref=e1648]: "2007"
+                - generic [ref=e1649]:
+                  - button "Open Pack" [ref=e1650]
+                  - link "View Cards" [ref=e1651]:
+                    - /url: /sets/dp3
+              - generic [ref=e1654] [cursor=pointer]:
+                - generic [ref=e1655]:
+                  - img "Great Encounters logo" [ref=e1657]
+                  - generic [ref=e1658]: Legal
+                - heading "Great Encounters" [level=3] [ref=e1660]
+                - paragraph [ref=e1661]: Diamond & Pearl
+                - generic [ref=e1662]:
+                  - generic [ref=e1663]: 106 cards
+                  - generic [ref=e1664]: "2008"
+                - generic [ref=e1665]:
+                  - button "Open Pack" [ref=e1666]
+                  - link "View Cards" [ref=e1667]:
+                    - /url: /sets/dp4
+              - generic [ref=e1670] [cursor=pointer]:
+                - generic [ref=e1671]:
+                  - img "Majestic Dawn logo" [ref=e1673]
+                  - generic [ref=e1674]: Legal
+                - heading "Majestic Dawn" [level=3] [ref=e1676]
+                - paragraph [ref=e1677]: Diamond & Pearl
+                - generic [ref=e1678]:
+                  - generic [ref=e1679]: 100 cards
+                  - generic [ref=e1680]: "2008"
+                - generic [ref=e1681]:
+                  - button "Open Pack" [ref=e1682]
+                  - link "View Cards" [ref=e1683]:
+                    - /url: /sets/dp5
+              - generic [ref=e1686] [cursor=pointer]:
+                - generic [ref=e1687]:
+                  - img "Legends Awakened logo" [ref=e1689]
+                  - generic [ref=e1690]: Legal
+                - heading "Legends Awakened" [level=3] [ref=e1692]
+                - paragraph [ref=e1693]: Diamond & Pearl
+                - generic [ref=e1694]:
+                  - generic [ref=e1695]: 146 cards
+                  - generic [ref=e1696]: "2008"
+                - generic [ref=e1697]:
+                  - button "Open Pack" [ref=e1698]
+                  - link "View Cards" [ref=e1699]:
+                    - /url: /sets/dp6
+              - generic [ref=e1702] [cursor=pointer]:
+                - generic [ref=e1703]:
+                  - img "Stormfront logo" [ref=e1705]
+                  - generic [ref=e1706]: Legal
+                - heading "Stormfront" [level=3] [ref=e1708]
+                - paragraph [ref=e1709]: Diamond & Pearl
+                - generic [ref=e1710]:
+                  - generic [ref=e1711]: 106 cards
+                  - generic [ref=e1712]: "2008"
+                - generic [ref=e1713]:
+                  - button "Open Pack" [ref=e1714]
+                  - link "View Cards" [ref=e1715]:
+                    - /url: /sets/dp7
+          - generic [ref=e1716]:
+            - generic [ref=e1717]:
+              - generic [ref=e1718]:
+                - heading "EX" [level=2] [ref=e1720]
+                - generic [ref=e1721]: 2003–2007
+              - generic [ref=e1722]: 20 sets
+            - generic [ref=e1723]:
+              - generic [ref=e1726] [cursor=pointer]:
+                - generic [ref=e1727]:
+                  - img "Ruby & Sapphire logo" [ref=e1729]
+                  - generic [ref=e1730]: Legal
+                - heading "Ruby & Sapphire" [level=3] [ref=e1732]
+                - paragraph [ref=e1733]: EX
+                - generic [ref=e1734]:
+                  - generic [ref=e1735]: 109 cards
+                  - generic [ref=e1736]: "2003"
+                - generic [ref=e1737]:
+                  - button "Open Pack" [ref=e1738]
+                  - link "View Cards" [ref=e1739]:
+                    - /url: /sets/ex1
+              - generic [ref=e1742] [cursor=pointer]:
+                - generic [ref=e1743]:
+                  - img "Sandstorm logo" [ref=e1745]
+                  - generic [ref=e1746]: Legal
+                - heading "Sandstorm" [level=3] [ref=e1748]
+                - paragraph [ref=e1749]: EX
+                - generic [ref=e1750]:
+                  - generic [ref=e1751]: 100 cards
+                  - generic [ref=e1752]: "2003"
+                - generic [ref=e1753]:
+                  - button "Open Pack" [ref=e1754]
+                  - link "View Cards" [ref=e1755]:
+                    - /url: /sets/ex2
+              - generic [ref=e1758] [cursor=pointer]:
+                - generic [ref=e1759]:
+                  - img "Dragon logo" [ref=e1761]
+                  - generic [ref=e1762]: Legal
+                - heading "Dragon" [level=3] [ref=e1764]
+                - paragraph [ref=e1765]: EX
+                - generic [ref=e1766]:
+                  - generic [ref=e1767]: 100 cards
+                  - generic [ref=e1768]: "2003"
+                - generic [ref=e1769]:
+                  - button "Open Pack" [ref=e1770]
+                  - link "View Cards" [ref=e1771]:
+                    - /url: /sets/ex3
+              - generic [ref=e1774] [cursor=pointer]:
+                - generic [ref=e1775]:
+                  - img "Team Magma vs Team Aqua logo" [ref=e1777]
+                  - generic [ref=e1778]: Legal
+                - heading "Team Magma vs Team Aqua" [level=3] [ref=e1780]
+                - paragraph [ref=e1781]: EX
+                - generic [ref=e1782]:
+                  - generic [ref=e1783]: 97 cards
+                  - generic [ref=e1784]: "2004"
+                - generic [ref=e1785]:
+                  - button "Open Pack" [ref=e1786]
+                  - link "View Cards" [ref=e1787]:
+                    - /url: /sets/ex4
+              - generic [ref=e1790] [cursor=pointer]:
+                - generic [ref=e1791]:
+                  - img "EX Trainer Kit Latias logo" [ref=e1793]
+                  - generic [ref=e1794]: Legal
+                - heading "EX Trainer Kit Latias" [level=3] [ref=e1796]
+                - paragraph [ref=e1797]: EX
+                - generic [ref=e1798]:
+                  - generic [ref=e1799]: 10 cards
+                  - generic [ref=e1800]: "2004"
+                - generic [ref=e1801]:
+                  - button "Open Pack" [ref=e1802]
+                  - link "View Cards" [ref=e1803]:
+                    - /url: /sets/tk1a
+              - generic [ref=e1806] [cursor=pointer]:
+                - generic [ref=e1807]:
+                  - img "EX Trainer Kit Latios logo" [ref=e1809]
+                  - generic [ref=e1810]: Legal
+                - heading "EX Trainer Kit Latios" [level=3] [ref=e1812]
+                - paragraph [ref=e1813]: EX
+                - generic [ref=e1814]:
+                  - generic [ref=e1815]: 10 cards
+                  - generic [ref=e1816]: "2004"
+                - generic [ref=e1817]:
+                  - button "Open Pack" [ref=e1818]
+                  - link "View Cards" [ref=e1819]:
+                    - /url: /sets/tk1b
+              - generic [ref=e1822] [cursor=pointer]:
+                - generic [ref=e1823]:
+                  - img "Hidden Legends logo" [ref=e1825]
+                  - generic [ref=e1826]: Legal
+                - heading "Hidden Legends" [level=3] [ref=e1828]
+                - paragraph [ref=e1829]: EX
+                - generic [ref=e1830]:
+                  - generic [ref=e1831]: 102 cards
+                  - generic [ref=e1832]: "2004"
+                - generic [ref=e1833]:
+                  - button "Open Pack" [ref=e1834]
+                  - link "View Cards" [ref=e1835]:
+                    - /url: /sets/ex5
+              - generic [ref=e1838] [cursor=pointer]:
+                - generic [ref=e1839]:
+                  - img "FireRed & LeafGreen logo" [ref=e1841]
+                  - generic [ref=e1842]: Legal
+                - heading "FireRed & LeafGreen" [level=3] [ref=e1844]
+                - paragraph [ref=e1845]: EX
+                - generic [ref=e1846]:
+                  - generic [ref=e1847]: 116 cards
+                  - generic [ref=e1848]: "2004"
+                - generic [ref=e1849]:
+                  - button "Open Pack" [ref=e1850]
+                  - link "View Cards" [ref=e1851]:
+                    - /url: /sets/ex6
+              - generic [ref=e1854] [cursor=pointer]:
+                - generic [ref=e1855]:
+                  - img "Team Rocket Returns logo" [ref=e1857]
+                  - generic [ref=e1858]: Legal
+                - heading "Team Rocket Returns" [level=3] [ref=e1860]
+                - paragraph [ref=e1861]: EX
+                - generic [ref=e1862]:
+                  - generic [ref=e1863]: 111 cards
+                  - generic [ref=e1864]: "2004"
+                - generic [ref=e1865]:
+                  - button "Open Pack" [ref=e1866]
+                  - link "View Cards" [ref=e1867]:
+                    - /url: /sets/ex7
+              - generic [ref=e1870] [cursor=pointer]:
+                - generic [ref=e1871]:
+                  - img "Deoxys logo" [ref=e1873]
+                  - generic [ref=e1874]: Legal
+                - heading "Deoxys" [level=3] [ref=e1876]
+                - paragraph [ref=e1877]: EX
+                - generic [ref=e1878]:
+                  - generic [ref=e1879]: 108 cards
+                  - generic [ref=e1880]: "2005"
+                - generic [ref=e1881]:
+                  - button "Open Pack" [ref=e1882]
+                  - link "View Cards" [ref=e1883]:
+                    - /url: /sets/ex8
+              - generic [ref=e1886] [cursor=pointer]:
+                - generic [ref=e1887]:
+                  - img "Emerald logo" [ref=e1889]
+                  - generic [ref=e1890]: Legal
+                - heading "Emerald" [level=3] [ref=e1892]
+                - paragraph [ref=e1893]: EX
+                - generic [ref=e1894]:
+                  - generic [ref=e1895]: 107 cards
+                  - generic [ref=e1896]: "2005"
+                - generic [ref=e1897]:
+                  - button "Open Pack" [ref=e1898]
+                  - link "View Cards" [ref=e1899]:
+                    - /url: /sets/ex9
+              - generic [ref=e1902] [cursor=pointer]:
+                - generic [ref=e1903]:
+                  - img "Unseen Forces logo" [ref=e1905]
+                  - generic [ref=e1906]: Legal
+                - heading "Unseen Forces" [level=3] [ref=e1908]
+                - paragraph [ref=e1909]: EX
+                - generic [ref=e1910]:
+                  - generic [ref=e1911]: 145 cards
+                  - generic [ref=e1912]: "2005"
+                - generic [ref=e1913]:
+                  - button "Open Pack" [ref=e1914]
+                  - link "View Cards" [ref=e1915]:
+                    - /url: /sets/ex10
+              - generic [ref=e1918] [cursor=pointer]:
+                - generic [ref=e1919]:
+                  - img "Delta Species logo" [ref=e1921]
+                  - generic [ref=e1922]: Legal
+                - heading "Delta Species" [level=3] [ref=e1924]
+                - paragraph [ref=e1925]: EX
+                - generic [ref=e1926]:
+                  - generic [ref=e1927]: 114 cards
+                  - generic [ref=e1928]: "2005"
+                - generic [ref=e1929]:
+                  - button "Open Pack" [ref=e1930]
+                  - link "View Cards" [ref=e1931]:
+                    - /url: /sets/ex11
+              - generic [ref=e1934] [cursor=pointer]:
+                - generic [ref=e1935]:
+                  - img "Legend Maker logo" [ref=e1937]
+                  - generic [ref=e1938]: Legal
+                - heading "Legend Maker" [level=3] [ref=e1940]
+                - paragraph [ref=e1941]: EX
+                - generic [ref=e1942]:
+                  - generic [ref=e1943]: 93 cards
+                  - generic [ref=e1944]: "2006"
+                - generic [ref=e1945]:
+                  - button "Open Pack" [ref=e1946]
+                  - link "View Cards" [ref=e1947]:
+                    - /url: /sets/ex12
+              - generic [ref=e1950] [cursor=pointer]:
+                - generic [ref=e1951]:
+                  - img "EX Trainer Kit 2 Plusle logo" [ref=e1953]
+                  - generic [ref=e1954]: Legal
+                - heading "EX Trainer Kit 2 Plusle" [level=3] [ref=e1956]
+                - paragraph [ref=e1957]: EX
+                - generic [ref=e1958]:
+                  - generic [ref=e1959]: 12 cards
+                  - generic [ref=e1960]: "2006"
+                - generic [ref=e1961]:
+                  - button "Open Pack" [ref=e1962]
+                  - link "View Cards" [ref=e1963]:
+                    - /url: /sets/tk2a
+              - generic [ref=e1966] [cursor=pointer]:
+                - generic [ref=e1967]:
+                  - img "EX Trainer Kit 2 Minun logo" [ref=e1969]
+                  - generic [ref=e1970]: Legal
+                - heading "EX Trainer Kit 2 Minun" [level=3] [ref=e1972]
+                - paragraph [ref=e1973]: EX
+                - generic [ref=e1974]:
+                  - generic [ref=e1975]: 12 cards
+                  - generic [ref=e1976]: "2006"
+                - generic [ref=e1977]:
+                  - button "Open Pack" [ref=e1978]
+                  - link "View Cards" [ref=e1979]:
+                    - /url: /sets/tk2b
+              - generic [ref=e1982] [cursor=pointer]:
+                - generic [ref=e1983]:
+                  - img "Holon Phantoms logo" [ref=e1985]
+                  - generic [ref=e1986]: Legal
+                - heading "Holon Phantoms" [level=3] [ref=e1988]
+                - paragraph [ref=e1989]: EX
+                - generic [ref=e1990]:
+                  - generic [ref=e1991]: 111 cards
+                  - generic [ref=e1992]: "2006"
+                - generic [ref=e1993]:
+                  - button "Open Pack" [ref=e1994]
+                  - link "View Cards" [ref=e1995]:
+                    - /url: /sets/ex13
+              - generic [ref=e1998] [cursor=pointer]:
+                - generic [ref=e1999]:
+                  - img "Crystal Guardians logo" [ref=e2001]
+                  - generic [ref=e2002]: Legal
+                - heading "Crystal Guardians" [level=3] [ref=e2004]
+                - paragraph [ref=e2005]: EX
+                - generic [ref=e2006]:
+                  - generic [ref=e2007]: 100 cards
+                  - generic [ref=e2008]: "2006"
+                - generic [ref=e2009]:
+                  - button "Open Pack" [ref=e2010]
+                  - link "View Cards" [ref=e2011]:
+                    - /url: /sets/ex14
+              - generic [ref=e2014] [cursor=pointer]:
+                - generic [ref=e2015]:
+                  - img "Dragon Frontiers logo" [ref=e2017]
+                  - generic [ref=e2018]: Legal
+                - heading "Dragon Frontiers" [level=3] [ref=e2020]
+                - paragraph [ref=e2021]: EX
+                - generic [ref=e2022]:
+                  - generic [ref=e2023]: 101 cards
+                  - generic [ref=e2024]: "2006"
+                - generic [ref=e2025]:
+                  - button "Open Pack" [ref=e2026]
+                  - link "View Cards" [ref=e2027]:
+                    - /url: /sets/ex15
+              - generic [ref=e2030] [cursor=pointer]:
+                - generic [ref=e2031]:
+                  - img "Power Keepers logo" [ref=e2033]
+                  - generic [ref=e2034]: Legal
+                - heading "Power Keepers" [level=3] [ref=e2036]
+                - paragraph [ref=e2037]: EX
+                - generic [ref=e2038]:
+                  - generic [ref=e2039]: 108 cards
+                  - generic [ref=e2040]: "2007"
+                - generic [ref=e2041]:
+                  - button "Open Pack" [ref=e2042]
+                  - link "View Cards" [ref=e2043]:
+                    - /url: /sets/ex16
+          - generic [ref=e2044]:
+            - generic [ref=e2045]:
+              - generic [ref=e2046]:
+                - heading "Neo" [level=2] [ref=e2048]
+                - generic [ref=e2049]: 2000–2002
+              - generic [ref=e2050]: 4 sets
+            - generic [ref=e2051]:
+              - generic [ref=e2054] [cursor=pointer]:
+                - generic [ref=e2055]:
+                  - img "Neo Genesis logo" [ref=e2057]
+                  - generic [ref=e2058]: Legal
+                - heading "Neo Genesis" [level=3] [ref=e2060]
+                - paragraph [ref=e2061]: Neo
+                - generic [ref=e2062]:
+                  - generic [ref=e2063]: 111 cards
+                  - generic [ref=e2064]: "2000"
+                - generic [ref=e2065]:
+                  - button "Open Pack" [ref=e2066]
+                  - link "View Cards" [ref=e2067]:
+                    - /url: /sets/neo1
+              - generic [ref=e2070] [cursor=pointer]:
+                - generic [ref=e2071]:
+                  - img "Neo Discovery logo" [ref=e2073]
+                  - generic [ref=e2074]: Legal
+                - heading "Neo Discovery" [level=3] [ref=e2076]
+                - paragraph [ref=e2077]: Neo
+                - generic [ref=e2078]:
+                  - generic [ref=e2079]: 75 cards
+                  - generic [ref=e2080]: "2001"
+                - generic [ref=e2081]:
+                  - button "Open Pack" [ref=e2082]
+                  - link "View Cards" [ref=e2083]:
+                    - /url: /sets/neo2
+              - generic [ref=e2086] [cursor=pointer]:
+                - generic [ref=e2087]:
+                  - img "Neo Revelation logo" [ref=e2089]
+                  - generic [ref=e2090]: Legal
+                - heading "Neo Revelation" [level=3] [ref=e2092]
+                - paragraph [ref=e2093]: Neo
+                - generic [ref=e2094]:
+                  - generic [ref=e2095]: 66 cards
+                  - generic [ref=e2096]: "2001"
+                - generic [ref=e2097]:
+                  - button "Open Pack" [ref=e2098]
+                  - link "View Cards" [ref=e2099]:
+                    - /url: /sets/neo3
+              - generic [ref=e2102] [cursor=pointer]:
+                - generic [ref=e2103]:
+                  - img "Neo Destiny logo" [ref=e2105]
+                  - generic [ref=e2106]: Legal
+                - heading "Neo Destiny" [level=3] [ref=e2108]
+                - paragraph [ref=e2109]: Neo
+                - generic [ref=e2110]:
+                  - generic [ref=e2111]: 113 cards
+                  - generic [ref=e2112]: "2002"
+                - generic [ref=e2113]:
+                  - button "Open Pack" [ref=e2114]
+                  - link "View Cards" [ref=e2115]:
+                    - /url: /sets/neo4
+          - generic [ref=e2116]:
+            - generic [ref=e2117]:
+              - generic [ref=e2118]:
+                - heading "Base" [level=2] [ref=e2120]
+                - generic [ref=e2121]: 1999–2000
+              - generic [ref=e2122]: 6 sets
+            - generic [ref=e2123]:
+              - generic [ref=e2126] [cursor=pointer]:
+                - generic [ref=e2127]:
+                  - img "Base logo" [ref=e2129]
+                  - generic [ref=e2130]: Legal
+                - heading "Base" [level=3] [ref=e2132]
+                - paragraph [ref=e2133]: Base
+                - generic [ref=e2134]:
+                  - generic [ref=e2135]: 102 cards
+                  - generic [ref=e2136]: "1999"
+                - generic [ref=e2137]:
+                  - button "Open Pack" [ref=e2138]
+                  - link "View Cards" [ref=e2139]:
+                    - /url: /sets/base1
+              - generic [ref=e2142] [cursor=pointer]:
+                - generic [ref=e2143]:
+                  - img "Jungle logo" [ref=e2145]
+                  - generic [ref=e2146]: Legal
+                - heading "Jungle" [level=3] [ref=e2148]
+                - paragraph [ref=e2149]: Base
+                - generic [ref=e2150]:
+                  - generic [ref=e2151]: 64 cards
+                  - generic [ref=e2152]: "1999"
+                - generic [ref=e2153]:
+                  - button "Open Pack" [ref=e2154]
+                  - link "View Cards" [ref=e2155]:
+                    - /url: /sets/base2
+              - generic [ref=e2158] [cursor=pointer]:
+                - generic [ref=e2159]:
+                  - img "Wizards Black Star Promos logo" [ref=e2161]
+                  - generic [ref=e2162]: Legal
+                - heading "Wizards Black Star Promos" [level=3] [ref=e2164]
+                - paragraph [ref=e2165]: Base
+                - generic [ref=e2166]:
+                  - generic [ref=e2167]: 53 cards
+                  - generic [ref=e2168]: "1999"
+                - generic [ref=e2169]:
+                  - button "Open Pack" [ref=e2170]
+                  - link "View Cards" [ref=e2171]:
+                    - /url: /sets/basep
+              - generic [ref=e2174] [cursor=pointer]:
+                - generic [ref=e2175]:
+                  - img "Fossil logo" [ref=e2177]
+                  - generic [ref=e2178]: Legal
+                - heading "Fossil" [level=3] [ref=e2180]
+                - paragraph [ref=e2181]: Base
+                - generic [ref=e2182]:
+                  - generic [ref=e2183]: 62 cards
+                  - generic [ref=e2184]: "1999"
+                - generic [ref=e2185]:
+                  - button "Open Pack" [ref=e2186]
+                  - link "View Cards" [ref=e2187]:
+                    - /url: /sets/base3
+              - generic [ref=e2190] [cursor=pointer]:
+                - generic [ref=e2191]:
+                  - img "Base Set 2 logo" [ref=e2193]
+                  - generic [ref=e2194]: Legal
+                - heading "Base Set 2" [level=3] [ref=e2196]
+                - paragraph [ref=e2197]: Base
+                - generic [ref=e2198]:
+                  - generic [ref=e2199]: 130 cards
+                  - generic [ref=e2200]: "2000"
+                - generic [ref=e2201]:
+                  - button "Open Pack" [ref=e2202]
+                  - link "View Cards" [ref=e2203]:
+                    - /url: /sets/base4
+              - generic [ref=e2206] [cursor=pointer]:
+                - generic [ref=e2207]:
+                  - img "Team Rocket logo" [ref=e2209]
+                  - generic [ref=e2210]: Legal
+                - heading "Team Rocket" [level=3] [ref=e2212]
+                - paragraph [ref=e2213]: Base
+                - generic [ref=e2214]:
+                  - generic [ref=e2215]: 83 cards
+                  - generic [ref=e2216]: "2000"
+                - generic [ref=e2217]:
+                  - button "Open Pack" [ref=e2218]
+                  - link "View Cards" [ref=e2219]:
+                    - /url: /sets/base5
+          - generic [ref=e2220]:
+            - generic [ref=e2221]:
+              - generic [ref=e2222]:
+                - heading "Other" [level=2] [ref=e2224]
+                - generic [ref=e2225]: 2000–2026
+              - generic [ref=e2226]: 41 sets
+            - generic [ref=e2227]:
+              - generic [ref=e2230] [cursor=pointer]:
+                - generic [ref=e2231]:
+                  - img "Gym Heroes logo" [ref=e2233]
+                  - generic [ref=e2234]: Legal
+                - heading "Gym Heroes" [level=3] [ref=e2236]
+                - paragraph [ref=e2237]: Gym
+                - generic [ref=e2238]:
+                  - generic [ref=e2239]: 132 cards
+                  - generic [ref=e2240]: "2000"
+                - generic [ref=e2241]:
+                  - button "Open Pack" [ref=e2242]
+                  - link "View Cards" [ref=e2243]:
+                    - /url: /sets/gym1
+              - generic [ref=e2246] [cursor=pointer]:
+                - generic [ref=e2247]:
+                  - img "Gym Challenge logo" [ref=e2249]
+                  - generic [ref=e2250]: Legal
+                - heading "Gym Challenge" [level=3] [ref=e2252]
+                - paragraph [ref=e2253]: Gym
+                - generic [ref=e2254]:
+                  - generic [ref=e2255]: 132 cards
+                  - generic [ref=e2256]: "2000"
+                - generic [ref=e2257]:
+                  - button "Open Pack" [ref=e2258]
+                  - link "View Cards" [ref=e2259]:
+                    - /url: /sets/gym2
+              - generic [ref=e2262] [cursor=pointer]:
+                - generic [ref=e2263]:
+                  - img "Southern Islands logo" [ref=e2265]
+                  - generic [ref=e2266]: Legal
+                - heading "Southern Islands" [level=3] [ref=e2268]
+                - paragraph [ref=e2269]: Other
+                - generic [ref=e2270]:
+                  - generic [ref=e2271]: 18 cards
+                  - generic [ref=e2272]: "2001"
+                - generic [ref=e2273]:
+                  - button "Open Pack" [ref=e2274]
+                  - link "View Cards" [ref=e2275]:
+                    - /url: /sets/si1
+              - generic [ref=e2278] [cursor=pointer]:
+                - generic [ref=e2279]:
+                  - img "Legendary Collection logo" [ref=e2281]
+                  - generic [ref=e2282]: Legal
+                - heading "Legendary Collection" [level=3] [ref=e2284]
+                - paragraph [ref=e2285]: Other
+                - generic [ref=e2286]:
+                  - generic [ref=e2287]: 110 cards
+                  - generic [ref=e2288]: "2002"
+                - generic [ref=e2289]:
+                  - button "Open Pack" [ref=e2290]
+                  - link "View Cards" [ref=e2291]:
+                    - /url: /sets/base6
+              - generic [ref=e2294] [cursor=pointer]:
+                - generic [ref=e2295]:
+                  - img "Expedition Base Set logo" [ref=e2297]
+                  - generic [ref=e2298]: Legal
+                - heading "Expedition Base Set" [level=3] [ref=e2300]
+                - paragraph [ref=e2301]: E-Card
+                - generic [ref=e2302]:
+                  - generic [ref=e2303]: 165 cards
+                  - generic [ref=e2304]: "2002"
+                - generic [ref=e2305]:
+                  - button "Open Pack" [ref=e2306]
+                  - link "View Cards" [ref=e2307]:
+                    - /url: /sets/ecard1
+              - generic [ref=e2310] [cursor=pointer]:
+                - generic [ref=e2311]:
+                  - img "Best of Game logo" [ref=e2313]
+                  - generic [ref=e2314]: Legal
+                - heading "Best of Game" [level=3] [ref=e2316]
+                - paragraph [ref=e2317]: Other
+                - generic [ref=e2318]:
+                  - generic [ref=e2319]: 9 cards
+                  - generic [ref=e2320]: "2002"
+                - generic [ref=e2321]:
+                  - button "Open Pack" [ref=e2322]
+                  - link "View Cards" [ref=e2323]:
+                    - /url: /sets/bp
+              - generic [ref=e2326] [cursor=pointer]:
+                - generic [ref=e2327]:
+                  - img "Aquapolis logo" [ref=e2329]
+                  - generic [ref=e2330]: Legal
+                - heading "Aquapolis" [level=3] [ref=e2332]
+                - paragraph [ref=e2333]: E-Card
+                - generic [ref=e2334]:
+                  - generic [ref=e2335]: 182 cards
+                  - generic [ref=e2336]: "2003"
+                - generic [ref=e2337]:
+                  - button "Open Pack" [ref=e2338]
+                  - link "View Cards" [ref=e2339]:
+                    - /url: /sets/ecard2
+              - generic [ref=e2342] [cursor=pointer]:
+                - generic [ref=e2343]:
+                  - img "Skyridge logo" [ref=e2345]
+                  - generic [ref=e2346]: Legal
+                - heading "Skyridge" [level=3] [ref=e2348]
+                - paragraph [ref=e2349]: E-Card
+                - generic [ref=e2350]:
+                  - generic [ref=e2351]: 182 cards
+                  - generic [ref=e2352]: "2003"
+                - generic [ref=e2353]:
+                  - button "Open Pack" [ref=e2354]
+                  - link "View Cards" [ref=e2355]:
+                    - /url: /sets/ecard3
+              - generic [ref=e2358] [cursor=pointer]:
+                - generic [ref=e2359]:
+                  - img "Nintendo Black Star Promos logo" [ref=e2361]
+                  - generic [ref=e2362]: Legal
+                - heading "Nintendo Black Star Promos" [level=3] [ref=e2364]
+                - paragraph [ref=e2365]: NP
+                - generic [ref=e2366]:
+                  - generic [ref=e2367]: 40 cards
+                  - generic [ref=e2368]: "2003"
+                - generic [ref=e2369]:
+                  - button "Open Pack" [ref=e2370]
+                  - link "View Cards" [ref=e2371]:
+                    - /url: /sets/np
+              - generic [ref=e2374] [cursor=pointer]:
+                - generic [ref=e2375]:
+                  - img "POP Series 1 logo" [ref=e2377]
+                  - generic [ref=e2378]: Legal
+                - heading "POP Series 1" [level=3] [ref=e2380]
+                - paragraph [ref=e2381]: POP
+                - generic [ref=e2382]:
+                  - generic [ref=e2383]: 17 cards
+                  - generic [ref=e2384]: "2004"
+                - generic [ref=e2385]:
+                  - button "Open Pack" [ref=e2386]
+                  - link "View Cards" [ref=e2387]:
+                    - /url: /sets/pop1
+              - generic [ref=e2390] [cursor=pointer]:
+                - generic [ref=e2391]:
+                  - img "POP Series 2 logo" [ref=e2393]
+                  - generic [ref=e2394]: Legal
+                - heading "POP Series 2" [level=3] [ref=e2396]
+                - paragraph [ref=e2397]: POP
+                - generic [ref=e2398]:
+                  - generic [ref=e2399]: 17 cards
+                  - generic [ref=e2400]: "2005"
+                - generic [ref=e2401]:
+                  - button "Open Pack" [ref=e2402]
+                  - link "View Cards" [ref=e2403]:
+                    - /url: /sets/pop2
+              - generic [ref=e2406] [cursor=pointer]:
+                - generic [ref=e2407]:
+                  - img "POP Series 3 logo" [ref=e2409]
+                  - generic [ref=e2410]: Legal
+                - heading "POP Series 3" [level=3] [ref=e2412]
+                - paragraph [ref=e2413]: POP
+                - generic [ref=e2414]:
+                  - generic [ref=e2415]: 17 cards
+                  - generic [ref=e2416]: "2006"
+                - generic [ref=e2417]:
+                  - button "Open Pack" [ref=e2418]
+                  - link "View Cards" [ref=e2419]:
+                    - /url: /sets/pop3
+              - generic [ref=e2422] [cursor=pointer]:
+                - generic [ref=e2423]:
+                  - img "POP Series 4 logo" [ref=e2425]
+                  - generic [ref=e2426]: Legal
+                - heading "POP Series 4" [level=3] [ref=e2428]
+                - paragraph [ref=e2429]: POP
+                - generic [ref=e2430]:
+                  - generic [ref=e2431]: 17 cards
+                  - generic [ref=e2432]: "2006"
+                - generic [ref=e2433]:
+                  - button "Open Pack" [ref=e2434]
+                  - link "View Cards" [ref=e2435]:
+                    - /url: /sets/pop4
+              - generic [ref=e2438] [cursor=pointer]:
+                - generic [ref=e2439]:
+                  - img "POP Series 5 logo" [ref=e2441]
+                  - generic [ref=e2442]: Legal
+                - heading "POP Series 5" [level=3] [ref=e2444]
+                - paragraph [ref=e2445]: POP
+                - generic [ref=e2446]:
+                  - generic [ref=e2447]: 17 cards
+                  - generic [ref=e2448]: "2007"
+                - generic [ref=e2449]:
+                  - button "Open Pack" [ref=e2450]
+                  - link "View Cards" [ref=e2451]:
+                    - /url: /sets/pop5
+              - generic [ref=e2454] [cursor=pointer]:
+                - generic [ref=e2455]:
+                  - img "POP Series 6 logo" [ref=e2457]
+                  - generic [ref=e2458]: Legal
+                - heading "POP Series 6" [level=3] [ref=e2460]
+                - paragraph [ref=e2461]: POP
+                - generic [ref=e2462]:
+                  - generic [ref=e2463]: 17 cards
+                  - generic [ref=e2464]: "2007"
+                - generic [ref=e2465]:
+                  - button "Open Pack" [ref=e2466]
+                  - link "View Cards" [ref=e2467]:
+                    - /url: /sets/pop6
+              - generic [ref=e2470] [cursor=pointer]:
+                - generic [ref=e2471]:
+                  - img "POP Series 7 logo" [ref=e2473]
+                  - generic [ref=e2474]: Legal
+                - heading "POP Series 7" [level=3] [ref=e2476]
+                - paragraph [ref=e2477]: POP
+                - generic [ref=e2478]:
+                  - generic [ref=e2479]: 17 cards
+                  - generic [ref=e2480]: "2008"
+                - generic [ref=e2481]:
+                  - button "Open Pack" [ref=e2482]
+                  - link "View Cards" [ref=e2483]:
+                    - /url: /sets/pop7
+              - generic [ref=e2486] [cursor=pointer]:
+                - generic [ref=e2487]:
+                  - img "POP Series 8 logo" [ref=e2489]
+                  - generic [ref=e2490]: Legal
+                - heading "POP Series 8" [level=3] [ref=e2492]
+                - paragraph [ref=e2493]: POP
+                - generic [ref=e2494]:
+                  - generic [ref=e2495]: 17 cards
+                  - generic [ref=e2496]: "2008"
+                - generic [ref=e2497]:
+                  - button "Open Pack" [ref=e2498]
+                  - link "View Cards" [ref=e2499]:
+                    - /url: /sets/pop8
+              - generic [ref=e2502] [cursor=pointer]:
+                - generic [ref=e2503]:
+                  - img "POP Series 9 logo" [ref=e2505]
+                  - generic [ref=e2506]: Legal
+                - heading "POP Series 9" [level=3] [ref=e2508]
+                - paragraph [ref=e2509]: POP
+                - generic [ref=e2510]:
+                  - generic [ref=e2511]: 17 cards
+                  - generic [ref=e2512]: "2009"
+                - generic [ref=e2513]:
+                  - button "Open Pack" [ref=e2514]
+                  - link "View Cards" [ref=e2515]:
+                    - /url: /sets/pop9
+              - generic [ref=e2518] [cursor=pointer]:
+                - generic [ref=e2519]:
+                  - img "Pokémon Rumble logo" [ref=e2521]
+                  - generic [ref=e2522]: Legal
+                - heading "Pokémon Rumble" [level=3] [ref=e2524]
+                - paragraph [ref=e2525]: Other
+                - generic [ref=e2526]:
+                  - generic [ref=e2527]: 16 cards
+                  - generic [ref=e2528]: "2009"
+                - generic [ref=e2529]:
+                  - button "Open Pack" [ref=e2530]
+                  - link "View Cards" [ref=e2531]:
+                    - /url: /sets/ru1
+              - generic [ref=e2534] [cursor=pointer]:
+                - generic [ref=e2535]:
+                  - img "HeartGold & SoulSilver logo" [ref=e2537]
+                  - generic [ref=e2538]: Legal
+                - heading "HeartGold & SoulSilver" [level=3] [ref=e2540]
+                - paragraph [ref=e2541]: HeartGold & SoulSilver
+                - generic [ref=e2542]:
+                  - generic [ref=e2543]: 124 cards
+                  - generic [ref=e2544]: "2010"
+                - generic [ref=e2545]:
+                  - button "Open Pack" [ref=e2546]
+                  - link "View Cards" [ref=e2547]:
+                    - /url: /sets/hgss1
+              - generic [ref=e2550] [cursor=pointer]:
+                - generic [ref=e2551]:
+                  - img "HGSS Black Star Promos logo" [ref=e2553]
+                  - generic [ref=e2554]: Legal
+                - heading "HGSS Black Star Promos" [level=3] [ref=e2556]
+                - paragraph [ref=e2557]: HeartGold & SoulSilver
+                - generic [ref=e2558]:
+                  - generic [ref=e2559]: 25 cards
+                  - generic [ref=e2560]: "2010"
+                - generic [ref=e2561]:
+                  - button "Open Pack" [ref=e2562]
+                  - link "View Cards" [ref=e2563]:
+                    - /url: /sets/hsp
+              - generic [ref=e2566] [cursor=pointer]:
+                - generic [ref=e2567]:
+                  - img "HS—Unleashed logo" [ref=e2569]
+                  - generic [ref=e2570]: Legal
+                - heading "HS—Unleashed" [level=3] [ref=e2572]
+                - paragraph [ref=e2573]: HeartGold & SoulSilver
+                - generic [ref=e2574]:
+                  - generic [ref=e2575]: 96 cards
+                  - generic [ref=e2576]: "2010"
+                - generic [ref=e2577]:
+                  - button "Open Pack" [ref=e2578]
+                  - link "View Cards" [ref=e2579]:
+                    - /url: /sets/hgss2
+              - generic [ref=e2582] [cursor=pointer]:
+                - generic [ref=e2583]:
+                  - img "HS—Undaunted logo" [ref=e2585]
+                  - generic [ref=e2586]: Legal
+                - heading "HS—Undaunted" [level=3] [ref=e2588]
+                - paragraph [ref=e2589]: HeartGold & SoulSilver
+                - generic [ref=e2590]:
+                  - generic [ref=e2591]: 91 cards
+                  - generic [ref=e2592]: "2010"
+                - generic [ref=e2593]:
+                  - button "Open Pack" [ref=e2594]
+                  - link "View Cards" [ref=e2595]:
+                    - /url: /sets/hgss3
+              - generic [ref=e2598] [cursor=pointer]:
+                - generic [ref=e2599]:
+                  - img "HS—Triumphant logo" [ref=e2601]
+                  - generic [ref=e2602]: Legal
+                - heading "HS—Triumphant" [level=3] [ref=e2604]
+                - paragraph [ref=e2605]: HeartGold & SoulSilver
+                - generic [ref=e2606]:
+                  - generic [ref=e2607]: 103 cards
+                  - generic [ref=e2608]: "2010"
+                - generic [ref=e2609]:
+                  - button "Open Pack" [ref=e2610]
+                  - link "View Cards" [ref=e2611]:
+                    - /url: /sets/hgss4
+              - generic [ref=e2614] [cursor=pointer]:
+                - generic [ref=e2615]:
+                  - img "Call of Legends logo" [ref=e2617]
+                  - generic [ref=e2618]: Legal
+                - heading "Call of Legends" [level=3] [ref=e2620]
+                - paragraph [ref=e2621]: HeartGold & SoulSilver
+                - generic [ref=e2622]:
+                  - generic [ref=e2623]: 106 cards
+                  - generic [ref=e2624]: "2011"
+                - generic [ref=e2625]:
+                  - button "Open Pack" [ref=e2626]
+                  - link "View Cards" [ref=e2627]:
+                    - /url: /sets/col1
+              - generic [ref=e2630] [cursor=pointer]:
+                - generic [ref=e2631]:
+                  - img "McDonald's Collection 2011 logo" [ref=e2633]
+                  - generic [ref=e2634]: Legal
+                - heading "McDonald's Collection 2011" [level=3] [ref=e2636]
+                - paragraph [ref=e2637]: Other
+                - generic [ref=e2638]:
+                  - generic [ref=e2639]: 12 cards
+                  - generic [ref=e2640]: "2011"
+                - generic [ref=e2641]:
+                  - button "Open Pack" [ref=e2642]
+                  - link "View Cards" [ref=e2643]:
+                    - /url: /sets/mcd11
+              - generic [ref=e2646] [cursor=pointer]:
+                - generic [ref=e2647]:
+                  - img "McDonald's Collection 2012 logo" [ref=e2649]
+                  - generic [ref=e2650]: Legal
+                - heading "McDonald's Collection 2012" [level=3] [ref=e2652]
+                - paragraph [ref=e2653]: Other
+                - generic [ref=e2654]:
+                  - generic [ref=e2655]: 12 cards
+                  - generic [ref=e2656]: "2012"
+                - generic [ref=e2657]:
+                  - button "Open Pack" [ref=e2658]
+                  - link "View Cards" [ref=e2659]:
+                    - /url: /sets/mcd12
+              - generic [ref=e2662] [cursor=pointer]:
+                - generic [ref=e2663]:
+                  - img "McDonald's Collection 2014 logo" [ref=e2665]
+                  - generic [ref=e2666]: Legal
+                - heading "McDonald's Collection 2014" [level=3] [ref=e2668]
+                - paragraph [ref=e2669]: Other
+                - generic [ref=e2670]:
+                  - generic [ref=e2671]: 12 cards
+                  - generic [ref=e2672]: "2014"
+                - generic [ref=e2673]:
+                  - button "Open Pack" [ref=e2674]
+                  - link "View Cards" [ref=e2675]:
+                    - /url: /sets/mcd14
+              - generic [ref=e2678] [cursor=pointer]:
+                - generic [ref=e2679]:
+                  - img "McDonald's Collection 2015 logo" [ref=e2681]
+                  - generic [ref=e2682]: Legal
+                - heading "McDonald's Collection 2015" [level=3] [ref=e2684]
+                - paragraph [ref=e2685]: Other
+                - generic [ref=e2686]:
+                  - generic [ref=e2687]: 12 cards
+                  - generic [ref=e2688]: "2015"
+                - generic [ref=e2689]:
+                  - button "Open Pack" [ref=e2690]
+                  - link "View Cards" [ref=e2691]:
+                    - /url: /sets/mcd15
+              - generic [ref=e2694] [cursor=pointer]:
+                - generic [ref=e2695]:
+                  - img "McDonald's Collection 2016 logo" [ref=e2697]
+                  - generic [ref=e2698]: Legal
+                - heading "McDonald's Collection 2016" [level=3] [ref=e2700]
+                - paragraph [ref=e2701]: Other
+                - generic [ref=e2702]:
+                  - generic [ref=e2703]: 12 cards
+                  - generic [ref=e2704]: "2016"
+                - generic [ref=e2705]:
+                  - button "Open Pack" [ref=e2706]
+                  - link "View Cards" [ref=e2707]:
+                    - /url: /sets/mcd16
+              - generic [ref=e2710] [cursor=pointer]:
+                - generic [ref=e2711]:
+                  - img "McDonald's Collection 2017 logo" [ref=e2713]
+                  - generic [ref=e2714]: Legal
+                - heading "McDonald's Collection 2017" [level=3] [ref=e2716]
+                - paragraph [ref=e2717]: Other
+                - generic [ref=e2718]:
+                  - generic [ref=e2719]: 12 cards
+                  - generic [ref=e2720]: "2017"
+                - generic [ref=e2721]:
+                  - button "Open Pack" [ref=e2722]
+                  - link "View Cards" [ref=e2723]:
+                    - /url: /sets/mcd17
+              - generic [ref=e2726] [cursor=pointer]:
+                - generic [ref=e2727]:
+                  - img "McDonald's Collection 2018 logo" [ref=e2729]
+                  - generic [ref=e2730]: Legal
+                - heading "McDonald's Collection 2018" [level=3] [ref=e2732]
+                - paragraph [ref=e2733]: Other
+                - generic [ref=e2734]:
+                  - generic [ref=e2735]: 12 cards
+                  - generic [ref=e2736]: "2018"
+                - generic [ref=e2737]:
+                  - button "Open Pack" [ref=e2738]
+                  - link "View Cards" [ref=e2739]:
+                    - /url: /sets/mcd18
+              - generic [ref=e2742] [cursor=pointer]:
+                - generic [ref=e2743]:
+                  - img "McDonald's Collection 2019 logo" [ref=e2745]
+                  - generic [ref=e2746]: Legal
+                - heading "McDonald's Collection 2019" [level=3] [ref=e2748]
+                - paragraph [ref=e2749]: Other
+                - generic [ref=e2750]:
+                  - generic [ref=e2751]: 12 cards
+                  - generic [ref=e2752]: "2019"
+                - generic [ref=e2753]:
+                  - button "Open Pack" [ref=e2754]
+                  - link "View Cards" [ref=e2755]:
+                    - /url: /sets/mcd19
+              - generic [ref=e2758] [cursor=pointer]:
+                - generic [ref=e2759]:
+                  - img "Pokémon Futsal Collection logo" [ref=e2761]
+                  - generic [ref=e2762]: Legal
+                - heading "Pokémon Futsal Collection" [level=3] [ref=e2764]
+                - paragraph [ref=e2765]: Other
+                - generic [ref=e2766]:
+                  - generic [ref=e2767]: 5 cards
+                  - generic [ref=e2768]: "2020"
+                - generic [ref=e2769]:
+                  - button "Open Pack" [ref=e2770]
+                  - link "View Cards" [ref=e2771]:
+                    - /url: /sets/fut20
+              - generic [ref=e2774] [cursor=pointer]:
+                - generic [ref=e2775]:
+                  - img "McDonald's Collection 2021 logo" [ref=e2777]
+                  - generic [ref=e2778]: Legal
+                - heading "McDonald's Collection 2021" [level=3] [ref=e2780]
+                - paragraph [ref=e2781]: Other
+                - generic [ref=e2782]:
+                  - generic [ref=e2783]: 25 cards
+                  - generic [ref=e2784]: "2021"
+                - generic [ref=e2785]:
+                  - button "Open Pack" [ref=e2786]
+                  - link "View Cards" [ref=e2787]:
+                    - /url: /sets/mcd21
+              - generic [ref=e2790] [cursor=pointer]:
+                - generic [ref=e2791]:
+                  - img "McDonald's Collection 2022 logo" [ref=e2793]
+                  - generic [ref=e2794]: Legal
+                - heading "McDonald's Collection 2022" [level=3] [ref=e2796]
+                - paragraph [ref=e2797]: Other
+                - generic [ref=e2798]:
+                  - generic [ref=e2799]: 15 cards
+                  - generic [ref=e2800]: "2022"
+                - generic [ref=e2801]:
+                  - button "Open Pack" [ref=e2802]
+                  - link "View Cards" [ref=e2803]:
+                    - /url: /sets/mcd22
+              - generic [ref=e2806] [cursor=pointer]:
+                - generic [ref=e2807]:
+                  - img "Mega Evolution logo" [ref=e2809]
+                  - generic [ref=e2810]: Legal
+                - heading "Mega Evolution" [level=3] [ref=e2812]
+                - paragraph [ref=e2813]: Mega Evolution
+                - generic [ref=e2814]:
+                  - generic [ref=e2815]: 188 cards
+                  - generic [ref=e2816]: "2025"
+                - generic [ref=e2817]:
+                  - button "Open Pack" [ref=e2818]
+                  - link "View Cards" [ref=e2819]:
+                    - /url: /sets/me1
+              - generic [ref=e2822] [cursor=pointer]:
+                - generic [ref=e2823]:
+                  - img "Phantasmal Flames logo" [ref=e2825]
+                  - generic [ref=e2826]: Legal
+                - heading "Phantasmal Flames" [level=3] [ref=e2828]
+                - paragraph [ref=e2829]: Mega Evolution
+                - generic [ref=e2830]:
+                  - generic [ref=e2831]: 130 cards
+                  - generic [ref=e2832]: "2025"
+                - generic [ref=e2833]:
+                  - button "Open Pack" [ref=e2834]
+                  - link "View Cards" [ref=e2835]:
+                    - /url: /sets/me2
+              - generic [ref=e2838] [cursor=pointer]:
+                - generic [ref=e2839]:
+                  - img "Ascended Heroes logo" [ref=e2841]
+                  - generic [ref=e2842]: Legal
+                - heading "Ascended Heroes" [level=3] [ref=e2844]
+                - paragraph [ref=e2845]: Mega Evolution
+                - generic [ref=e2846]:
+                  - generic [ref=e2847]: 295 cards
+                  - generic [ref=e2848]: "2026"
+                - generic [ref=e2849]:
+                  - button "Open Pack" [ref=e2850]
+                  - link "View Cards" [ref=e2851]:
+                    - /url: /sets/me2pt5
+              - generic [ref=e2854] [cursor=pointer]:
+                - generic [ref=e2855]:
+                  - img "Perfect Order logo" [ref=e2857]
+                  - generic [ref=e2858]: Legal
+                - heading "Perfect Order" [level=3] [ref=e2860]
+                - paragraph [ref=e2861]: Mega Evolution
+                - generic [ref=e2862]:
+                  - generic [ref=e2863]: 124 cards
+                  - generic [ref=e2864]: "2026"
+                - generic [ref=e2865]:
+                  - button "Open Pack" [ref=e2866]
+                  - link "View Cards" [ref=e2867]:
+                    - /url: /sets/me3
+              - generic [ref=e2870] [cursor=pointer]:
+                - generic [ref=e2871]:
+                  - img "Chaos Rising logo" [ref=e2873]
+                  - generic [ref=e2874]: Legal
+                - heading "Chaos Rising" [level=3] [ref=e2876]
+                - paragraph [ref=e2877]: Mega Evolution
+                - generic [ref=e2878]:
+                  - generic [ref=e2879]: 122 cards
+                  - generic [ref=e2880]: "2026"
+                - generic [ref=e2881]:
+                  - button "Open Pack" [ref=e2882]
+                  - link "View Cards" [ref=e2883]:
+                    - /url: /sets/me4
+  - button "Open Next.js Dev Tools" [ref=e2889] [cursor=pointer]:
+    - img [ref=e2890]
