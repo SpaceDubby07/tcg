@@ -8,17 +8,23 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const SAMPLE_IDS = ['base1-4', 'base1-1', 'base1-15', 'sv4-215', 'swsh9-186'];
+const FEATURED_IDS = ['base1-4', 'base1-1', 'base1-15', 'base1-2', 'base1-10'];
 
 export default function PricingPreviewPage() {
   const prices = getAllPrices();
-  const pricedCount = Object.keys(prices).length;
+  const pricedIds = Object.keys(prices);
+  const pricedCount = pricedIds.length;
   const totalCards = getCardSummaries().length;
 
-  const samples = SAMPLE_IDS.map((id) => {
+  const sampleIds = [
+    ...FEATURED_IDS.filter((id) => prices[id]),
+    ...pricedIds.filter((id) => !FEATURED_IDS.includes(id)).slice(0, 5),
+  ].slice(0, 8);
+
+  const samples = sampleIds.map((id) => {
     const card = getCardById(id);
-    return card ? { id, name: card.name, hasPrice: Boolean(prices[id]) } : null;
-  }).filter(Boolean) as { id: string; name: string; hasPrice: boolean }[];
+    return card ? { id, name: card.name } : null;
+  }).filter(Boolean) as { id: string; name: string }[];
 
   return (
     <div className="min-h-screen bg-[#0f0f23] py-12 px-4">
@@ -63,8 +69,10 @@ export default function PricingPreviewPage() {
                 className="flex items-center justify-between bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl px-5 py-3 transition-colors"
               >
                 <span className="text-white font-medium">{sample.name}</span>
-                <span className={`text-xs ${sample.hasPrice ? 'text-emerald-400' : 'text-neutral-500'}`}>
-                  {sample.hasPrice ? 'Has price' : 'No data yet'}
+                <span className="text-xs text-emerald-400">
+                  {prices[sample.id]?.usd
+                    ? `$${prices[sample.id].usd!.market.toFixed(2)}`
+                    : 'View price'}
                 </span>
               </Link>
             ))}
