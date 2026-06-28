@@ -43,7 +43,7 @@ export default function CardFilter({ cards }: { cards: Card[] }) {
   const [displayCount, setDisplayCount] = useState(CARDS_PER_PAGE);
   const observerRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
-  const prevCountRef = useRef(0);
+  const prevVisibleIdsRef = useRef<string[]>([]);
 
   const rarities = useMemo(
     () => Array.from(new Set(cards.map((c) => c.rarity).filter(Boolean))).sort() as string[],
@@ -61,7 +61,12 @@ export default function CardFilter({ cards }: { cards: Card[] }) {
     return matchesQuery && matchesRarity && matchesType;
   }), [cards, query, rarity, type]);
 
-  useEffect(() => { setDisplayCount(CARDS_PER_PAGE); }, [query, rarity, type]);
+  const filterKey = `${query}|${rarity}|${type}`;
+
+  useEffect(() => {
+    setDisplayCount(CARDS_PER_PAGE);
+    prevVisibleIdsRef.current = [];
+  }, [filterKey]);
 
   const displayedCards = useMemo(() => filtered.slice(0, displayCount), [filtered, displayCount]);
   const hasMore = displayCount < filtered.length;
@@ -82,14 +87,24 @@ export default function CardFilter({ cards }: { cards: Card[] }) {
 
   useEffect(() => {
     if (!gridRef.current) return;
+
+    const currentIds = displayedCards.map((card) => card.id);
+    const prevIds = prevVisibleIdsRef.current;
+    const isLoadMore =
+      prevIds.length > 0 &&
+      currentIds.length > prevIds.length &&
+      prevIds.every((id, index) => currentIds[index] === id);
+
     const allEls = Array.from(gridRef.current.querySelectorAll('[data-card]')) as HTMLElement[];
-    const newEls = allEls.slice(prevCountRef.current);
-    if (newEls.length) {
-      newEls.forEach((c) => { c.style.opacity = '0'; });
-      staggerIn(newEls, 20);
+    const elsToAnimate = isLoadMore ? allEls.slice(prevIds.length) : allEls;
+
+    if (elsToAnimate.length) {
+      elsToAnimate.forEach((el) => { el.style.opacity = '0'; });
+      staggerIn(elsToAnimate, 20);
     }
-    prevCountRef.current = allEls.length;
-  }, [displayedCards.length]);
+
+    prevVisibleIdsRef.current = currentIds;
+  }, [displayedCards]);
 
   const fieldCls = "h-11 bg-[#0a0a14] border border-white/10 rounded-xl text-slate-200 text-sm focus:outline-none focus:border-blue-500/60 transition-colors";
 
