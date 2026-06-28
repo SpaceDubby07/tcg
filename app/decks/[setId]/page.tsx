@@ -7,6 +7,8 @@ import { Card } from '@/types/types';
 import DeckView from '@/app/components/DeckView';
 import setsData from '@/data/sets/en.json';
 
+export const revalidate = 2592000;
+
 export async function generateStaticParams() {
   return getDeckSetIds().map((setId) => ({ setId }));
 }

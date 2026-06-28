@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllCards, getCardById } from '@/lib/cards';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import CardImagePanel from '@/app/components/CardImagePanel';
@@ -19,8 +20,10 @@ const TYPE_COLORS: Record<string, string> = {
   Fairy: '#f48fb1',
 };
 
+export const revalidate = 2592000;
+
 export async function generateStaticParams() {
-  return getAllCards().map((card) => ({ id: card.id }));
+  return [];
 }
 
 export async function generateMetadata({

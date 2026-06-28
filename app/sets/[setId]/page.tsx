@@ -3,6 +3,8 @@ import CardList from '@/app/components/CardList';
 import { getCardsForSet } from '@/lib/cards';
 import setsData from '@/data/sets/en.json';
 
+export const revalidate = 2592000;
+
 export async function generateStaticParams() {
   return setsData.map((set) => ({ setId: set.id }));
 }
