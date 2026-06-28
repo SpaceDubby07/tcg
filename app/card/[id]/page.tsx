@@ -3,6 +3,21 @@ import { notFound } from 'next/navigation';
 import { getAllCards, getCardById } from '@/lib/cards';
 import Image from 'next/image';
 import Link from 'next/link';
+import CardImagePanel from '@/app/components/CardImagePanel';
+
+const TYPE_COLORS: Record<string, string> = {
+  Fire: '#ff6b35',
+  Water: '#4fc3f7',
+  Grass: '#66bb6a',
+  Lightning: '#ffd600',
+  Psychic: '#ce93d8',
+  Fighting: '#ef9a9a',
+  Darkness: '#9575cd',
+  Metal: '#b0bec5',
+  Colorless: '#cfd8dc',
+  Dragon: '#7e57c2',
+  Fairy: '#f48fb1',
+};
 
 export async function generateStaticParams() {
   return getAllCards().map((card) => ({ id: card.id }));
@@ -48,51 +63,35 @@ export default async function CardDetailPage({
 }) {
   const { id } = await params;
   const card = getCardById(id);
-
-  if (!card) {
-    notFound();
-  }
+  if (!card) notFound();
 
   const allCards = getAllCards();
   const currentIndex = allCards.findIndex((c) => c.id === id);
+  const prevCard = currentIndex > 0 ? allCards[currentIndex - 1] : null;
+  const nextCard = currentIndex < allCards.length - 1 ? allCards[currentIndex + 1] : null;
 
-  const prevCard =
-    currentIndex > 0 ? allCards[currentIndex - 1] : null;
-  const nextCard =
-    currentIndex < allCards.length - 1
-      ? allCards[currentIndex + 1]
-      : null;
+  const primaryType = card.types?.[0];
+  const typeColor = primaryType ? (TYPE_COLORS[primaryType] ?? '#ef4444') : '#ef4444';
 
   return (
-    <div className="min-h-screen bg-neutral-900">
-      {/* Header Navigation */}
-      <header className="sticky top-0 z-50 bg-black/50 backdrop-blur-md border-b border-neutral-800">
+    <div className="min-h-screen bg-[#0a0a0f]">
+      {/* Back nav */}
+      <header className="sticky top-0 z-40 bg-black/50 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link
             href="/card"
-            className="text-neutral-400 hover:text-white transition-colors flex items-center gap-2"
+            className="text-neutral-400 hover:text-white transition-colors flex items-center gap-2 text-sm"
           >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 19l-7-7m0 0l7-7m-7 7h18"
-              />
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             Back to Collection
           </Link>
-
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {prevCard && (
               <Link
                 href={`/card/${prevCard.id}`}
-                className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg transition-colors"
+                className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm transition-colors"
               >
                 ← Prev
               </Link>
@@ -100,7 +99,7 @@ export default async function CardDetailPage({
             {nextCard && (
               <Link
                 href={`/card/${nextCard.id}`}
-                className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-lg transition-colors"
+                className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm transition-colors"
               >
                 Next →
               </Link>
@@ -111,54 +110,37 @@ export default async function CardDetailPage({
 
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid lg:grid-cols-5 gap-12">
-          {/* Left: Card Image */}
+          {/* Left: Card Image with entrance animation */}
           <div className="lg:col-span-2">
             <div className="sticky top-28">
-              <Image
+              <CardImagePanel
                 src={card.images.large}
                 alt={card.name}
-                width={500}
-                height={700}
-                className="w-full rounded-2xl shadow-2xl"
-                priority
+                type={primaryType}
               />
 
-              {/* Card Metadata */}
+              {/* Metadata grid */}
               <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
-                <div className="bg-neutral-800 rounded-lg p-3">
-                  <div className="text-neutral-400 mb-1">
-                    Set Number
-                  </div>
-                  <div className="text-white font-semibold">
-                    #{card.number}
-                  </div>
+                <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                  <div className="text-neutral-500 mb-1 text-xs">Set Number</div>
+                  <div className="text-white font-semibold">#{card.number}</div>
                 </div>
                 {card.nationalPokedexNumbers && (
-                  <div className="bg-neutral-800 rounded-lg p-3">
-                    <div className="text-neutral-400 mb-1">
-                      Pokédex #
-                    </div>
-                    <div className="text-white font-semibold">
-                      {card.nationalPokedexNumbers[0]}
-                    </div>
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                    <div className="text-neutral-500 mb-1 text-xs">Pokédex #</div>
+                    <div className="text-white font-semibold">{card.nationalPokedexNumbers[0]}</div>
                   </div>
                 )}
                 {card.level && (
-                  <div className="bg-neutral-800 rounded-lg p-3">
-                    <div className="text-neutral-400 mb-1">Level</div>
-                    <div className="text-white font-semibold">
-                      {card.level}
-                    </div>
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                    <div className="text-neutral-500 mb-1 text-xs">Level</div>
+                    <div className="text-white font-semibold">{card.level}</div>
                   </div>
                 )}
                 {card.convertedRetreatCost !== undefined && (
-                  <div className="bg-neutral-800 rounded-lg p-3">
-                    <div className="text-neutral-400 mb-1">
-                      Retreat Cost
-                    </div>
-                    <div className="text-white font-semibold">
-                      {card.convertedRetreatCost}
-                    </div>
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                    <div className="text-neutral-500 mb-1 text-xs">Retreat Cost</div>
+                    <div className="text-white font-semibold">{card.convertedRetreatCost}</div>
                   </div>
                 )}
               </div>
@@ -167,99 +149,75 @@ export default async function CardDetailPage({
 
           {/* Right: Card Details */}
           <div className="lg:col-span-3 space-y-8">
-            {/* Header */}
             <div>
-              <div className="flex items-center gap-3 mb-2">
-                {card.types?.map((type) => (
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                {card.types?.map((t) => (
                   <span
-                    key={type}
-                    className="px-3 py-1 bg-neutral-800 text-neutral-300 rounded-full text-sm font-medium"
+                    key={t}
+                    className="px-3 py-1 rounded-full text-xs font-semibold text-white"
+                    style={{ background: `${TYPE_COLORS[t] ?? '#666'}33`, border: `1px solid ${TYPE_COLORS[t] ?? '#666'}66` }}
                   >
-                    {type}
+                    {t}
                   </span>
                 ))}
-                {card.subtypes?.map((subtype) => (
-                  <span
-                    key={subtype}
-                    className="px-3 py-1 bg-neutral-800 text-neutral-300 rounded-full text-sm"
-                  >
-                    {subtype}
+                {card.subtypes?.map((sub) => (
+                  <span key={sub} className="px-3 py-1 bg-white/10 text-neutral-300 rounded-full text-xs">
+                    {sub}
                   </span>
                 ))}
               </div>
-              <h1 className="text-5xl font-bold text-white mb-3">
-                {card.name}
-              </h1>
-              <div className="flex items-center gap-6 text-neutral-400">
-                <span className="text-2xl font-bold text-red-500">
-                  HP {card.hp}
-                </span>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">{card.name}</h1>
+              <div className="flex flex-wrap items-center gap-4 text-neutral-400 text-sm">
+                {card.hp && (
+                  <span className="text-2xl font-bold" style={{ color: typeColor }}>
+                    HP {card.hp}
+                  </span>
+                )}
                 {card.rarity && <span>• {card.rarity}</span>}
                 {card.artist && <span>• Art by {card.artist}</span>}
               </div>
             </div>
 
-            {/* Evolution */}
             {card.evolvesFrom && (
-              <div className="bg-neutral-800 rounded-xl p-5 border border-neutral-700">
-                <div className="text-neutral-400 text-sm mb-1">
-                  Evolves From
-                </div>
-                <div className="text-white font-semibold text-lg">
-                  {card.evolvesFrom}
-                </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <div className="text-neutral-500 text-xs mb-1">Evolves From</div>
+                <div className="text-white font-semibold text-lg">{card.evolvesFrom}</div>
               </div>
             )}
 
-            {/* Abilities */}
             {card.abilities && card.abilities.length > 0 && (
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-white">
-                  Abilities
-                </h2>
+                <h2 className="text-xl font-bold text-white">Abilities</h2>
                 {card.abilities.map((ability, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-neutral-800 rounded-xl p-6 border border-neutral-700"
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-bold text-white">
-                        {ability.name}
-                      </h3>
-                      <span className="text-xs px-3 py-1 bg-purple-600 text-white rounded-full">
+                  <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-5">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-bold text-white">{ability.name}</h3>
+                      <span className="text-xs px-2 py-0.5 bg-purple-600/50 text-purple-200 rounded-full border border-purple-500/30">
                         {ability.type}
                       </span>
                     </div>
-                    <p className="text-neutral-300 leading-relaxed">
-                      {ability.text}
-                    </p>
+                    <p className="text-neutral-300 leading-relaxed text-sm">{ability.text}</p>
                   </div>
                 ))}
               </div>
             )}
 
-            {/* Attacks */}
             {card.attacks && card.attacks.length > 0 && (
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-white">
-                  Attacks
-                </h2>
+                <h2 className="text-xl font-bold text-white">Attacks</h2>
                 {card.attacks.map((attack, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-neutral-800 rounded-xl p-6 border border-neutral-700"
-                  >
+                  <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-5">
                     <div className="flex items-start justify-between mb-3">
                       <div>
-                        <h3 className="text-xl font-bold text-white mb-2">
-                          {attack.name}
-                        </h3>
-                        {attack.cost && (
-                          <div className="flex gap-1">
+                        <h3 className="text-lg font-bold text-white mb-2">{attack.name}</h3>
+                        {attack.cost && attack.cost.length > 0 && (
+                          <div className="flex gap-1.5 flex-wrap">
                             {attack.cost.map((energy, i) => (
                               <span
                                 key={i}
-                                className="w-6 h-6 rounded-full bg-neutral-700 flex items-center justify-center text-xs text-neutral-300"
+                                className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white"
+                                style={{ background: TYPE_COLORS[energy] ?? '#555' }}
+                                title={energy}
                               >
                                 {energy[0]}
                               </span>
@@ -268,15 +226,13 @@ export default async function CardDetailPage({
                         )}
                       </div>
                       {attack.damage && (
-                        <span className="text-3xl font-bold text-red-500">
+                        <span className="text-3xl font-bold" style={{ color: typeColor }}>
                           {attack.damage}
                         </span>
                       )}
                     </div>
                     {attack.text && (
-                      <p className="text-neutral-300 leading-relaxed">
-                        {attack.text}
-                      </p>
+                      <p className="text-neutral-300 leading-relaxed text-sm">{attack.text}</p>
                     )}
                   </div>
                 ))}
@@ -284,103 +240,94 @@ export default async function CardDetailPage({
             )}
 
             {card.rules && (
-              <div className="">
-                {card.rules && (
-                  <div className="bg-neutral-800 rounded-xl p-5 border border-neutral-700">
-                    <h3 className="text-lg font-bold text-white mb-3">
-                      Rules
-                    </h3>
-                    <p className="text-neutral-300 leading-relaxed text-lg">
-                      {card.rules}
-                    </p>
-                  </div>
-                )}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <h3 className="text-base font-bold text-white mb-2">Rules</h3>
+                <p className="text-neutral-300 leading-relaxed text-sm">{card.rules}</p>
               </div>
             )}
 
-            {/* Weaknesses & Resistances */}
             {card.weaknesses && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {card.weaknesses && (
-                  <div className="bg-red-950/30 border border-red-900/50 rounded-xl p-5">
-                    <h3 className="text-lg font-bold text-red-400 mb-3">
-                      Weakness
-                    </h3>
-                    {card.weaknesses.map((weakness, idx) => (
-                      <div key={idx} className="text-neutral-300">
-                        {weakness.type} {weakness.value}
-                      </div>
-                    ))}
+              <div className="bg-red-950/30 border border-red-900/40 rounded-xl p-5">
+                <h3 className="text-base font-bold text-red-400 mb-2">Weakness</h3>
+                {card.weaknesses.map((w, idx) => (
+                  <div key={idx} className="text-neutral-300 text-sm">
+                    {w.type} {w.value}
                   </div>
-                )}
+                ))}
               </div>
             )}
 
-            {/* Flavor Text */}
             {card.flavorText && (
-              <div className="bg-neutral-800 rounded-xl p-6 border border-neutral-700">
-                <p className="text-neutral-300 italic leading-relaxed text-lg">
-                  {card.flavorText}
-                </p>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <p className="text-neutral-400 italic leading-relaxed text-sm">{card.flavorText}</p>
               </div>
             )}
 
-            {/* Legalities */}
             {card.legalities && (
-              <div className="bg-neutral-800 rounded-xl p-5 border border-neutral-700">
-                <h3 className="text-lg font-bold text-white mb-3">
-                  Format Legality
-                </h3>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <h3 className="text-base font-bold text-white mb-3">Format Legality</h3>
                 <div className="flex flex-wrap gap-2">
-                  {Object.entries(card.legalities).map(
-                    ([format, status]) => (
-                      <span
-                        key={format}
-                        className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          status === 'Legal'
-                            ? 'bg-green-600 text-white'
-                            : 'bg-red-600 text-white'
-                        }`}
-                      >
-                        {format}: {status}
-                      </span>
-                    )
-                  )}
+                  {Object.entries(card.legalities).map(([format, status]) => (
+                    <span
+                      key={format}
+                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                        status === 'Legal'
+                          ? 'bg-emerald-500/20 text-emerald-300 ring-1 ring-emerald-500/30'
+                          : 'bg-red-500/20 text-red-300 ring-1 ring-red-500/30'
+                      }`}
+                    >
+                      {format}: {status}
+                    </span>
+                  ))}
                 </div>
               </div>
             )}
           </div>
         </div>
 
-        {/* Bottom Navigation */}
+        {/* Bottom prev/next with thumbnails */}
         {(prevCard || nextCard) && (
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
             {prevCard ? (
               <Link
                 href={`/card/${prevCard.id}`}
-                className="bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 rounded-xl p-6 transition-colors group"
+                className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-colors group flex items-center gap-4"
               >
-                <div className="text-sm text-neutral-400 mb-2">
-                  Previous Card
-                </div>
-                <div className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                  ← {prevCard.name}
+                <Image
+                  src={prevCard.images.small}
+                  alt={prevCard.name}
+                  width={48}
+                  height={67}
+                  className="rounded-lg opacity-70 group-hover:opacity-100 transition-opacity"
+                />
+                <div>
+                  <div className="text-xs text-neutral-500 mb-1">Previous Card</div>
+                  <div className="text-white font-bold group-hover:text-blue-400 transition-colors">
+                    ← {prevCard.name}
+                  </div>
                 </div>
               </Link>
             ) : (
-              <div></div>
+              <div />
             )}
             {nextCard && (
               <Link
                 href={`/card/${nextCard.id}`}
-                className="bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 rounded-xl p-6 transition-colors group text-right"
+                className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-colors group flex items-center justify-end gap-4 text-right"
               >
-                <div className="text-sm text-neutral-400 mb-2">
-                  Next Card
+                <div>
+                  <div className="text-xs text-neutral-500 mb-1">Next Card</div>
+                  <div className="text-white font-bold group-hover:text-blue-400 transition-colors">
+                    {nextCard.name} →
+                  </div>
                 </div>
-                <div className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                  {nextCard.name} →
-                </div>
+                <Image
+                  src={nextCard.images.small}
+                  alt={nextCard.name}
+                  width={48}
+                  height={67}
+                  className="rounded-lg opacity-70 group-hover:opacity-100 transition-opacity"
+                />
               </Link>
             )}
           </div>
