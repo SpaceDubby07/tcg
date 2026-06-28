@@ -1,1 +1,43 @@
 @import 'tailwindcss';
+
+:root {
+  --color-fire: #ff6b35;
+  --color-water: #4fc3f7;
+  --color-grass: #66bb6a;
+  --color-lightning: #ffd600;
+  --color-psychic: #ce93d8;
+  --color-fighting: #ef9a9a;
+  --color-darkness: #9575cd;
+  --color-metal: #b0bec5;
+  --color-colorless: #cfd8dc;
+  --color-dragon: #7e57c2;
+  --color-fairy: #f48fb1;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes pokeball-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+
+body {
+  background-color: #0a0a0f;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
