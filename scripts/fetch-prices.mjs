@@ -2,9 +2,11 @@
  * Fetches market prices from TCGdex and writes data/prices.json.
  *
  * Usage:
- *   node scripts/fetch-prices.mjs              # all cards (~20k, slow)
- *   node scripts/fetch-prices.mjs --set=base1    # one set only
- *   node scripts/fetch-prices.mjs --delay=150    # ms between requests (default 120)
+ *   node scripts/fetch-prices.mjs                    # all cards, skip existing
+ *   node scripts/fetch-prices.mjs --set=base1        # one set only
+ *   node scripts/fetch-prices.mjs --force            # re-fetch all
+ *   node scripts/fetch-prices.mjs --concurrency=8    # parallel requests (default 6)
+ *   node scripts/fetch-prices.mjs --delay=80         # ms between batches (default 80)
  */
 
 import fs from 'fs';
@@ -19,7 +21,9 @@ const API_BASE = 'https://api.tcgdex.net/v2/en/cards';
 
 const args = process.argv.slice(2);
 const setFilter = args.find((a) => a.startsWith('--set='))?.split('=')[1];
-const delayMs = Number(args.find((a) => a.startsWith('--delay='))?.split('=')[1] ?? 120);
+const delayMs = Number(args.find((a) => a.startsWith('--delay='))?.split('=')[1] ?? 80);
+const concurrency = Number(args.find((a) => a.startsWith('--concurrency='))?.split('=')[1] ?? 6);
+const force = args.includes('--force');
 
 const VARIANT_PRIORITY = [
   'normal',
@@ -103,9 +107,13 @@ function toPriceEntry(pricing) {
 async function fetchCardPrice(id) {
   const res = await fetch(`${API_BASE}/${id}`);
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`TCGdex ${id}: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
   return toPriceEntry(data.pricing);
+}
+
+function savePrices(prices) {
+  fs.writeFileSync(OUT_FILE, JSON.stringify(prices, null, 2));
 }
 
 async function main() {
@@ -120,34 +128,59 @@ async function main() {
     existing = JSON.parse(fs.readFileSync(OUT_FILE, 'utf-8'));
   }
 
-  console.log(`Fetching prices for ${ids.length} cards (delay ${delayMs}ms)...`);
+  const toFetch = force ? ids : ids.filter((id) => !existing[id]);
+  console.log(`Total cards: ${ids.length}`);
+  console.log(`Already cached: ${ids.length - toFetch.length}`);
+  console.log(`To fetch: ${toFetch.length} (concurrency ${concurrency}, batch delay ${delayMs}ms)`);
+
+  if (!toFetch.length) {
+    console.log('Nothing to fetch. Use --force to refresh all.');
+    return;
+  }
+
   let fetched = 0;
   let withPrice = 0;
-  let skipped = 0;
+  let withoutPrice = 0;
 
-  for (const id of ids) {
-    try {
-      const entry = await fetchCardPrice(id);
+  for (let i = 0; i < toFetch.length; i += concurrency) {
+    const batch = toFetch.slice(i, i + concurrency);
+    const results = await Promise.all(
+      batch.map(async (id) => {
+        try {
+          const entry = await fetchCardPrice(id);
+          return { id, entry, error: null };
+        } catch (err) {
+          return { id, entry: null, error: err.message };
+        }
+      })
+    );
+
+    for (const { id, entry, error } of results) {
       fetched++;
+      if (error) {
+        console.error(`  ${id}: ${error}`);
+        continue;
+      }
       if (entry) {
         existing[id] = entry;
         withPrice++;
       } else {
-        skipped++;
+        withoutPrice++;
       }
-    } catch (err) {
-      console.error(`  ${id}: ${err.message}`);
     }
 
-    if (fetched % 25 === 0) {
-      console.log(`  ${fetched}/${ids.length} (${withPrice} with prices)`);
+    if (fetched % 100 < concurrency) {
+      console.log(`  ${fetched}/${toFetch.length} (${withPrice} priced, ${withoutPrice} no data)`);
+      savePrices(existing);
     }
 
-    await sleep(delayMs);
+    if (i + concurrency < toFetch.length) {
+      await sleep(delayMs);
+    }
   }
 
-  fs.writeFileSync(OUT_FILE, JSON.stringify(existing, null, 2));
-  console.log(`Done. ${withPrice} priced, ${skipped} without data. Wrote ${OUT_FILE}`);
+  savePrices(existing);
+  console.log(`Done. ${withPrice} new priced entries, ${withoutPrice} without data. Wrote ${OUT_FILE}`);
 }
 
 main();

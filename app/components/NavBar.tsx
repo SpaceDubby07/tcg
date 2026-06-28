@@ -20,7 +20,6 @@ PokeballSVG.displayName = 'PokeballSVG';
 const NAV_LINKS = [
   { href: '/', label: 'Sets' },
   { href: '/card', label: 'Cards' },
-  { href: '/pricing', label: 'Pricing' },
 ];
 
 export default function NavBar() {

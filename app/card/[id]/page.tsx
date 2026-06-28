@@ -5,6 +5,7 @@ import { getAllCards, getCardById } from '@/lib/cards';
 import Image from 'next/image';
 import Link from 'next/link';
 import CardImagePanel from '@/app/components/CardImagePanel';
+import CardPrice from '@/app/components/CardPrice';
 
 const TYPE_COLORS: Record<string, string> = {
   Fire: '#ff6b35',
@@ -147,6 +148,8 @@ export default async function CardDetailPage({
                   </div>
                 )}
               </div>
+
+              <CardPrice cardId={card.id} />
             </div>
           </div>
 

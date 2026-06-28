@@ -10,7 +10,7 @@ function formatUsd(amount: number) {
 }
 
 function formatEur(amount: number) {
-  return new Intl.NumberFormat('en-EU', {
+  return new Intl.NumberFormat('de-DE', {
     style: 'currency',
     currency: 'EUR',
     minimumFractionDigits: 2,
@@ -25,58 +25,92 @@ function formatVariant(variant: string) {
     .trim();
 }
 
-export default function CardPrice({ cardId }: { cardId: string }) {
-  const price = getPriceByCardId(cardId);
-
-  if (!price) {
-    return (
-      <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-        <h3 className="text-base font-bold text-white mb-2">Market Price</h3>
-        <p className="text-neutral-500 text-sm">No market data available for this card.</p>
-      </div>
-    );
-  }
-
-  const updated = price.tcgplayerUpdated ?? price.cardmarketUpdated;
+function PriceRange({ low, mid, market }: { low?: number; mid?: number; market: number }) {
+  if (low == null || mid == null) return null;
+  const max = Math.max(market, mid, low) * 1.1 || 1;
+  const pct = (v: number) => `${Math.min(100, (v / max) * 100)}%`;
 
   return (
-    <div className="bg-white/5 border border-white/10 rounded-xl p-5 space-y-4">
-      <div>
-        <h3 className="text-base font-bold text-white">Market Price</h3>
-        <p className="text-neutral-500 text-xs mt-1">Rough estimates from TCGPlayer &amp; Cardmarket via TCGdex</p>
+    <div className="mt-3 space-y-2">
+      <div className="relative h-1.5 rounded-full bg-white/10 overflow-hidden">
+        <div
+          className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-emerald-600/60 to-emerald-400/80"
+          style={{ width: pct(market) }}
+        />
+      </div>
+      <div className="flex justify-between text-[11px] text-neutral-500">
+        <span>Low {formatUsd(low)}</span>
+        <span>Mid {formatUsd(mid)}</span>
+      </div>
+    </div>
+  );
+}
+
+export default function CardPrice({ cardId }: { cardId: string }) {
+  const price = getPriceByCardId(cardId);
+  if (!price?.usd && !price?.eur) return null;
+
+  const updated = price.tcgplayerUpdated ?? price.cardmarketUpdated;
+  const updatedLabel = updated
+    ? new Date(updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+    : null;
+
+  return (
+    <section
+      aria-label="Market value"
+      className="mt-6 rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-transparent overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.24)]"
+    >
+      <div className="px-5 py-3.5 border-b border-white/8 flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
+          <h3 className="text-sm font-semibold text-white tracking-wide">Market Value</h3>
+        </div>
+        {updatedLabel && (
+          <span className="text-[11px] text-neutral-500 whitespace-nowrap">Updated {updatedLabel}</span>
+        )}
       </div>
 
-      {price.usd && (
-        <div className="rounded-lg bg-emerald-500/10 border border-emerald-500/20 p-4">
-          <div className="text-emerald-400 text-xs font-semibold uppercase tracking-wide mb-1">TCGPlayer (USD)</div>
-          <div className="text-3xl font-bold text-white">{formatUsd(price.usd.market)}</div>
-          <div className="text-neutral-400 text-xs mt-2 space-y-0.5">
-            <div>{formatVariant(price.usd.variant)} printing</div>
-            {price.usd.low != null && price.usd.mid != null && (
-              <div>Low {formatUsd(price.usd.low)} · Mid {formatUsd(price.usd.mid)}</div>
-            )}
+      <div className={`p-5 gap-4 ${price.usd && price.eur ? 'grid sm:grid-cols-2' : ''}`}>
+        {price.usd && (
+          <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.06] p-4">
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400/90">
+                TCGPlayer
+              </span>
+              <span className="text-[10px] text-neutral-500 uppercase tracking-wide">USD</span>
+            </div>
+            <div className="text-3xl font-bold text-white tabular-nums tracking-tight">
+              {formatUsd(price.usd.market)}
+            </div>
+            <p className="text-neutral-500 text-xs mt-1.5">{formatVariant(price.usd.variant)}</p>
+            <PriceRange low={price.usd.low} mid={price.usd.mid} market={price.usd.market} />
           </div>
-        </div>
-      )}
+        )}
 
-      {price.eur && (
-        <div className="rounded-lg bg-blue-500/10 border border-blue-500/20 p-4">
-          <div className="text-blue-400 text-xs font-semibold uppercase tracking-wide mb-1">Cardmarket (EUR)</div>
-          {price.eur.trend != null && (
-            <div className="text-2xl font-bold text-white">{formatEur(price.eur.trend)}</div>
-          )}
-          <div className="text-neutral-400 text-xs mt-2 space-y-0.5">
-            {price.eur.avg != null && <div>Avg {formatEur(price.eur.avg)}</div>}
-            {price.eur.low != null && <div>Low {formatEur(price.eur.low)}</div>}
+        {price.eur && (
+          <div className="rounded-lg border border-sky-500/15 bg-sky-500/[0.06] p-4">
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-sky-400/90">
+                Cardmarket
+              </span>
+              <span className="text-[10px] text-neutral-500 uppercase tracking-wide">EUR</span>
+            </div>
+            <div className="text-3xl font-bold text-white tabular-nums tracking-tight">
+              {price.eur.trend != null ? formatEur(price.eur.trend) : price.eur.avg != null ? formatEur(price.eur.avg) : '—'}
+            </div>
+            <div className="text-neutral-500 text-xs mt-2 space-y-0.5">
+              {price.eur.avg != null && price.eur.trend != null && (
+                <p>Avg {formatEur(price.eur.avg)}</p>
+              )}
+              {price.eur.low != null && <p>Low {formatEur(price.eur.low)}</p>}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
-      {updated && (
-        <p className="text-neutral-600 text-xs">
-          Last updated {new Date(updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-        </p>
-      )}
-    </div>
+      <p className="px-5 pb-4 text-[11px] leading-relaxed text-neutral-600">
+        Rough market estimates sourced from TCGPlayer and Cardmarket via TCGdex. Not financial advice.
+      </p>
+    </section>
   );
 }
