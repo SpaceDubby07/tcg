@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllCards, getCardById } from '@/lib/cards';
+import { getAllCardIds, getCardById, getCardsForSet, setIdFromCardId } from '@/lib/cards';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,10 +21,11 @@ const TYPE_COLORS: Record<string, string> = {
   Fairy: '#f48fb1',
 };
 
-export const revalidate = 2592000;
+// Fully pre-rendered at build time — no runtime functions for card pages.
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return [];
+  return getAllCardIds().map((id) => ({ id }));
 }
 
 export async function generateMetadata({
@@ -69,10 +70,13 @@ export default async function CardDetailPage({
   const card = getCardById(id);
   if (!card) notFound();
 
-  const allCards = getAllCards();
-  const currentIndex = allCards.findIndex((c) => c.id === id);
-  const prevCard = currentIndex > 0 ? allCards[currentIndex - 1] : null;
-  const nextCard = currentIndex < allCards.length - 1 ? allCards[currentIndex + 1] : null;
+  // Prev/next navigation is scoped to the card's own set, so we only load that
+  // one set file instead of the entire ~20k-card dataset.
+  const setCards = getCardsForSet(setIdFromCardId(id));
+  const currentIndex = setCards.findIndex((c) => c.id === id);
+  const prevCard = currentIndex > 0 ? setCards[currentIndex - 1] : null;
+  const nextCard =
+    currentIndex >= 0 && currentIndex < setCards.length - 1 ? setCards[currentIndex + 1] : null;
 
   const primaryType = card.types?.[0];
   const typeColor = primaryType ? (TYPE_COLORS[primaryType] ?? '#ef4444') : '#ef4444';

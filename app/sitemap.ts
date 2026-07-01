@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { getAllCards } from '@/lib/cards';
+import { getAllCardIds } from '@/lib/cards';
 import { getDeckSetIds } from '@/lib/decks';
 import setsData from '@/data/sets/en.json';
 
@@ -29,8 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     }));
 
-  const cardRoutes: MetadataRoute.Sitemap = getAllCards().map((card) => ({
-    url: `${BASE}/card/${card.id}`,
+  const cardRoutes: MetadataRoute.Sitemap = getAllCardIds().map((id) => ({
+    url: `${BASE}/card/${id}`,
     changeFrequency: 'yearly',
     priority: 0.5,
   }));
